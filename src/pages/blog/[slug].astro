@@ -12,7 +12,9 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const { Content } = await post.render();
+const { Content, headings } = await post.render();
+
+const toc = headings.filter((h) => h.depth === 2);
 
 const relatedPosts = (await getCollection('blog'))
   .filter((p) => p.slug !== post.slug && p.data.tags.some((t) => post.data.tags.includes(t)))
@@ -80,10 +82,13 @@ const formattedDate = post.data.publishDate.toLocaleDateString('pt-BR', {
                 Neste artigo
               </h3>
               <nav class="space-y-3 text-sm">
-                <a href="#" class="block text-gray-600 hover:text-secondary transition-colors">Introdução</a>
-                <a href="#" class="block text-gray-600 hover:text-secondary transition-colors">Principais tópicos</a>
-                <a href="#" class="block text-gray-600 hover:text-secondary transition-colors">Perguntas frequentes</a>
-                <a href="#" class="block text-gray-600 hover:text-secondary transition-colors">Conclusão</a>
+                {toc.length > 0 ? (
+                  toc.map((h) => (
+                    <a href={`#${h.slug}`} class="block text-gray-600 hover:text-secondary transition-colors">{h.text}</a>
+                  ))
+                ) : (
+                  <span class="block text-gray-400">Navegação indisponível</span>
+                )}
               </nav>
             </div>
 

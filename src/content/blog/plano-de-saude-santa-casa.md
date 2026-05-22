@@ -5,8 +5,6 @@ publishDate: 2025-07-25T08:00:00Z
 tags: ["santa casa", "hospital", "rio de janeiro"]
 ---
 
-# Plano de Saúde Santa Casa: Tudo Sobre a Cobertura Hospitalar de Referência no Rio de Janeiro
-
 Quando falamos em **plano de saúde Santa Casa**, estamos falando de uma das instituições médicas mais tradicionais e respeitadas do Brasil. Com raízes centenárias e um compromisso com o atendimento humanizado, a Santa Casa se consolidou como referência em saúde, especialmente em grandes centros urbanos como o Rio de Janeiro.
 
 Neste guia completo, vamos explorar tudo sobre o plano de saúde Santa Casa: como funciona a cobertura, quem pode contratar, como funciona a estrutura de atendimento e como encontrar a melhor opção se você mora no Rio de Janeiro ou na Região Metropolitana.
@@ -331,7 +329,7 @@ Segue padrão da ANS: 30 dias para consultas, 180 para cirurgias, 300 para parto
 **Posso isentar a carência?**
 Sim, se já teve plano nos últimos 12 meses.
 
-**O plano cobere odontologia?**
+**O plano cobre odontologia?**
 Quando contratada como adicional.
 
 **Como cancelar o plano Santa Casa?**

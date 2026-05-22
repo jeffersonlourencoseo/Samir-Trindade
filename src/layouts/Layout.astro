@@ -23,8 +23,14 @@ const { title, description, image, type, noindex } = Astro.props;
     <SchemaLocalBusiness />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <style is:global>
+      html, body {
+        overflow-x: hidden;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Outfit', sans-serif;
+      }
       /* Estilização global de artigos */
       .prose-article h1 {
         display: none;
@@ -119,7 +125,7 @@ const { title, description, image, type, noindex } = Astro.props;
       }
     </style>
   </head>
-  <body class="font-sans text-gray-900 antialiased">
+  <body class="font-['Source_Sans_3',sans-serif] text-gray-900 antialiased">
     <Header />
     <main>
       <slot />
