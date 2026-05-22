@@ -40,7 +40,7 @@ O Rio de Janeiro é um dos mercados mais aquecidos de planos de saúde do Brasil
 
 ### Densidade de rede
 
-A capital fluminense concentra alguns dos melhores hospitais do país. Operadoras como Unimed, Amil, Bradesco e SulAmérica mantêm redes credenciadas extensas na cidade e na Região Metropolitana.
+A capital fluminense concentra alguns dos melhores hospitais do país. Operadoras como [Unimed](/servicos), [Amil](/servicos), [Bradesco](/servicos) e [SulAmérica](/servicos) mantêm redes credenciadas extensas na cidade e na Região Metropolitana.
 
 ### Faixas etárias
 
@@ -48,7 +48,7 @@ Empresas no RJ têm perfis variados. Startups têm equipes jovens; indústrias t
 
 ### Custo de vida
 
-O valor do plano empresarial no RJ precisa ser competitivo. Operadoras regionais como Unimed costumam oferecer preços mais atrativos para empresas de pequeno e médio porte.
+O valor do plano empresarial no RJ precisa ser competitivo. Operadoras regionais como [Unimed](/servicos) costumam oferecer preços mais atrativos para empresas de pequeno e médio porte.
 
 **[Solicite uma cotação comparativa](https://wa.me/5521964625163)** analisando o mercado empresarial do Rio de Janeiro.
 
@@ -92,33 +92,33 @@ Para empresas maiores, operadoras que oferecem relatórios de utilização, gest
 
 ## 4. As principais operadoras para empresas no RJ
 
-### Unimed
+### [Unimed](/servicos)
 
 Excelente custo-benefício para empresas que atuam principalmente no estado do Rio. Rede densa e atendimento humanizado.
 
-### Amil
+### [Amil](/servicos)
 
 Ideal para empresas com filiais em outros estados. Cobertura nacional robusta e tecnologia de ponta.
 
-### Bradesco Saúde
+### [Bradesco Saúde](/servicos)
 
 Rede premium e programas de gestão de saúde corporativa. Indicado para empresas de médio e grande porte.
 
-### SulAmérica
+### [SulAmérica](/servicos)
 
 Planos modulares que permitem customizar a cobertura. Flexibilidade para empresas com perfis diversos.
 
-### Hapvida
+### [Hapvida](/servicos)
 
 Preços competitivos e expansão constante. Boa opção para pequenas empresas e startups.
 
-### NotreDame Intermédica
+### [NotreDame](/servicos) Intermédica
 
 Rede extensa e opções variadas. Forte presença no Sudeste.
 
 ### Outras operadoras
 
-Porto Seguro, Prevent Senior, Care Plus, Omint e Assim Saúde também oferecem planos empresariais no RJ, cada uma com características específicas.
+[Porto Seguro](/servicos), [Prevent Senior](/servicos), Care Plus, Omint e [Assim Saúde](/servicos) também oferecem planos empresariais no RJ, cada uma com características específicas.
 
 **[Adquira seu plano com desconto](https://wa.me/5521964625163)** comparando propostas de até 10 operadoras diferentes.
 
@@ -189,7 +189,7 @@ Colaboradores que já tinham plano nos últimos 12 meses têm direito à isenç�
 
 ### Negociação empresarial
 
-Empresas com bom histórico e volume de vidas conseguem negociar carências reduzidas. Um corretor especializado faz essa negociação com a operadora.
+Empresas com bom histórico e volume de vidas conseguem negociar carências reduzidas. Um [corretor especializado](/sobre) faz essa negociação com a operadora.
 
 **[Solicite uma cotação comparativa](https://wa.me/5521964625163)** e negocie as melhores condições de carência para sua empresa.
 
@@ -237,7 +237,7 @@ Empresas que revisam o plano a cada 24 meses conseguem reduções de até 30% na
 
 ### O papel do corretor
 
-Um corretor acompanhante faz essa revisão de forma proativa. Ele compara o mercado, negocia com operadoras e garante que a empresa sempre tenha o melhor plano.
+Um [corretor acompanhante](/sobre) faz essa revisão de forma proativa. Ele compara o mercado, negocia com operadoras e garante que a empresa sempre tenha o melhor plano.
 
 **[Adquira seu plano com desconto](https://wa.me/5521964625163)** e tenha garantida a revisão a cada 2 anos.
 
@@ -267,7 +267,7 @@ A coparticipação pode gerar insatisfação se não for bem explicada aos colab
 
 Reajustes acima do índice da ANS podem ser contestados. Ignorar esse acompanhamento é deixar dinheiro na mesa.
 
-### Não ter corretor acompanhante
+### Não ter [corretor acompanhante](/sobre)
 
 O maior erro é contratar sem um corretor que acompanha. O pós-venda é onde a economia real acontece.
 
@@ -302,7 +302,7 @@ Sim, desde que tenha CNPJ ativo e pelo menos 2 vidas no contrato.
 Sim, especialmente quando superam o índice máximo definido pela ANS.
 
 **Qual a melhor operadora para pequenas empresas no RJ?**
-Depende do perfil. Unimed e Hapvida costumam ter preços competitivos para PMEs.
+Depende do perfil. [Unimed](/servicos) e [Hapvida](/servicos) costumam ter preços competitivos para PMEs.
 
 **O corretor cobra para fazer cotação?**
 Não. O corretor recebe comissão da operadora, não do cliente.
@@ -319,6 +319,6 @@ A operadora ideal hoje pode não ser a ideal daqui a dois anos. O perfil da sua 
 
 Se você gerencia uma empresa no Rio de Janeiro, não escolha sozinho. Tenha um especialista ao seu lado que entende o mercado, conhece as operadoras e trabalha com o seu interesse em mente.
 
-Sou Samir Trindade, corretor credenciado ANS 73719199730, especializado em planos empresariais no Rio de Janeiro. Atendo empresas de 3 a 3.000 vidas, PMEs, startups e grandes corporações. Trabalho com Unimed, Amil, Bradesco, SulAmérica e mais de 10 operadoras.
+Sou [Samir Trindade](/sobre), corretor credenciado ANS 73719199730, especializado em planos empresariais no Rio de Janeiro. Atendo empresas de 3 a 3.000 vidas, PMEs, startups e grandes corporações. Trabalho com [Unimed](/servicos), [Amil](/servicos), [Bradesco](/servicos), [SulAmérica](/servicos) e mais de 10 operadoras.
 
 **[Solicite uma cotação comparativa](https://wa.me/5521964625163)** e descubra o melhor plano de saúde para a sua empresa. Sem compromisso.

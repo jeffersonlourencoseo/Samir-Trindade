@@ -157,7 +157,7 @@ A rede se estende ao Rio de Janeiro, Niterói, São Gonçalo e outras cidades da
 
 ### Como verificar a rede
 
-Antes de contratar, é fundamental confirmar quais hospitais e médicos da sua região estão credenciados. Um corretor especializado pode fornecer essa informação atualizada.
+Antes de contratar, é fundamental confirmar quais hospitais e médicos da sua região estão credenciados. Um [corretor especializado](/sobre) pode fornecer essa informação atualizada.
 
 **[Fale com o corretor](https://wa.me/5521964625163)** e receba a lista atualizada de rede credenciada Santa Casa na sua cidade.
 
@@ -183,7 +183,7 @@ O atendimento na Santa Casa é reconhecidamente humanizado. O vínculo médico-p
 
 Para determinados perfis, especialmente na Região Serrana, o plano de saúde Santa Casa oferece excelente custo-benefício.
 
-**[Solicite uma cotação comparativa](https://wa.me/5521964625163)** comparando Santa Casa com Unimed, Amil e Bradesco.
+**[Solicite uma cotação comparativa](https://wa.me/5521964625163)** comparando Santa Casa com [Unimed](/servicos), [Amil](/servicos) e [Bradesco](/servicos).
 
 ---
 
@@ -204,7 +204,7 @@ Desde pequenas empresas com poucos colaboradores até grandes corporações.
 
 ### Implementação
 
-O processo de implantação é simples e pode ser feito com apoio de um corretor especializado.
+O processo de implantação é simples e pode ser feito com apoio de um [corretor especializado](/sobre).
 
 **[Adquira seu plano com desconto](https://wa.me/5521964625163)** para sua empresa com a Santa Casa.
 
@@ -328,7 +328,7 @@ Sim. É um dos diferenciais históricos da instituição.
 Apenas em hospitais e unidades credenciadas.
 
 **Como verificar a rede credenciada?**
-Consultando diretamente a operadora ou através de um corretor especializado.
+Consultando diretamente a operadora ou através de um [corretor especializado](/sobre).
 
 **O plano Santa Casa é bom para empresas?**
 Sim. Oferece condições empresariais competitivas.
@@ -343,7 +343,7 @@ O **plano de saúde Santa Casa** é uma excelente escolha para quem busca tradi�
 
 No entanto, como toda decisão em saúde suplementar, a escolha deve ser personalizada. O melhor plano é aquele que combina boa cobertura, rede credenciada adequada e um corretor que acompanha o contrato ao longo do tempo.
 
-Sou Samir Trindade, corretor credenciado ANS 73719199730. Trabalho com mais de 10 operadoras, incluindo Santa Casa, Unimed, Amil, Bradesco e SulAmérica. Atendo presencialmente no Centro do Rio de Janeiro e online para todo o estado.
+Sou [Samir Trindade](/sobre), corretor credenciado ANS 73719199730. Trabalho com mais de 10 operadoras, incluindo Santa Casa, [Unimed](/servicos), [Amil](/servicos), [Bradesco](/servicos) e [SulAmérica](/servicos). Atendo presencialmente no Centro do Rio de Janeiro e online para todo o estado.
 
 Se você está considerando o plano de saúde Santa Casa ou quer comparar com outras opções, entre em contato.
 

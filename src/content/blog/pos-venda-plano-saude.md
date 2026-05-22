@@ -82,7 +82,7 @@ Quando a operadora nega uma autorização ou reembolso, o corretor entra como in
 
 ### Troca proativa de operadora
 
-O mercado muda. A operadora que era boa há dois anos pode não ser mais. Um corretor acompanhante compara o mercado periodicamente e sugere a troca quando necessário.
+O mercado muda. A operadora que era boa há dois anos pode não ser mais. Um [corretor acompanhante](/sobre) compara o mercado periodicamente e sugere a troca quando necessário.
 
 ### Redução de parcela a cada 2 anos
 
@@ -110,7 +110,7 @@ Um reajuste de 15% ao ano não parece muito. Mas em 5 anos, o acumulado é de 10
 
 ### Sem corretor, você paga mais
 
-Quem não tem corretor acompanhante simplesmente aceita o reajuste. Quem tem, contesta, negocia e, quando necessário, troca de operadora.
+Quem não tem [corretor acompanhante](/sobre) simplesmente aceita o reajuste. Quem tem, contesta, negocia e, quando necessário, troca de operadora.
 
 ### Como um corretor negocia reajustes
 
@@ -192,7 +192,7 @@ Um corretor experiente conhece os canais de atendimento prioritários, os regula
 
 ### A diferença que faz
 
-Clientes com corretor acompanhante resolvem problemas em média 3 vezes mais rápido do que clientes que ligam diretamente no SAC.
+Clientes com [corretor acompanhante](/sobre) resolvem problemas em média 3 vezes mais rápido do que clientes que ligam diretamente no SAC.
 
 **[Fale com o corretor](https://wa.me/5521964625163)** que resolve sinistros sem você ter que ligar para o SAC.
 
@@ -319,11 +319,11 @@ Sim. Um bom corretor resolve problemas de autorização, reembolso e cobertura d
 
 Contratar um plano de saúde sem pós-venda é como comprar um carro sem revisão periódica. Funciona no começo, mas com o tempo vai ficando caro, problemático e insatisfatório.
 
-O **pós-venda em plano de saúde** não é luxo. É necessidade. Reajustes anuais, mudanças de rede, problemas de autorização e sinistros são realidades de todo beneficiário. Quem tem um corretor acompanhante resolve esses problemas rápido, paga menos e nunca fica desamparado.
+O **pós-venda em plano de saúde** não é luxo. É necessidade. Reajustes anuais, mudanças de rede, problemas de autorização e sinistros são realidades de todo beneficiário. Quem tem um [corretor acompanhante](/sobre) resolve esses problemas rápido, paga menos e nunca fica desamparado.
 
 A verdade é simples: o melhor plano do mundo com o pior corretor pode ser pior que um plano médio com o melhor corretor. O plano é metade da equação. O corretor é a outra metade.
 
-Sou Samir Trindade, corretor credenciado ANS 73719199730, e o pós-venda é o meu diferencial. Não prometo apenas um plano. Prometo acompanhamento contínuo, revisão de reajustes, redução de parcela a cada 2 anos e resolução de problemas sem você ter que ligar no SAC.
+Sou [Samir Trindade](/sobre), corretor credenciado ANS 73719199730, e o pós-venda é o meu diferencial. Não prometo apenas um plano. Prometo acompanhamento contínuo, revisão de reajustes, redução de parcela a cada 2 anos e resolução de problemas sem você ter que ligar no SAC.
 
 Atendo empresas, famílias, MEIs e pessoas físicas no Centro do Rio de Janeiro (Av. Rio Branco, 108, 21º andar) e online por WhatsApp para todo o estado.
 

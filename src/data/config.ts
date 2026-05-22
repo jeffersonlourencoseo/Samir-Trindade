@@ -17,7 +17,7 @@ export const SITE_CONFIG = {
     country: 'BR',
   },
   ansRegister: '73719199730',
-  hours: 'Segunda a sexta das 8h às 19h. Sábado das 8h às 15h. Atendimento extra mediante agendamento.',
+  hours: 'Segunda a sexta das 8h às 19h. Sábado das 8h às 15h.',
   social: {
     whatsapp: 'https://wa.me/5521964625163',
   },

@@ -55,7 +55,7 @@ O plano empresarial do MEI tem a mesma rede credenciada de uma grande empresa. H
 
 ### Pós-venda e renegociação
 
-Como qualquer plano empresarial, o contrato do MEI pode ser renegociado a cada 2 anos. Um corretor especializado revisa o mercado, compara propostas e garante que você nunca pague mais do que deve.
+Como qualquer plano empresarial, o contrato do MEI pode ser renegociado a cada 2 anos. Um [corretor especializado](/sobre) revisa o mercado, compara propostas e garante que você nunca pague mais do que deve.
 
 **[Cote agora](https://wa.me/5521964625163)** e descubra quanto o MEI economia no plano de saúde empresarial.
 
@@ -65,33 +65,33 @@ Como qualquer plano empresarial, o contrato do MEI pode ser renegociado a cada 2
 
 No Rio de Janeiro, a maioria das grandes operadoras oferece planos empresariais para MEI. As principais são:
 
-### Unimed
+### [Unimed](/servicos)
 
 Cooperativa médica com forte presença no estado do Rio. Oferece planos empresariais para MEI a partir de 2 vidas, com rede credenciada densa na Região Metropolitana.
 
-### Amil
+### [Amil](/servicos)
 
 Uma das maiores redes nacionais. Ideal para MEIs que viajam a trabalho ou precisam de cobertura fora do estado.
 
-### Bradesco Saúde
+### [Bradesco Saúde](/servicos)
 
 Tradição e solidez. Planos com gestão de saúde e programas de prevenção.
 
-### SulAmérica
+### [SulAmérica](/servicos)
 
 Planos modulares que permitem customizar a cobertura conforme as necessidades do MEI.
 
-### Hapvida
+### [Hapvida](/servicos)
 
 Preços competitivos e expansão constante no Sudeste.
 
-### NotreDame Intermédica
+### [NotreDame](/servicos) Intermédica
 
 Rede extensa e opções variadas para pequenos empresários.
 
 ### Outras operadoras
 
-Porto Seguro, Prevent Senior, Care Plus, Omint e Assim Saúde também oferecem planos empresariais para MEI, dependendo da região e do número de vidas.
+[Porto Seguro](/servicos), [Prevent Senior](/servicos), Care Plus, Omint e [Assim Saúde](/servicos) também oferecem planos empresariais para MEI, dependendo da região e do número de vidas.
 
 **[Solicite uma cotação comparativa](https://wa.me/5521964625163)** comparando até 10 operadoras para MEI.
 
@@ -291,7 +291,7 @@ Sim, para empresas. O plano de saúde empresarial é considerado despesa operaci
 O cancelamento deve ser solicitado por escrito à operadora, seguindo as regras do contrato.
 
 **Qual a melhor operadora para MEI no Rio de Janeiro?**
-Depende do perfil. Unimed e Amil são as mais procuradas, mas a melhor escolha varia conforme a região e as necessidades.
+Depende do perfil. [Unimed](/servicos) e [Amil](/servicos) são as mais procuradas, mas a melhor escolha varia conforme a região e as necessidades.
 
 **[Fale com o corretor](https://wa.me/5521964625163)** e tire todas as suas dúvidas sobre plano de saúde MEI.
 
@@ -305,6 +305,6 @@ A economia é real e significativa. Em 5 anos, a diferença entre um plano indiv
 
 Mas a escolha da operadora e do plano exige análise cuidadosa. Não bate ser MEI e contratar qualquer plano. É preciso comparar redes credenciadas, coberturas, carências e condições de reajuste. E, mais importante, ter um corretor que acompanha o contrato ao longo do tempo, renegocia a cada 2 anos e garante que você nunca pague mais do que deve.
 
-Sou Samir Trindade, corretor credenciado ANS 73719199730, especializado em planos empresariais para MEI no Rio de Janeiro. Atendo presencialmente no Centro (Av. Rio Branco, 108, 21º andar) e online por WhatsApp para todo o estado.
+Sou [Samir Trindade](/sobre), corretor credenciado ANS 73719199730, especializado em planos empresariais para MEI no Rio de Janeiro. Atendo presencialmente no Centro (Av. Rio Branco, 108, 21º andar) e online por WhatsApp para todo o estado.
 
 **[Cote agora](https://wa.me/5521964625163)** e descubra quanto o seu MEI pode economizar no plano de saúde empresarial. Sem compromisso.
