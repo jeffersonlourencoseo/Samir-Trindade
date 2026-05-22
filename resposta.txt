@@ -1,0 +1,104 @@
+May 22, 2026, 08:28
+atendimento_extra
+
+sim
+avaliacoes_google
+
+Ainda não
+cidade_bairro
+
+Rio de Janeiro Centro
+cidade_prioridade
+
+Rio de Janeiro
+cidades_cobertas
+
+Todo estado do Rio de Janeiro
+clientes_disponiveis
+
+sim_varios
+cnpj
+
+como_encontram
+
+indicacao, eventos
+concorrentes
+
+Não
+coparticipacao
+
+ambos
+cores
+
+Ainda não
+diferencial
+
+A qualidade do pós venda
+email
+
+samirtrindade1983@gmail.com
+endereco
+
+Avenida Rio Branco 108
+21° andar
+experiencia_idosos
+
+atendo
+faixa_vidas
+
+3 A 3000
+fotos
+
+sim_poucas
+gmn_status
+
+nao
+horarios
+
+Segunda a sexta das 8 às 19, sábado de 8 às 15
+logo
+
+png
+modalidades
+
+empresarial, mei
+nome_negocio
+
+Consultor de Planos de Saúde , Samir Trindade
+objetivos
+
+leads, visibilidade, concorrentes, credibilidade, whatsapp
+observacoes
+
+Toda empresa precisa trocar o plano de saúde de 2 em 2 anos para uma redução na parcela sem perder qualidade. Faço o melhor pós venda do mercado, acompanho os clientes e atendo suas necessidades.
+odonto
+
+incluso
+operadora_destaque
+
+Amil , Bradesco e Sulamerica
+operadoras
+
+Unimed, Bradesco Saúde, Amil, SulAmérica, Hapvida, NotreDame, Porto Seguro Saúde, Prevent Senior
+operadoras_outras
+
+Assim Saúde
+prospeccao
+
+misto
+redes_sociais
+
+registro_ans
+
+73719199730
+site_atual
+
+telefone
+
+21964625163
+tem_whatsapp
+
+sim
+tipo_atendimento
+
+ambos

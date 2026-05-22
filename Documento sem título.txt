@@ -1,0 +1,207 @@
+﻿Guia 1
+"Aja como um desenvolvedor especialista em Astro e UX Design. Preciso criar a base (Phase 1) de um site de **Samir Trindade Corretor de Plano de Saúde** focado em SEO Local.
+
+
+Siga estas especificações de DESIGN PROFISSIONAL:
+1. **Reset e Base:** Use **Astro 4.x** e **Tailwind CSS**. A linguagem deve ser **pt-BR**. Use o gerenciador de pacotes padrão (**npm**).
+2. **Fundamentos de Respiro:** Defina no `Layout.astro` que todas as seções principais terão um preenchimento generoso (`py-24` no mobile e `py-32` no desktop). Nunca deixe o conteúdo 'sufocado'.
+3. **Containers:** Use um container centralizado (`container mx-auto`) com padding lateral de segurança (`px-6` a `px-12`) para que o texto nunca encoste nas bordas da tela.
+4. **Arquivos de Configuração:** Crie `package.json`, `astro.config.mjs` e `tailwind.config.mjs` (com suporte ao plugin `@astrojs/tailwind`).
+5. **Layout e Home:** 
+   - O `Layout.astro` deve ter a fonte **Inter** configurada (Acessibilidade).
+   - O `index.astro` deve ter um H1 com `leading-tight` (altura de linha correta) e espaçamento inferior (`mb-10`) antes de qualquer outro elemento.
+
+
+Mantenha o código limpo, mas com espaçamentos largos (py-32) e organizados desde o início."
+
+
+Guia 2
+"Como um designer UI/UX especialista em sites de alta conversão, preciso aplicar o design (Phase 2) no projeto de **Samir Trindade Corretor de Plano de Saúde**.
+
+
+Diretrizes Críticas de Layout (Design de Agência):
+1. **Regra do Padding Interno:** Todos os cards (Serviços, Depoimentos, etc) devem ter um preenchimento interno (`padding`) generoso de no mínimo `p-10` ou `p-12`. Nada deve encostar na borda do card.
+2. **Sistema de Cores (Editável):** Configure as cores no `tailwind.config.mjs` usando os nomes `primary` (#FACC15), `secondary` (#1E3A8A) e `accent` (#000000).
+3. **Padrão de Grids:** Use `gap-10` ou `gap-12` entre os elementos de um grid. Espaço é sinônimo de profissionalismo.
+4. **Acessibilidade:** Garanta contraste alto entre o texto e o fundo. Use `text-gray-900` para títulos e `text-gray-600` para parágrafos.
+5. **Componentes:**
+   - **Header:** Deve ser `sticky` (fixo) com um leve desfoque de fundo (`backdrop-blur`) para um toque moderno.
+   - **Hero:** Use uma tipografia 'Black' ou 'Extra Bold'. O espaçamento entre o título e o botão de ação deve ser de pelo menos `mt-10`.
+   - **Footer:** Deve ter um padding superior (`pt-24`) para separar bem do resto do site.
+
+
+Entregue um código com design de agência, focado em autoridade e segurança."
+
+
+Guia 3
+"Preciso expandir o site de **Samir Trindade Corretor de Plano de Saúde** (Phase 3) criando a arquitetura completa de páginas, mantendo a consistência de design.
+
+
+Especificações do Sistema:
+1. **Hierarquia de Títulos:** Todas as novas páginas interna (`sobre`, `contato`, `servicos`, `blog`) devem ter um título `h1` grande, com margem inferior generosa (`mb-16`) para dar destaque.
+2. **Páginas Dinâmicas:** Configure as Content Collections para `blog` e `servicos`. Nas páginas individuais (`[slug].astro`), use o componente `<article>` com a classe `prose prose-lg` do Tailwind, mas adicione um container que garanta margens laterais de respiro (`max-w-5xl mx-auto`).
+3. **Páginas Legais:** Formate as páginas de 'Privacidade' e 'Termos' com tipografia legível e espaçamento entre parágrafos (`space-y-6`), evitando blocos de texto cansativos.
+4. **UX de Conversão:** O botão de WhatsApp e o formulário de contato devem ter `paddings` internos grandes (`p-6` a `p-10`) para serem fáceis de clicar no celular.
+5. **Navegação:** Garanta que os links do Header e Footer reflitam todas as novas rotas.
+
+
+Foque em manter o 'respiro' (py-32) do site em cada nova página criada."
+
+
+Guia 4
+"Como um especialista em Copywriting para SEO Local e UI Design, preciso estruturar o conteúdo final (Phase 4) do site de **Samir Trindade Corretor de Plano de Saúde**. 
+
+
+Siga as instruções de estrutura para cada página, respeitando os padrões de respiro (py-32) e padding (p-12) definidos anteriormente.
+
+
+### 1. Página Inicial (HOME)
+Refatore a `index.astro` para conter as seguintes seções na ordem indicada:
+- **Hero:** Deve ter uma Tag (ex: 'Líder em Andaimes'), Título (H1), Subtítulo persuasivo e dois botões: 'Solicitar Orçamento no WhatsApp' e 'Ver Nossos Equipamentos'.
+- **Diferenciais:** Grid com 3 ou 4 blocos destacando diferenciais (ex: Entrega em 2h, Equipamentos Revisados, Melhor Preço). Use ícones ou emojis.
+- **Sobre Nós (Resumo):** Um bloco com texto sobre a empresa e um botão 'Conheça nossa História' levando para a página sobre.
+- **Nossos Equipamentos:** Grade mostrando até 6 serviços da coleção 'servicos'. Inclua um botão 'Ver Todos os Equipamentos' levando para a listagem completa.
+- **Depoimentos:** Seção com 3 cards de clientes satisfeitos (use nomes e fotos fictícias).
+- **Chamada de Contato:** Seção final com texto direto e dois botões grandes: 'Conversar no WhatsApp' e 'Ligar Agora'.
+
+
+### 2. Página Sobre (SOBRE)
+A `sobre.astro` não deve ser apenas texto. Estruture-a em seções visuais:
+- **Nossa História:** Como a empresa começou.
+- **Missão, Visão e Valores:** Use um grid ou lista icônica.
+- **Compromisso com a Segurança:** Fale sobre as normas técnicas (NR-18) e manutenção.
+- **Nossa Equipe:** Foco no atendimento humanizado.
+
+
+### 3. Página de Contato (CONTATO)
+Refatore a `contato.astro` para:
+- **Página Sobre:** Elaborar uma página institucional completa dividida em seções (ex: Nossa História, Missão/Valores, Padrões de Segurança e Por que nos escolher).
+- **Página de Serviço Detalhado:** O modelo dinâmico (`[slug].astro`) não deve ser apenas o texto do Markdown. Estruture-o com um Hero do Serviço, Seção de Especificações Técnicas, Benefícios/Aplicações e um CTA de fechamento (WhatsApp + Ligação).
+- **Página de Post do Blog:** Transforme o post em um "Portal de Notícias". Use uma estrutura de leitura limpa (prose), inclua uma barra lateral com CTA para orçamento, e uma seção final sugerindo "Outras Dicas de Obra" (posts relacionados).
+- **Página Contato:** Estruturar o NAP (Nome/Endereço/Tel) e o formulário funcional e com design limpo.
+
+
+Mantenha a consistência visual, use as cores `primary` e `accent`, e garanta que o site pareça uma ferramenta de vendas profissional e de alto padrão."
+
+
+Guia 5
+"Aja como um Senior UI/UX Designer e Auditor de Performance. Sua missão é realizar uma **Auditoria de Polimento Final (Phase 5)** em todo o site. 
+
+
+**INSTRUÇÃO CRÍTICA DE EXECUÇÃO:** Não tente substituir apenas pedaços de frases ou classes isoladas. Identifique o componente ou seção inteira que possui erros e **REESCREVA O BLOCO DE CÓDIGO COMPLETO**. 
+
+
+Aplique estas **5 Leis Inegociáveis**:
+
+
+### 1. DITADURA DO CONTRASTE (LEGIBILIDADE TOTAL)
+- **REGRA BINÁRIA:** Se o fundo for ESCURO (bg-accent, bg-black, bg-gray-900, etc.), o texto de corpo DEVE ser `text-white` ou `text-gray-100`. Títulos e links DEVEM ser `text-primary`.
+- **PROIBIÇÃO:** É terminantemente proibido o uso de `text-secondary`, cinzas médios ou cores de baixo contraste em fundos escuros. A leitura deve ser cristalina.
+
+
+### 2. CONTROLE UNIVERSAL DE ESCALA (CHEGA DE TEXTO GIGANTE)
+- **AUDITORIA DE DESKTOP:** Verifique se os títulos (H1/H2) estão 'gritando' ou desproporcionais ao container. Se um título for maior que `text-7xl` e estiver sufocando o layout, reduza-o para uma escala mais elegante (ex: `text-6xl`).
+- **AUDITORIA DE MOBILE:** Se um título ocupar mais de 30% da altura da tela ou causar quebras de linha excessivas em uma frase curta, ele está **ERRADO**. Reduza a escala (ex: para `text-4xl` ou `text-5xl`).
+- **ESTÉTICA:** Use sempre `font-black`, `tracking-tighter` e `leading-tight` para manter o visual compacto e profissional.
+
+
+### 3. LEI DO MENU MOBILE INDESTRUTÍVEL (UX DE ELITE)
+Revise o `Header.astro`. O Menu Mobile deve ser uma experiência de agência:
+- **ESTRUTURA:** Use um Drawer `fixed inset-0` com `z-index-[999]`, fundo sólido opaco (`bg-accent`) e `backdrop-blur`.
+- **LÓGICA DE TRAVA:** O JavaScript do menu **DEVE OBRIGATORIAMENTE** incluir `document.body.style.overflow = 'hidden'` quando o menu abrir, e liberar o scroll (`''`) quando fechar.
+- **ACABAMENTO:** Links gigantes centralizados, um botão 'X' de fechar imponente e um CTA de WhatsApp destacado com `shadow-xl`.
+
+
+### 4. LEI DAS MICRO-INTERAÇÕES (SITE VIVO)
+- Adicione obrigatoriamente `hover:scale-105`, `active:scale-95` e `transition-all` em todos os botões, links de menu e cards.
+- Use sombras coloridas sutis (ex: `shadow-primary/20`) para criar profundidade em elementos de destaque.
+
+
+### 5. INTEGRIDADE, LINKS E DADOS REAIS
+- **LINKS:** Troque cada `href="#"` por rotas reais (`/servicos`, `/sobre`, `/contato`, `/blog`).
+- **DADOS:** Não use [TELEFONE] ou similares. Use dados de exemplo realistas e formatados.
+- **SEGURANÇA:** Verifique se todas as tags foram fechadas. Um erro de tag aberta invalida o trabalho.
+
+
+REESCREVA OS ARQUIVOS AFETADOS COM FOCO EM ENTREGAR UM PRODUTO FINAL DE ALTO VALOR PERCEBIDO."
+
+
+Guia 6
+"Aja como um Especialista em SEO Técnico e Performance. Nossa missão agora é a **Etapa 6: Infraestrutura e SEO Local**. 
+
+
+O objetivo é centralizar os dados da empresa e ativar os recursos que garantem o ranqueamento no Google Maps. 
+
+
+Siga estes passos obrigatórios:
+
+
+### 1. CENTRAL DE DADOS (CÉREBRO DO SITE)
+Crie (ou atualize) o arquivo `src/data/config.ts`. 
+- **AÇÃO:** Antes de gerar o código, pergunte ao usuário: 'Qual é o domínio final do site? (ex: https://andaimespro.com.br)'. 
+- Com essa resposta, preencha o objeto `SITE_CONFIG` com o domínio real, o Nome da Empresa (NAP), Endereço, Telefone e WhatsApp. Todo o site deve ler os dados deste arquivo a partir de agora.
+
+
+### 2. ATIVAÇÃO DO SITEMAP
+Configure o arquivo `astro.config.mjs` para:
+- Importar a integração `@astrojs/sitemap`.
+- Definir a propriedade `site` dinamicamente a partir do seu `config.ts`.
+- Ativar o sitemap na lista de `integrations`.
+
+
+### 3. COMPONENTE SEO E SCHEMA (GOOGLE)
+- Garanta que exista um componente `SEO.astro` que gerencia Meta Tags e Open Graph (Social Cards para WhatsApp/Facebook).
+- Crie o componente `SchemaLocalBusiness.astro` contendo o código JSON-LD de `LocalBusiness`. Use os dados do `config.ts` para preencher Nome, Endereço e Telefone.
+
+
+### 4. CONVERSÃO ATIVA (WHATSAPP PREMIUM)
+Crie um componente `WhatsAppBtn.astro` flutuante no canto inferior direito.
+- **DESIGN:** Deve ter um fundo verde oficial (#25D366), sombra vibrante e um efeito de pulsação suave (`animate-ping`). Ao passar o mouse, deve exibir uma label 'Fale Conosco'.
+
+
+### 5. INTEGRAÇÃO NO LAYOUT
+- Injete todos esses componentes no `Layout.astro`. O site deve estar 100% configurado tecnicamente ao final desta etapa.
+
+
+Entregue o código limpo, modular e focado em performance máxima (Nota 100 no PageSpeed)."
+
+
+Guia 7
+"Aja como um Engenheiro de DevOps e Desenvolvedor Full-stack. Chegamos à **Etapa 7: Finalização e Deploy**. 
+
+
+Sua missão é preparar o site para o mundo real e realizar os primeiros passos de versionamento e infraestrutura.
+
+
+**EXECUTE AS SEGUINTES TAREFAS AGORA:**
+
+
+### 1. INSTALAÇÃO E CONFIGURAÇÃO TÉCNICA
+- **TERMINAL:** Execute o comando `npm install @astrojs/vercel` para garantir que o adaptador de deploy esteja presente.
+- **CONFIGURAÇÃO:** Atualize o `astro.config.mjs` para usar o adaptador da Vercel (`output: 'server' / adapter: vercel()`).
+
+
+### 2. HIGIENE E PORTFÓLIO (README)
+- **ARQUIVOS:** Crie um `.gitignore` rigoroso (ignorando node_modules, .astro, dist, .env).
+- **DOCUMENTAÇÃO:** Crie um `README.md` em Português de alto nível, descrevendo o projeto, as tecnologias usadas e o status 'Pronto para Produção'. Este arquivo é o marketing do aluno.
+
+
+### 3. VERSIONAMENTO (GIT)
+- **TERMINAL:** Você deve inicializar o repositório agora. Execute em sequência:
+    1. `git init`
+    2. `git add .`
+    3. `git commit -m 'feat: projeto finalizado e pronto para deploy'`
+
+
+### 4. CHECKLIST DE CONVERSÃO
+- Verifique se o `WhatsAppBtn.astro` está integrado no `Layout.astro`.
+- Verifique se todos os placeholders no `src/data/config.ts` foram removidos.
+
+
+**IMPORTANTE:** Se qualquer comando de terminal falhar por permissão, você deve tentar contornar usando o caminho absoluto ou informar ao usuário exatamente o que aconteceu, mas a prioridade é a **EXECUÇÃO AUTOMÁTICA**.
+
+
+Ao final, informe ao usuário que o projeto está versionado localmente e pronto para ser conectado ao repositório remoto do Github."
+
+
+Guia 8

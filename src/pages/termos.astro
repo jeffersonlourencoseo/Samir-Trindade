@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SITE_CONFIG } from '../data/config';
+---
+
+<Layout title="Termos de Uso" noindex={true}>
+  <section class="bg-accent py-24 md:py-32">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="mx-auto max-w-3xl">
+        <span class="mb-4 inline-block text-sm font-bold uppercase tracking-widest text-primary">Legal</span>
+        <h1 class="text-4xl font-black leading-tight tracking-tighter text-white md:text-5xl mb-10">
+          Termos de Uso
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 md:py-32 bg-white">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="mx-auto max-w-3xl space-y-6 text-gray-600">
+        <p>
+          Ao acessar e utilizar este site, você concorda em cumprir os seguintes termos e condições de uso.
+        </p>
+
+        <h2 class="text-xl font-bold text-gray-900 pt-4">1. Objeto</h2>
+        <p>
+          Este site tem como objetivo apresentar os serviços de corretagem de planos de saúde oferecidos
+          por {SITE_CONFIG.shortName}, credenciado ANS {SITE_CONFIG.ansRegister}.
+        </p>
+
+        <h2 class="text-xl font-bold text-gray-900 pt-4">2. Corretagem de Planos de Saúde</h2>
+        <p>
+          {SITE_CONFIG.shortName} atua como correspondente bancário/corretor de seguros e planos de saúde,
+          intermediando a contratação entre o cliente e as operadoras de plano de saúde credenciadas.
+          Todas as propostas, contratos e relações jurídicas são firmadas diretamente entre o cliente
+          e a operadora escolhida.
+        </p>
+
+        <h2 class="text-xl font-bold text-gray-900 pt-4">3. Responsabilidades</h2>
+        <p>
+          O site apresenta informações sobre planos de saúde com base nas condições divulgadas pelas
+          operadoras. Recomenda-se sempre a leitura integral do contrato e do regulamento do plano
+          antes da contratação.
+        </p>
+
+        <h2 class="text-xl font-bold text-gray-900 pt-4">4. Propriedade Intelectual</h2>
+        <p>
+          Todo o conteúdo deste site — textos, imagens, logotipos e layout — é de propriedade de
+          {SITE_CONFIG.shortName} ou de seus respectivos titulares, sendo protegido pela legislação
+          de direitos autorais.
+        </p>
+
+        <h2 class="text-xl font-bold text-gray-900 pt-4">5. Limitação de Responsabilidade</h2>
+        <p>
+          {SITE_CONFIG.shortName} não se responsabiliza por eventuais alterações de rede credenciada,
+          reajustes de mensalidade ou mudanças nas condições contratuais promovidas pelas operadoras
+          de saúde após a contratação.
+        </p>
+
+        <h2 class="text-xl font-bold text-gray-900 pt-4">6. Alterações</h2>
+        <p>
+          Estes termos podem ser atualizados a qualquer momento, sem aviso prévio. Recomendamos a
+          leitura periódica desta página.
+        </p>
+
+        <p class="pt-6 text-sm text-gray-400">
+          Última atualização: maio de 2024.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>

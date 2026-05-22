@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SITE_CONFIG } from '../data/config';
+---
+
+<Layout title="Política de Privacidade" noindex={true}>
+  <section class="bg-accent py-24 md:py-32">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="mx-auto max-w-3xl">
+        <span class="mb-4 inline-block text-sm font-bold uppercase tracking-widest text-primary">Legal</span>
+        <h1 class="text-4xl font-black leading-tight tracking-tighter text-white md:text-5xl mb-10">
+          Política de Privacidade
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 md:py-32 bg-white">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="mx-auto max-w-3xl space-y-6 text-gray-600">
+        <p>
+          A presente Política de Privacidade descreve como {SITE_CONFIG.shortName} coleta, usa e protege
+          as informações pessoais dos visitantes deste site.
+        </p>
+
+        <h2 class="text-xl font-bold text-gray-900 pt-4">1. Coleta de Informações</h2>
+        <p>
+          Coletamos informações quando você preenche o formulário de contato ou envia uma mensagem
+          pelo WhatsApp. Os dados podem incluir nome, e-mail, telefone e informações sobre seu
+          interesse em planos de saúde.
+        </p>
+
+        <h2 class="text-xl font-bold text-gray-900 pt-4">2. Uso das Informações</h2>
+        <p>
+          As informações coletadas são utilizadas exclusivamente para:
+        </p>
+        <ul class="list-disc space-y-2 pl-6">
+          <li>Responder suas solicitações de cotação e dúvidas;</li>
+          <li>Entrar em contato por telefone, e-mail ou WhatsApp;</li>
+          <li>Enviar propostas de planos de saúde personalizadas.</li>
+        </ul>
+
+        <h2 class="text-xl font-bold text-gray-900 pt-4">3. Proteção de Dados</h2>
+        <p>
+          Implementamos medidas de segurança para proteger suas informações pessoais contra acesso
+          não autorizado, alteração, divulgação ou destruição.
+        </p>
+
+        <h2 class="text-xl font-bold text-gray-900 pt-4">4. Compartilhamento</h2>
+        <p>
+          Não vendemos, trocamos ou transferimos suas informações para terceiros, exceto quando
+          necessário para cotação junto às operadoras de saúde, sempre com seu consentimento.
+        </p>
+
+        <h2 class="text-xl font-bold text-gray-900 pt-4">5. Cookies</h2>
+        <p>
+          Este site pode utilizar cookies para melhorar a experiência de navegação. Você pode
+          desativar os cookies nas configurações do seu navegador.
+        </p>
+
+        <h2 class="text-xl font-bold text-gray-900 pt-4">6. Contato</h2>
+        <p>
+          Em caso de dúvidas sobre esta política, entre em contato pelo e-mail {SITE_CONFIG.email}.
+        </p>
+
+        <p class="pt-6 text-sm text-gray-400">
+          Última atualização: maio de 2024.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>

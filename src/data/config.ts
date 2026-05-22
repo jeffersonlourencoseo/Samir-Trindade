@@ -1,0 +1,26 @@
+export const SITE_CONFIG = {
+  name: 'Samir Trindade — Consultor de Planos de Saúde',
+  shortName: 'Samir Trindade',
+  domain: 'https://samirtrindade.com.br',
+  description: 'Corretor credenciado ANS especializado em planos de saúde empresariais, MEI e familiares no Rio de Janeiro. Mais de 10 operadoras, atendimento presencial e online.',
+  email: 'samirtrindade1983@gmail.com',
+  phone: '(21) 96462-5163',
+  phoneRaw: '5521964625163',
+  whatsappLink: 'https://wa.me/5521964625163',
+  address: {
+    street: 'Avenida Rio Branco, 108, 21º andar',
+    neighborhood: 'Centro',
+    city: 'Rio de Janeiro',
+    state: 'RJ',
+    stateFull: 'Rio de Janeiro',
+    zip: '20040-001',
+    country: 'BR',
+  },
+  ansRegister: '73719199730',
+  hours: 'Segunda a sexta das 8h às 19h. Sábado das 8h às 15h. Atendimento extra mediante agendamento.',
+  social: {
+    whatsapp: 'https://wa.me/5521964625163',
+  },
+  author: 'Samir Trindade',
+  ogImage: '/og-image.jpg',
+} as const;

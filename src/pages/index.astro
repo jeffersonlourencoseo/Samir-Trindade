@@ -1,0 +1,338 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { SITE_CONFIG } from '../data/config';
+
+const servicos = await getCollection('servicos');
+const blogPosts = (await getCollection('blog')).slice(0, 3);
+
+const diferenciais = [
+  {
+    icon: '🛡️',
+    title: 'Pós-venda de verdade',
+    desc: 'Acompanho seus reajustes anuais, troco operadoras a cada 2 anos para reduzir custos e resolvo problemas de cobertura.',
+  },
+  {
+    icon: '🏥',
+    title: '+10 operadoras credenciadas',
+    desc: 'Amil, Bradesco, SulAmérica, Unimed, Hapvida, NotreDame, Porto Seguro e mais. A escolha certa para cada perfil.',
+  },
+  {
+    icon: '🏢',
+    title: 'Empresas, MEI e famílias',
+    desc: 'Atendo de 2 a 3000 vidas. Planos empresariais, MEI, individual, familiar e terceira idade em todo o RJ.',
+  },
+  {
+    icon: '📍',
+    title: 'Presencial + Online',
+    desc: 'Escritório no Centro do Rio (Av. Rio Branco, 108) e atendimento por WhatsApp/video para todo o estado.',
+  },
+];
+
+const depoimentos = [
+  {
+    nome: 'Carla Mendes',
+    cargo: 'RH — Construtora Norte RJ',
+    texto: 'Conseguimos reduzir 28% da mensalidade do plano sem perder um hospital da nossa rede. O pós-venda do Samir faz toda a diferença.',
+  },
+  {
+    nome: 'Roberto Lima',
+    cargo: 'Sócio — Agência Digital',
+    texto: 'Troquei de corretor porque o anterior sumia depois da venda. Com o Samir, tenho resposta no mesmo dia para qualquer problema.',
+  },
+  {
+    nome: 'Fernanda Oliveira',
+    cargo: 'MEI — Estética',
+    texto: 'Usando meu CNPJ, paguei 35% a menos no plano familiar. Ele explicou cada detalhe e não teve surpresa depois.',
+  },
+];
+---
+
+<Layout title="Corretor de Plano de Saúde no Rio de Janeiro">
+  <!-- HERO -->
+  <section class="relative overflow-hidden bg-accent py-24 md:py-32">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute -left-20 -top-20 h-96 w-96 rounded-full bg-primary blur-3xl"></div>
+      <div class="absolute -bottom-20 -right-20 h-96 w-96 rounded-full bg-secondary blur-3xl"></div>
+    </div>
+
+    <div class="container relative mx-auto px-6 md:px-12">
+      <div class="mx-auto max-w-4xl text-center">
+        <span class="mb-6 inline-block rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-primary"
+        >
+          Corretor Credenciado ANS {SITE_CONFIG.ansRegister}
+        </span>
+
+        <h1 class="text-4xl font-black leading-tight tracking-tighter text-white md:text-6xl lg:text-7xl">
+          Planos de Saúde para Empresas, MEI e Famílias no Rio de Janeiro
+        </h1>
+
+        <p class="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-gray-300 md:text-xl">
+          Mais de 10 operadoras. Atendimento presencial no Centro do Rio e online para todo o estado.
+          Especialista em reduzir sua mensalidade a cada 2 anos sem perder qualidade.
+        </p>
+
+        <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <a
+            href={SITE_CONFIG.whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-bold text-accent shadow-lg shadow-primary/20 transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95"
+          >
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 5.834h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            Falar no WhatsApp
+          </a>
+
+          <a
+            href="/servicos"
+            class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-8 py-4 text-base font-bold text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:bg-white/10 active:scale-95"
+          >
+            Conhecer Planos
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section class="py-24 md:py-32 bg-white">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="mb-16 text-center">
+        <h2 class="text-3xl font-black tracking-tighter text-gray-900 md:text-5xl">
+          Por que contratar comigo?
+        </h2>
+        <p class="mx-auto mt-4 max-w-xl text-gray-600">
+          Não vendo plano. Entrego solução de saúde com acompanhamento contínuo.
+        </p>
+      </div>
+
+      <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+        {diferenciais.map((item) => (
+          <div class="group rounded-2xl border border-gray-100 bg-gray-50 p-10 transition-all duration-300 hover:scale-[1.02] hover:border-primary/20 hover:shadow-xl">
+            <div class="mb-4 text-3xl">{item.icon}</div>
+            <h3 class="mb-3 text-lg font-bold text-gray-900">{item.title}</h3>
+            <p class="text-sm leading-relaxed text-gray-600">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE RESUMO -->
+  <section class="py-24 md:py-32 bg-gray-50">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="grid items-center gap-12 lg:grid-cols-2">
+        <div class="space-y-6">
+          <span class="text-sm font-bold uppercase tracking-widest text-secondary">Sobre</span>
+          <h2 class="text-3xl font-black tracking-tighter text-gray-900 md:text-5xl">
+            Corretor de plano de saúde que não some depois da venda
+          </h2>
+          <p class="text-lg leading-relaxed text-gray-600">
+            Sou Samir Trindade, corretor credenciado ANS há anos no mercado de saúde suplementar no Rio de Janeiro.
+            Atendo empresas de 2 a 3000 vidas, MEI e famílias. Meu diferencial é simples:
+            <strong class="text-gray-900">a qualidade do pós-venda.</strong>
+          </p>
+          <p class="text-lg leading-relaxed text-gray-600">
+            Toda empresa precisa revisar seu plano a cada 2 anos. Eu faço essa revisão de forma proativa,
+            negocio reajustes abusivos e, quando necessário, migro para outra operadora sem carência —
+            sempre reduzindo a parcela e mantendo a qualidade.
+          </p>
+          <a
+            href="/sobre"
+            class="inline-flex items-center gap-2 rounded-full bg-secondary px-8 py-4 text-base font-bold text-white shadow-lg shadow-secondary/20 transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95"
+          >
+            Conheça minha história
+          </a>
+        </div>
+
+        <div class="rounded-2xl bg-white p-12 shadow-xl border border-gray-100">
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xl">📍</div>
+              <div>
+                <p class="font-bold text-gray-900">Localização</p>
+                <p class="text-sm text-gray-600">Av. Rio Branco, 108, 21º andar — Centro, Rio de Janeiro/RJ</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xl">📞</div>
+              <div>
+                <p class="font-bold text-gray-900">Contato</p>
+                <p class="text-sm text-gray-600">{SITE_CONFIG.phone} — WhatsApp e ligação</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xl">🕐</div>
+              <div>
+                <p class="font-bold text-gray-900">Horário</p>
+                <p class="text-sm text-gray-600">Seg–Sex 8h–19h | Sáb 8h–15h | Extra mediante agendamento</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xl">🏅</div>
+              <div>
+                <p class="font-bold text-gray-900">Credenciamento</p>
+                <p class="text-sm text-gray-600">Registro ANS {SITE_CONFIG.ansRegister}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="py-24 md:py-32 bg-white">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="mb-16 flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
+        <div>
+          <span class="text-sm font-bold uppercase tracking-widest text-secondary">Operadoras</span>
+          <h2 class="mt-2 text-3xl font-black tracking-tighter text-gray-900 md:text-5xl">
+            Planos que comercializo
+          </h2>
+        </div>
+        <a
+          href="/servicos"
+          class="inline-flex items-center gap-2 rounded-full border border-gray-200 px-6 py-3 text-sm font-bold text-gray-700 transition-all duration-300 hover:border-primary hover:text-accent"
+        >
+          Ver todos os planos
+        </a>
+      </div>
+
+      <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+        {servicos.slice(0, 6).map((s) => (
+          <a
+            href={`/servicos/${s.slug}`}
+            class="group flex flex-col rounded-2xl border border-gray-100 bg-gray-50 p-10 transition-all duration-300 hover:scale-[1.02] hover:border-primary/20 hover:shadow-xl"
+          >
+            <div class="mb-4 inline-block rounded-lg bg-secondary/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-secondary">
+              {s.data.operadora}
+            </div>
+            <h3 class="mb-3 text-xl font-bold text-gray-900 group-hover:text-secondary transition-colors">
+              {s.data.title}
+            </h3>
+            <p class="mb-6 text-sm leading-relaxed text-gray-600">{s.data.description}</p>
+            <span class="mt-auto inline-flex items-center gap-1 text-sm font-bold text-secondary transition-all group-hover:translate-x-1"
+            >
+              Saiba mais →
+            </span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="py-24 md:py-32 bg-gray-50">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="mb-16 text-center">
+        <h2 class="text-3xl font-black tracking-tighter text-gray-900 md:text-5xl">
+          O que dizem os clientes
+        </h2>
+        <p class="mx-auto mt-4 max-w-xl text-gray-600">
+          Resultados reais de quem confiou no processo de consultoria.
+        </p>
+      </div>
+
+      <div class="grid gap-10 md:grid-cols-3">
+        {depoimentos.map((d) => (
+          <div class="rounded-2xl border border-gray-100 bg-white p-10 shadow-sm transition-all duration-300 hover:shadow-xl">
+            <div class="mb-6 text-primary text-4xl leading-none">"""</div>
+            <p class="mb-6 text-base leading-relaxed text-gray-700">{d.texto}</p>
+            <div class="flex items-center gap-4">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-secondary font-bold text-white"
+                >{d.nome.charAt(0)}</div>
+              <div>
+                <p class="font-bold text-gray-900">{d.nome}</p>
+                <p class="text-xs text-gray-500">{d.cargo}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="py-24 md:py-32 bg-white">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="mb-16 flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
+        <div>
+          <span class="text-sm font-bold uppercase tracking-widest text-secondary">Blog</span>
+          <h2 class="mt-2 text-3xl font-black tracking-tighter text-gray-900 md:text-5xl">
+            Dicas e novidades
+          </h2>
+        </div>
+        <a
+          href="/blog"
+          class="inline-flex items-center gap-2 rounded-full border border-gray-200 px-6 py-3 text-sm font-bold text-gray-700 transition-all duration-300 hover:border-primary hover:text-accent"
+        >
+          Ver todos os posts
+        </a>
+      </div>
+
+      <div class="grid gap-10 md:grid-cols-3">
+        {blogPosts.map((post) => (
+          <a
+            href={`/blog/${post.slug}`}
+            class="group flex flex-col rounded-2xl border border-gray-100 bg-gray-50 transition-all duration-300 hover:scale-[1.02] hover:border-primary/20 hover:shadow-xl overflow-hidden"
+          >
+            <div class="bg-secondary/10 p-8">
+              <div class="flex flex-wrap gap-2">
+                {post.data.tags.map((tag) => (
+                  <span class="rounded-full bg-white/80 px-3 py-1 text-xs font-bold uppercase tracking-wider text-secondary">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div class="flex flex-1 flex-col p-10">
+              <h3 class="mb-3 text-lg font-bold text-gray-900 group-hover:text-secondary transition-colors">
+                {post.data.title}
+              </h3>
+              <p class="mb-6 text-sm leading-relaxed text-gray-600">{post.data.description}</p>
+              <span class="mt-auto inline-flex items-center gap-1 text-sm font-bold text-secondary transition-all group-hover:translate-x-1"
+              >
+                Ler artigo →
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="py-24 md:py-32 bg-accent">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="mx-auto max-w-3xl text-center">
+        <h2 class="text-3xl font-black leading-tight tracking-tighter text-white md:text-5xl">
+          Pronto para encontrar o melhor plano?
+        </h2>
+        <p class="mx-auto mt-6 max-w-xl text-lg text-gray-300">
+          Receba uma cotação comparativa em até 24h. Sem compromisso, sem pressão.
+        </p>
+
+        <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <a
+            href={SITE_CONFIG.whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-bold text-accent shadow-lg shadow-primary/20 transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95"
+          >
+            Conversar no WhatsApp
+          </a>
+
+          <a
+            href={`tel:${SITE_CONFIG.phoneRaw}`}
+            class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-8 py-4 text-base font-bold text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:bg-white/10 active:scale-95"
+          >
+            Ligar Agora
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

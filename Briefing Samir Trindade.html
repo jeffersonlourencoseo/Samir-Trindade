@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Briefing — Corretor de Plano de Saúde</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F7F5F0;
+    --card: #FFFFFF;
+    --accent: #1A6B4A;
+    --accent-light: #E8F4EF;
+    --text: #1A1A18;
+    --muted: #6B6B60;
+    --border: #E2DDD6;
+    --error: #C0392B;
+    --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    padding: 0 0 80px;
+  }
+
+  /* HERO */
+  .hero {
+    background: var(--accent);
+    padding: 56px 24px 48px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 120%, rgba(255,255,255,0.07) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% -20%, rgba(255,255,255,0.05) 0%, transparent 50%);
+  }
+  .hero-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 16px;
+  }
+  .hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(28px, 5vw, 44px);
+    color: #fff;
+    line-height: 1.15;
+    margin-bottom: 14px;
+    position: relative;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: rgba(255,255,255,0.7);
+  }
+  .hero p {
+    font-size: 15px;
+    color: rgba(255,255,255,0.65);
+    max-width: 480px;
+    margin: 0 auto;
+    line-height: 1.6;
+    position: relative;
+  }
+
+  /* PROGRESS */
+  .progress-bar-wrap {
+    background: rgba(255,255,255,0.15);
+    height: 3px;
+    margin-top: 36px;
+    border-radius: 99px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  .progress-bar-fill {
+    height: 100%;
+    border-radius: 99px;
+    background: #fff;
+    width: 0%;
+    transition: width 0.4s ease;
+  }
+  .progress-label {
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  /* CONTAINER */
+  .container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* SECTION */
+  .section {
+    margin-top: 40px;
+    opacity: 0;
+    transform: translateY(18px);
+    animation: fadeUp 0.5s ease forwards;
+  }
+  .section:nth-child(1) { animation-delay: 0.05s; }
+  .section:nth-child(2) { animation-delay: 0.1s; }
+  .section:nth-child(3) { animation-delay: 0.15s; }
+  .section:nth-child(4) { animation-delay: 0.2s; }
+  .section:nth-child(5) { animation-delay: 0.25s; }
+  .section:nth-child(6) { animation-delay: 0.3s; }
+  .section:nth-child(7) { animation-delay: 0.35s; }
+  .section:nth-child(8) { animation-delay: 0.4s; }
+
+  @keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .section-num {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .section-title {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  /* CARD */
+  .card {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  /* FIELD */
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  .field label {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text);
+    line-height: 1.4;
+  }
+  .field label .required { color: var(--accent); margin-left: 3px; }
+  .field .hint {
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.4;
+    margin-top: -2px;
+  }
+  .field input[type="text"],
+  .field input[type="email"],
+  .field input[type="tel"],
+  .field textarea,
+  .field select {
+    width: 100%;
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    padding: 11px 14px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--text);
+    background: var(--bg);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+    appearance: none;
+  }
+  .field input:focus,
+  .field textarea:focus,
+  .field select:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(26,107,74,0.08);
+    background: #fff;
+  }
+  .field textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+
+  /* CHECKBOX GROUP */
+  .check-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 8px;
+  }
+  .check-item {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 9px 13px;
+    border: 1.5px solid var(--border);
+    border-radius: 9px;
+    cursor: pointer;
+    transition: all 0.15s;
+    background: var(--bg);
+    font-size: 13px;
+    color: var(--text);
+  }
+  .check-item:has(input:checked) {
+    border-color: var(--accent);
+    background: var(--accent-light);
+    color: var(--accent);
+  }
+  .check-item input { display: none; }
+
+  /* RADIO GROUP */
+  .radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .radio-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 14px;
+    border: 1.5px solid var(--border);
+    border-radius: 99px;
+    cursor: pointer;
+    transition: all 0.15s;
+    background: var(--bg);
+    font-size: 13px;
+    color: var(--text);
+  }
+  .radio-item:has(input:checked) {
+    border-color: var(--accent);
+    background: var(--accent-light);
+    color: var(--accent);
+    font-weight: 500;
+  }
+  .radio-item input { display: none; }
+
+  /* DIVIDER */
+  .divider {
+    height: 1px;
+    background: var(--border);
+    margin: 4px 0;
+  }
+
+  /* SUBMIT */
+  .submit-wrap {
+    margin-top: 48px;
+    text-align: center;
+  }
+  .btn-submit {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 16px 48px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 99px;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
+    box-shadow: 0 4px 20px rgba(26,107,74,0.25);
+    letter-spacing: 0.02em;
+  }
+  .btn-submit:hover {
+    background: #155a3e;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(26,107,74,0.3);
+  }
+  .btn-submit:active { transform: translateY(0); }
+  .submit-note {
+    margin-top: 14px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  /* SUCCESS */
+  .success-screen {
+    display: none;
+    text-align: center;
+    padding: 80px 24px;
+    animation: fadeUp 0.5s ease forwards;
+  }
+  .success-icon {
+    width: 64px;
+    height: 64px;
+    background: var(--accent-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+  }
+  .success-icon svg { width: 30px; height: 30px; stroke: var(--accent); }
+  .success-screen h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px;
+    margin-bottom: 12px;
+    color: var(--text);
+  }
+  .success-screen p { color: var(--muted); font-size: 15px; line-height: 1.6; }
+
+  /* VALIDATION */
+  .field-error {
+    font-size: 12px;
+    color: var(--error);
+    margin-top: 2px;
+    display: none;
+  }
+  .field.has-error input,
+  .field.has-error textarea {
+    border-color: var(--error);
+  }
+  .field.has-error .field-error { display: block; }
+
+  @media (max-width: 480px) {
+    .card { padding: 20px; }
+    .check-group { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-label">TMJL Google Meu Negócio</div>
+  <h1>Briefing <em>Samir Trindade</em></h1>
+  <p>Corretor de Plano de Saúde — preencha com calma, suas respostas guiam todo o projeto.</p>
+  <div class="progress-bar-wrap">
+    <div class="progress-bar-fill" id="progressFill"></div>
+  </div>
+  <div class="progress-label" id="progressLabel">0 de 32 perguntas respondidas</div>
+</div>
+
+<form id="briefingForm" novalidate action="https://formspree.io/f/mnjrpowy" method="POST">
+<div class="container">
+
+  <!-- 1. IDENTIFICAÇÃO -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">1</div>
+      <div class="section-title">Identificação do negócio</div>
+    </div>
+    <div class="card">
+
+      <div class="field">
+        <label>Nome do negócio (site e Google Meu Negócio)</label>
+        <div class="hint">Nome do corretor, nome fantasia ou os dois</div>
+        <input type="text" name="nome_negocio" placeholder="Ex: João Silva Planos de Saúde">
+        
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="field">
+        <label>CNPJ</label>
+        <input type="text" name="cnpj" placeholder="00.000.000/0000-00">
+      </div>
+
+      <div class="field">
+        <label>Registro ANS (número de corretor credenciado)</label>
+        <div class="hint">Exibir no site aumenta a credibilidade frente a vendedores informais</div>
+        <input type="text" name="registro_ans" placeholder="Ex: ANS 000000">
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="field">
+        <label>Endereço completo do escritório</label>
+        <div class="hint">CEP, rua, número, bairro, cidade, estado. Se for home office, informar para decidirmos se exibimos.</div>
+        <textarea name="endereco" placeholder="Rua das Flores, 123, Sala 4 — Centro — Niterói/RJ — CEP 24000-000"></textarea>
+        
+      </div>
+
+      <div class="field">
+        <label>Telefone principal</label>
+        <input type="tel" name="telefone" placeholder="(21) 99999-9999">
+        
+      </div>
+
+      <div class="field">
+        <label>Este número tem WhatsApp?</label>
+        <div class="radio-group">
+          <label class="radio-item"><input type="radio" name="tem_whatsapp" value="sim"> Sim</label>
+          <label class="radio-item"><input type="radio" name="tem_whatsapp" value="nao"> Não</label>
+          <label class="radio-item"><input type="radio" name="tem_whatsapp" value="outro_num"> Tem, mas em outro número</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>E-mail de contato público</label>
+        <input type="email" name="email" placeholder="contato@exemplo.com.br">
+      </div>
+
+      <div class="field">
+        <label>Já tem site? Se sim, qual URL?</label>
+        <input type="text" name="site_atual" placeholder="www.exemplo.com.br (ou deixe em branco)">
+      </div>
+
+      <div class="field">
+        <label>Já tem Google Meu Negócio? Tem acesso?</label>
+        <div class="radio-group">
+          <label class="radio-item"><input type="radio" name="gmn_status" value="sim_acesso"> Sim, tenho acesso</label>
+          <label class="radio-item"><input type="radio" name="gmn_status" value="sim_sem_acesso"> Sim, mas sem acesso</label>
+          <label class="radio-item"><input type="radio" name="gmn_status" value="nao"> Não tenho</label>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 2. OPERADORAS -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">2</div>
+      <div class="section-title">Operadoras e planos</div>
+    </div>
+    <div class="card">
+
+      <div class="field">
+        <label>Quais operadoras você é credenciado para vender?</label>
+        <div class="hint">Selecione todas que se aplicam</div>
+        <div class="check-group">
+          <label class="check-item"><input type="checkbox" name="operadoras" value="Unimed"> Unimed</label>
+          <label class="check-item"><input type="checkbox" name="operadoras" value="Bradesco Saúde"> Bradesco Saúde</label>
+          <label class="check-item"><input type="checkbox" name="operadoras" value="Amil"> Amil</label>
+          <label class="check-item"><input type="checkbox" name="operadoras" value="SulAmérica"> SulAmérica</label>
+          <label class="check-item"><input type="checkbox" name="operadoras" value="Hapvida"> Hapvida</label>
+          <label class="check-item"><input type="checkbox" name="operadoras" value="NotreDame"> NotreDame Intermédica</label>
+          <label class="check-item"><input type="checkbox" name="operadoras" value="Porto Seguro Saúde"> Porto Seguro Saúde</label>
+          <label class="check-item"><input type="checkbox" name="operadoras" value="Prevent Senior"> Prevent Senior</label>
+          <label class="check-item"><input type="checkbox" name="operadoras" value="Care Plus"> Care Plus</label>
+          <label class="check-item"><input type="checkbox" name="operadoras" value="Omint"> Omint</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Outras operadoras não listadas</label>
+        <input type="text" name="operadoras_outras" placeholder="Digite os nomes separados por vírgula">
+      </div>
+
+      <div class="field">
+        <label>Qual operadora você mais vende ou quer destacar no projeto?</label>
+        <div class="hint">Muita gente busca "plano Unimed [cidade]" — isso orienta o SEO</div>
+        <input type="text" name="operadora_destaque" placeholder="Ex: Unimed">
+        
+      </div>
+
+      <div class="field">
+        <label>Você comercializa planos com e sem coparticipação?</label>
+        <div class="radio-group">
+          <label class="radio-item"><input type="radio" name="coparticipacao" value="ambos"> Ambos</label>
+          <label class="radio-item"><input type="radio" name="coparticipacao" value="sem"> Só sem coparticipação</label>
+          <label class="radio-item"><input type="radio" name="coparticipacao" value="com"> Só com coparticipação</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Trabalha com odontológico incluso ou separado?</label>
+        <div class="radio-group">
+          <label class="radio-item"><input type="radio" name="odonto" value="incluso"> Incluso no plano</label>
+          <label class="radio-item"><input type="radio" name="odonto" value="separado"> Separado (plano dental à parte)</label>
+          <label class="radio-item"><input type="radio" name="odonto" value="ambos"> Os dois</label>
+          <label class="radio-item"><input type="radio" name="odonto" value="nao"> Não trabalha</label>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 3. PÚBLICOS -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">3</div>
+      <div class="section-title">Públicos e modalidades</div>
+    </div>
+    <div class="card">
+
+      <div class="field">
+        <label>Quais modalidades você atende?</label>
+        <div class="check-group">
+          <label class="check-item"><input type="checkbox" name="modalidades" value="individual_familiar"> Individual / Familiar</label>
+          <label class="check-item"><input type="checkbox" name="modalidades" value="empresarial"> Empresarial (PME)</label>
+          <label class="check-item"><input type="checkbox" name="modalidades" value="mei"> MEI</label>
+          <label class="check-item"><input type="checkbox" name="modalidades" value="autonomo"> Autônomo / Liberal</label>
+          <label class="check-item"><input type="checkbox" name="modalidades" value="idosos"> Terceira idade / Idosos</label>
+          <label class="check-item"><input type="checkbox" name="modalidades" value="rural"> Trabalhador rural</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Para empresarial: qual o mínimo e máximo de vidas que você atende?</label>
+        <input type="text" name="faixa_vidas" placeholder="Ex: de 2 a 200 vidas">
+      </div>
+
+      <div class="field">
+        <label>Tem experiência específica com planos para idosos ou terceira idade?</label>
+        <div class="radio-group">
+          <label class="radio-item"><input type="radio" name="experiencia_idosos" value="sim"> Sim, é um foco meu</label>
+          <label class="radio-item"><input type="radio" name="experiencia_idosos" value="atendo"> Atendo, mas não é foco</label>
+          <label class="radio-item"><input type="radio" name="experiencia_idosos" value="nao"> Não atendo</label>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 4. ÁREA DE ATUAÇÃO -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">4</div>
+      <div class="section-title">Área de atuação</div>
+    </div>
+    <div class="card">
+
+      <div class="field">
+        <label>Cidade e bairro onde está localizado</label>
+        <input type="text" name="cidade_bairro" placeholder="Ex: Niterói — Centro">
+        
+      </div>
+
+      <div class="field">
+        <label>Como você atende?</label>
+        <div class="radio-group">
+          <label class="radio-item"><input type="radio" name="tipo_atendimento" value="presencial"> Presencialmente</label>
+          <label class="radio-item"><input type="radio" name="tipo_atendimento" value="remoto"> WhatsApp / Vídeo</label>
+          <label class="radio-item"><input type="radio" name="tipo_atendimento" value="ambos"> Os dois</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Quais cidades ou regiões você cobre?</label>
+        <div class="hint">Isso define as áreas no Google Meu Negócio e as páginas de cidade no site</div>
+        <textarea name="cidades_cobertas" placeholder="Ex: Niterói, São Gonçalo, Maricá, Itaboraí, toda a Região Metropolitana do Rio…"></textarea>
+        
+      </div>
+
+      <div class="field">
+        <label>Tem alguma cidade onde quer ranquear com prioridade?</label>
+        <input type="text" name="cidade_prioridade" placeholder="Ex: Niterói e São Gonçalo">
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 5. HORÁRIOS -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">5</div>
+      <div class="section-title">Horários de atendimento</div>
+    </div>
+    <div class="card">
+
+      <div class="field">
+        <label>Dias e horários de atendimento</label>
+        <textarea name="horarios" placeholder="Ex: Segunda a sexta das 8h às 18h / Sábado das 9h às 12h"></textarea>
+        
+      </div>
+
+      <div class="field">
+        <label>Atende fora do horário comercial ou aos finais de semana?</label>
+        <div class="radio-group">
+          <label class="radio-item"><input type="radio" name="atendimento_extra" value="sim"> Sim</label>
+          <label class="radio-item"><input type="radio" name="atendimento_extra" value="nao"> Não</label>
+          <label class="radio-item"><input type="radio" name="atendimento_extra" value="as_vezes"> Às vezes, mediante agendamento</label>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 6. IDENTIDADE VISUAL -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">6</div>
+      <div class="section-title">Identidade visual e conteúdo</div>
+    </div>
+    <div class="card">
+
+      <div class="field">
+        <label>Tem logo? Em qual formato?</label>
+        <div class="radio-group">
+          <label class="radio-item"><input type="radio" name="logo" value="png"> Sim — PNG</label>
+          <label class="radio-item"><input type="radio" name="logo" value="svg"> Sim — SVG/AI</label>
+          <label class="radio-item"><input type="radio" name="logo" value="jpeg"> Sim — só JPEG</label>
+          <label class="radio-item"><input type="radio" name="logo" value="nao"> Não tenho logo</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Tem fotos do escritório, da equipe ou do atendimento?</label>
+        <div class="hint">Fotos reais aumentam muito a credibilidade no Google e no Google Meu Negócio</div>
+        <div class="radio-group">
+          <label class="radio-item"><input type="radio" name="fotos" value="sim_boas"> Sim, fotos de qualidade</label>
+          <label class="radio-item"><input type="radio" name="fotos" value="sim_poucas"> Sim, mas poucas / ruins</label>
+          <label class="radio-item"><input type="radio" name="fotos" value="nao"> Não tenho</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Tem cores ou identidade visual já definida?</label>
+        <input type="text" name="cores" placeholder="Ex: azul marinho e branco, igual ao meu Instagram">
+      </div>
+
+      <div class="field">
+        <label>Redes sociais ativas (cole os links ou perfis)</label>
+        <textarea name="redes_sociais" placeholder="Instagram: @exemplo&#10;LinkedIn: /in/exemplo&#10;Facebook: /exemplo"></textarea>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 7. REPUTAÇÃO -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">7</div>
+      <div class="section-title">Reputação e avaliações</div>
+    </div>
+    <div class="card">
+
+      <div class="field">
+        <label>Já tem avaliações no Google? Quantas e qual nota?</label>
+        <input type="text" name="avaliacoes_google" placeholder="Ex: 14 avaliações, nota 4.8">
+      </div>
+
+      <div class="field">
+        <label>Tem clientes satisfeitos que poderiam deixar avaliações nos primeiros dias do projeto?</label>
+        <div class="hint">Avaliações com palavras como "plano empresarial", "Unimed", "sem carência" ajudam no ranqueamento</div>
+        <div class="radio-group">
+          <label class="radio-item"><input type="radio" name="clientes_disponiveis" value="sim_varios"> Sim, vários</label>
+          <label class="radio-item"><input type="radio" name="clientes_disponiveis" value="sim_poucos"> Sim, alguns</label>
+          <label class="radio-item"><input type="radio" name="clientes_disponiveis" value="talvez"> Talvez</label>
+          <label class="radio-item"><input type="radio" name="clientes_disponiveis" value="nao"> Não</label>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 8. OBJETIVOS -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">8</div>
+      <div class="section-title">Objetivos e concorrência</div>
+    </div>
+    <div class="card">
+
+      <div class="field">
+        <label>Qual é o principal objetivo com o projeto?</label>
+        <div class="check-group">
+          <label class="check-item"><input type="checkbox" name="objetivos" value="leads"> Gerar mais leads</label>
+          <label class="check-item"><input type="checkbox" name="objetivos" value="maps"> Aparecer no Google Maps</label>
+          <label class="check-item"><input type="checkbox" name="objetivos" value="visibilidade"> Mais visibilidade online</label>
+          <label class="check-item"><input type="checkbox" name="objetivos" value="concorrentes"> Superar concorrentes</label>
+          <label class="check-item"><input type="checkbox" name="objetivos" value="credibilidade"> Credibilidade / profissionalismo</label>
+          <label class="check-item"><input type="checkbox" name="objetivos" value="whatsapp"> Mais contatos pelo WhatsApp</label>
+        </div>
+        
+      </div>
+
+      <div class="field">
+        <label>Conhece algum concorrente que aparece bem no Google na sua cidade?</label>
+        <input type="text" name="concorrentes" placeholder="Ex: Fulano Saúde, site www.exemplo.com.br">
+      </div>
+
+      <div class="field">
+        <label>Como seus clientes te encontram hoje?</label>
+        <div class="check-group">
+          <label class="check-item"><input type="checkbox" name="como_encontram" value="indicacao"> Indicação</label>
+          <label class="check-item"><input type="checkbox" name="como_encontram" value="instagram"> Instagram</label>
+          <label class="check-item"><input type="checkbox" name="como_encontram" value="facebook"> Facebook</label>
+          <label class="check-item"><input type="checkbox" name="como_encontram" value="google"> Google</label>
+          <label class="check-item"><input type="checkbox" name="como_encontram" value="linkedin"> LinkedIn</label>
+          <label class="check-item"><input type="checkbox" name="como_encontram" value="eventos"> Eventos / feiras</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Qual é o seu diferencial em relação a outros corretores da região?</label>
+        <div class="hint">Atendimento ágil, comparação entre operadoras, suporte pós-venda, especialização em MEI/empresa…</div>
+        <textarea name="diferencial" placeholder="Descreva com suas palavras o que te torna diferente"></textarea>
+        
+      </div>
+
+      <div class="field">
+        <label>Como você consegue seus clientes hoje?</label>
+        <div class="hint">Ajuda a entender o perfil do negócio e planejar o conteúdo do site</div>
+        <div class="check-group">
+          <label class="check-item"><input type="checkbox" name="prospeccao" value="ativa"> Prospecção ativa (ligações, visitas a empresas, abordagem direta)</label>
+          <label class="check-item"><input type="checkbox" name="prospeccao" value="indicacao_cultivada"> Indicação cultivada (peço indicações aos clientes ativos)</label>
+          <label class="check-item"><input type="checkbox" name="prospeccao" value="passivo"> Passivo — o cliente me encontra e entra em contato</label>
+          <label class="check-item"><input type="checkbox" name="prospeccao" value="misto"> Misto</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Alguma informação adicional que considera importante para o projeto?</label>
+        <textarea name="observacoes" placeholder="Fique à vontade para compartilhar qualquer contexto extra"></textarea>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SUBMIT -->
+  <div class="submit-wrap">
+    <button type="submit" class="btn-submit">Enviar Briefing</button>
+    <div class="submit-note">Suas respostas serão analisadas antes da nossa próxima conversa.</div>
+  </div>
+
+</div><!-- /container -->
+</form>
+
+<!-- SUCCESS -->
+<div class="container">
+  <div class="success-screen" id="successScreen">
+    <div class="success-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+    </div>
+    <h2>Briefing recebido!</h2>
+    <p>Obrigado pelas respostas. Vou analisar tudo com atenção e entro em contato em breve para alinharmos os próximos passos do projeto.</p>
+  </div>
+</div>
+
+<script>
+  // PROGRESS
+  function updateProgress() {
+    const form = document.getElementById('briefingForm');
+    const allFields = form.querySelectorAll('input[type="text"], input[type="email"], input[type="tel"], textarea, input[type="checkbox"]:checked, input[type="radio"]:checked');
+    const totalQuestions = 32;
+    // Count answered: text fields with value, any checked radio/checkbox per group
+    let answered = 0;
+    const textFields = form.querySelectorAll('input[type="text"], input[type="email"], input[type="tel"], textarea');
+    textFields.forEach(f => { if (f.value.trim()) answered++; });
+    const radioGroups = {};
+    form.querySelectorAll('input[type="radio"]:checked').forEach(r => { radioGroups[r.name] = true; });
+    const checkGroups = {};
+    form.querySelectorAll('input[type="checkbox"]:checked').forEach(c => { checkGroups[c.name] = true; });
+    answered += Object.keys(radioGroups).length + Object.keys(checkGroups).length;
+    answered = Math.min(answered, totalQuestions);
+    const pct = Math.round((answered / totalQuestions) * 100);
+    document.getElementById('progressFill').style.width = pct + '%';
+    document.getElementById('progressLabel').textContent = answered + ' de ' + totalQuestions + ' perguntas respondidas';
+  }
+
+  document.getElementById('briefingForm').addEventListener('input', updateProgress);
+  document.getElementById('briefingForm').addEventListener('change', updateProgress);
+
+  // SUBMIT
+  document.getElementById('briefingForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Enviar para Formspree
+    const btn = this.querySelector('.btn-submit');
+    btn.textContent = 'Enviando…';
+    btn.disabled = true;
+
+    const formData = new FormData(this);
+
+    fetch(this.action, {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(response => {
+      if (response.ok) {
+        this.style.display = 'none';
+        const s = document.getElementById('successScreen');
+        s.style.display = 'block';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        btn.textContent = 'Erro ao enviar. Tente novamente.';
+        btn.disabled = false;
+        btn.style.background = '#C0392B';
+      }
+    })
+    .catch(() => {
+      btn.textContent = 'Erro de conexão. Tente novamente.';
+      btn.disabled = false;
+      btn.style.background = '#C0392B';
+    });
+  });
+</script>
+</body>
+</html>

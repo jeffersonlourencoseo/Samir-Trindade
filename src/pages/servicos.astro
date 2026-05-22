@@ -1,0 +1,47 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const servicos = await getCollection('servicos');
+---
+
+<Layout title="Planos de Saúde">
+  <section class="bg-accent py-24 md:py-32">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="mx-auto max-w-3xl text-center">
+        <span class="mb-4 inline-block text-sm font-bold uppercase tracking-widest text-primary">Operadoras</span>
+        <h1 class="text-4xl font-black leading-tight tracking-tighter text-white md:text-6xl mb-10">
+          Planos que comercializo
+        </h1>
+        <p class="text-lg text-gray-300">
+          Empresarial, MEI, familiar e individual. Compare opções e escolha a melhor cobertura.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 md:py-32 bg-white">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+        {servicos.map((s) => (
+          <a
+            href={`/servicos/${s.slug}`}
+            class="group flex flex-col rounded-2xl border border-gray-100 bg-gray-50 p-10 transition-all duration-300 hover:scale-[1.02] hover:border-primary/20 hover:shadow-xl"
+          >
+            <div class="mb-4 inline-block rounded-lg bg-secondary/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-secondary">
+              {s.data.operadora}
+            </div>
+            <h2 class="mb-3 text-xl font-bold text-gray-900 group-hover:text-secondary transition-colors">
+              {s.data.title}
+            </h2>
+            <p class="mb-6 text-sm leading-relaxed text-gray-600">{s.data.description}</p>
+            <span class="mt-auto inline-flex items-center gap-1 text-sm font-bold text-secondary transition-all group-hover:translate-x-1"
+            >
+              Ver detalhes →
+            </span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>
