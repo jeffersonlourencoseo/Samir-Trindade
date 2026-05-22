@@ -1,7 +1,7 @@
 ---
 title: "Como escolher o melhor plano de saúde para sua empresa no Rio de Janeiro"
 description: "Guia prático para empresários e RH escolherem o plano ideal para colaboradores. Compare operadoras, coparticipação e rede credenciada."
-publishDate: 2024-05-15T08:00:00Z
+publishDate: 2025-05-15T08:00:00Z
 tags: ["empresarial", "PME", "dicas"]
 ---
 

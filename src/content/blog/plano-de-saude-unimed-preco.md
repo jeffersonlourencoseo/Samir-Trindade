@@ -1,7 +1,7 @@
 ---
 title: "Plano de Saúde Unimed Preço: Guia Completo para Escolher com Inteligência no Rio de Janeiro"
 description: "Entenda como funciona o plano de saúde Unimed preço, coberturas, modalidades e como encontrar o melhor custo-benefício no Rio de Janeiro."
-publishDate: 2024-07-10T08:00:00Z
+publishDate: 2025-07-10T08:00:00Z
 tags: ["unimed", "preço", "rio de janeiro"]
 ---
 

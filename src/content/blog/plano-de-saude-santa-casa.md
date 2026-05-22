@@ -1,7 +1,7 @@
 ---
 title: "Plano de Saúde Santa Casa: Entenda a Cobertura e Encontre a Melhor Opção no Rio de Janeiro"
 description: "O plano de saúde Santa Casa é uma opção consolidada para quem busca atendimento de qualidade. Saiba como funciona, quem pode contratar e como encontrar o melhor custo-benefício no Rio de Janeiro."
-publishDate: 2024-07-25T08:00:00Z
+publishDate: 2025-07-25T08:00:00Z
 tags: ["santa casa", "hospital", "rio de janeiro"]
 ---
 

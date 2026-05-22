@@ -1,7 +1,7 @@
 ---
 title: "Preço Plano de Saúde Unimed: Como Negociar e Economizar na Mensalidade no Rio de Janeiro"
 description: "Aprenda como funciona o preço do plano de saúde Unimed, quais fatores influenciam o valor e estratégias para reduzir sua mensalidade sem perder cobertura no Rio de Janeiro."
-publishDate: 2024-07-30T08:00:00Z
+publishDate: 2025-07-30T08:00:00Z
 tags: ["unimed", "preço", "economia", "rio de janeiro"]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Melhor Plano de Saúde: Como Identificar a Escolha Ideal para Você e Sua Família no Rio de Janeiro"
 description: "Não existe um único melhor plano de saúde. Descubra como identificar a opção ideal com base no seu perfil, orçamento e necessidades de cobertura no Rio de Janeiro."
-publishDate: 2024-07-20T08:00:00Z
+publishDate: 2025-07-20T08:00:00Z
 tags: ["melhor plano", "comparativo", "rio de janeiro"]
 ---
 

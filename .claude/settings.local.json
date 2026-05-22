@@ -18,7 +18,8 @@
       "Bash(git commit *)",
       "Bash(git remote *)",
       "Bash(git push *)",
-      "WebFetch(domain:samir-trindade.vercel.app)"
+      "WebFetch(domain:samir-trindade.vercel.app)",
+      "Bash(npm list *)"
     ]
   }
 }

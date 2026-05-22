@@ -1,7 +1,7 @@
 ---
 title: "Unimed Plano de Saúde Valor: Como Avaliar o Custo-Benefício Real no Rio de Janeiro"
 description: "Descubra como calcular o verdadeiro valor de um plano Unimed. Entenda coberturas, modalidades e como encontrar a melhor proposta no Rio de Janeiro e Região Metropolitana."
-publishDate: 2024-07-15T08:00:00Z
+publishDate: 2025-07-15T08:00:00Z
 tags: ["unimed", "valor", "rio de janeiro"]
 ---
 

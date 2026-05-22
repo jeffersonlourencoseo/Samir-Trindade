@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import typography from '@tailwindcss/typography';
+
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
@@ -22,7 +24,21 @@ export default {
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            color: '#374151',
+            h1: { color: '#111827', fontWeight: '800' },
+            h2: { color: '#111827', fontWeight: '700' },
+            h3: { color: '#111827', fontWeight: '700' },
+            strong: { color: '#111827' },
+            a: { color: '#1E3A8A', fontWeight: '600' },
+            'a:hover': { color: '#FACC15' },
+            blockquote: { borderLeftColor: '#FACC15' },
+          },
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [typography],
 };

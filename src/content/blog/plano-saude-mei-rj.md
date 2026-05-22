@@ -1,7 +1,7 @@
 ---
 title: "Plano de Saúde MEI no Rio de Janeiro: como contratar com CNPJ"
 description: "MEI tem direito a plano de saúde empresarial? Sim. Entenda como usar seu CNPJ para reduzir custos e garantir cobertura familiar."
-publishDate: 2024-06-02T08:00:00Z
+publishDate: 2025-06-02T08:00:00Z
 tags: ["MEI", "empresarial", "CNPJ"]
 ---
 

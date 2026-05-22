@@ -1,7 +1,7 @@
 ---
 title: "Por que o pós-venda é tão importante no plano de saúde?"
 description: "Contratar o plano é só o começo. Um corretor com pós-venda de qualidade acompanha reajustes, troca de operadora e resolução de problemas."
-publishDate: 2024-06-20T08:00:00Z
+publishDate: 2025-06-20T08:00:00Z
 tags: ["pós-venda", "empresarial", "dicas"]
 ---
 
