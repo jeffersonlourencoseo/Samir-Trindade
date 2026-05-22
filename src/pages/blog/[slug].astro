@@ -26,98 +26,6 @@ const formattedDate = post.data.publishDate.toLocaleDateString('pt-BR', {
 ---
 
 <Layout title={post.data.title} description={post.data.description} type="article">
-  <style>
-    .prose-article :global(h1) {
-      display: none;
-    }
-    .prose-article :global(h2) {
-      font-size: 1.75rem;
-      font-weight: 800;
-      color: #111827;
-      margin-top: 3rem;
-      margin-bottom: 1.25rem;
-      line-height: 1.2;
-      letter-spacing: -0.025em;
-    }
-    .prose-article :global(h3) {
-      font-size: 1.375rem;
-      font-weight: 700;
-      color: #1f2937;
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-      line-height: 1.3;
-    }
-    .prose-article :global(p) {
-      margin-bottom: 1.25rem;
-      line-height: 1.75;
-      color: #374151;
-    }
-    .prose-article :global(ul), .prose-article :global(ol) {
-      margin-bottom: 1.5rem;
-      padding-left: 1.5rem;
-    }
-    .prose-article :global(li) {
-      margin-bottom: 0.5rem;
-      line-height: 1.7;
-    }
-    .prose-article :global(a[href*="wa.me"]) {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      background-color: #1E3A8A;
-      color: #ffffff !important;
-      font-weight: 700;
-      font-size: 0.9375rem;
-      padding: 0.75rem 1.5rem;
-      border-radius: 9999px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 14px rgba(30, 58, 138, 0.25);
-      margin: 1rem 0;
-    }
-    .prose-article :global(a[href*="wa.me"]:hover) {
-      background-color: #FACC15;
-      color: #000000 !important;
-      transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(250, 204, 21, 0.3);
-    }
-    .prose-article :global(hr) {
-      border: 0;
-      height: 1px;
-      background: #e5e7eb;
-      margin: 2.5rem 0;
-    }
-    .prose-article :global(strong) {
-      color: #111827;
-      font-weight: 700;
-    }
-    .prose-article :global(blockquote) {
-      border-left: 4px solid #FACC15;
-      padding-left: 1.25rem;
-      margin: 1.5rem 0;
-      font-style: italic;
-      color: #4b5563;
-    }
-    .prose-article :global(table) {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 1.5rem 0;
-    }
-    .prose-article :global(th), .prose-article :global(td) {
-      border: 1px solid #e5e7eb;
-      padding: 0.75rem 1rem;
-      text-align: left;
-    }
-    .prose-article :global(th) {
-      background: #f9fafb;
-      font-weight: 700;
-      color: #111827;
-    }
-    .prose-article :global(tr:nth-child(even)) {
-      background: #f9fafb;
-    }
-  </style>
-
   <section class="bg-accent py-24 md:py-32">
     <div class="container mx-auto px-6 md:px-12">
       <div class="mx-auto max-w-4xl">
@@ -147,7 +55,7 @@ const formattedDate = post.data.publishDate.toLocaleDateString('pt-BR', {
 
             <div class="mt-16 pt-10 border-t border-gray-200">
               <div class="rounded-2xl bg-secondary p-10 text-white text-center">
-                <h2 class="text-2xl font-black mb-4 !text-white !mt-0">Pronto para encontrar seu plano ideal?</h2>
+                <h2 class="text-2xl font-black mb-4 text-white">Pronto para encontrar seu plano ideal?</h2>
                 <p class="text-gray-200 mb-8 max-w-lg mx-auto">
                   Receba uma cotação comparativa personalizada em até 24 horas. Compare operadoras e escolha com segurança.
                 </p>
