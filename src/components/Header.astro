@@ -45,7 +45,7 @@ const navLinks = [
     <!-- Mobile Toggle -->
     <button
       id="menu-toggle"
-      class="relative z-[1000] flex h-10 w-10 flex-col items-center justify-center gap-1.5 md:hidden"
+      class="relative z-[1001] flex h-10 w-10 flex-col items-center justify-center gap-1.5 md:hidden"
       aria-label="Abrir menu"
       aria-expanded="false"
     >
@@ -54,32 +54,32 @@ const navLinks = [
       <span class="menu-line block h-0.5 w-6 bg-white transition-all duration-300"></span>
     </button>
   </div>
-
-  <!-- Mobile Drawer -->
-  <div
-    id="mobile-menu"
-    class="fixed inset-0 z-[999] flex translate-x-full flex-col items-center justify-center bg-accent transition-transform duration-500 md:hidden"
-  >
-    <nav class="flex flex-col items-center gap-8">
-      {navLinks.map((link) => (
-        <a
-          href={link.href}
-          class="mobile-link text-3xl font-black tracking-tighter text-white transition-all duration-300 hover:text-primary"
-        >
-          {link.label}
-        </a>
-      ))}
-      <a
-        href={SITE_CONFIG.whatsappLink}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="mt-6 rounded-full bg-primary px-10 py-4 text-lg font-bold text-accent shadow-xl transition-all duration-300 hover:scale-105 active:scale-95"
-      >
-        Falar no WhatsApp
-      </a>
-    </nav>
-  </div>
 </header>
+
+<!-- Mobile Drawer (fora do header para evitar stacking context) -->
+<div
+  id="mobile-menu"
+  class="fixed inset-0 z-[1000] flex translate-x-full flex-col items-center justify-center bg-accent transition-transform duration-500 md:hidden"
+>
+  <nav class="flex flex-col items-center gap-8 px-6">
+    {navLinks.map((link) => (
+      <a
+        href={link.href}
+        class="mobile-link text-3xl font-black tracking-tighter text-white transition-all duration-300 hover:text-primary"
+      >
+        {link.label}
+      </a>
+    ))}
+    <a
+      href={SITE_CONFIG.whatsappLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="mt-6 rounded-full bg-primary px-10 py-4 text-lg font-bold text-accent shadow-xl transition-all duration-300 hover:scale-105 active:scale-95"
+    >
+      Falar no WhatsApp
+    </a>
+  </nav>
+</div>
 
 <script>
   const toggle = document.getElementById('menu-toggle');
@@ -94,12 +94,14 @@ const navLinks = [
     if (open) {
       drawer.classList.remove('translate-x-full');
       document.body.style.overflow = 'hidden';
+      document.body.style.touchAction = 'none';
       lines[0].classList.add('translate-y-2', 'rotate-45');
       lines[1].classList.add('opacity-0');
       lines[2].classList.add('-translate-y-2', '-rotate-45');
     } else {
       drawer.classList.add('translate-x-full');
       document.body.style.overflow = '';
+      document.body.style.touchAction = '';
       lines[0].classList.remove('translate-y-2', 'rotate-45');
       lines[1].classList.remove('opacity-0');
       lines[2].classList.remove('-translate-y-2', '-rotate-45');
@@ -113,5 +115,8 @@ const navLinks = [
   });
   window.addEventListener('resize', () => {
     if (window.innerWidth >= 768 && open) setOpen(false);
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && open) setOpen(false);
   });
 </script>
