@@ -3,6 +3,7 @@ title: "Pós-Venda em Plano de Saúde: Por Que a Maioria dos Contratantes se Arr
 description: "Descubra por que o pós-venda é o fator mais importante no plano de saúde. Aprenda como um corretor acompanhante pode reduzir custos, negociar reajustes e trocar operadoras sem dor de cabeça."
 publishDate: 2025-06-20T08:00:00Z
 tags: ["pós-venda", "empresarial", "dicas", "economia"]
+image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=400&fit=crop"
 ---
 
 A maioria dos corretores de plano de saúde some depois da assinatura do contrato. O problema é que o plano de saúde exige acompanhamento constante: reajustes anuais, troca de rede credenciada, mudanças na equipe, problemas de autorização e sinistros mal resolvidos.
@@ -10,23 +11,6 @@ A maioria dos corretores de plano de saúde some depois da assinatura do contrat
 Se você acha que contratar o plano é o fim do processo, está enganado. A verdade é que **o pós-venda é mais importante que a venda**. É no acompanhamento contínuo que você economiza dinheiro, evita dores de cabeça e garante que seu plano continue atendendo suas necessidades.
 
 Neste artigo, vamos desconstruir o que é um pós-venda de verdade, por que a maioria dos corretores não oferece, e como você pode se proteger contratando alguém que acompanha.
-
-## Índice
-
-1. O que é pós-venda em plano de saúde
-2. Por que a maioria dos corretores desaparece
-3. O que um bom pós-venda faz de verdade
-4. Reajustes anuais: o vilão silencioso
-5. Portabilidade: trocar sem perder
-6. Redução de parcela a cada 2 anos
-7. Resolução de sinistros e autorizações
-8. Quando trocar de operadora
-9. Pós-venda para empresas vs pessoas físicas
-10. Como identificar um corretor com pós-venda real
-11. Perguntas frequentes
-12. Conclusão: o plano é metade, o corretor é a outra metade
-
----
 
 ## 1. O que é pós-venda em plano de saúde
 

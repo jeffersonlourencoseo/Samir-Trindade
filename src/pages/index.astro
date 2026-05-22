@@ -279,15 +279,34 @@ const depoimentos = [
             href={`/blog/${post.slug}`}
             class="group flex flex-col rounded-2xl border border-gray-100 bg-gray-50 transition-all duration-300 hover:scale-[1.02] hover:border-primary/20 hover:shadow-xl overflow-hidden"
           >
-            <div class="bg-secondary/10 p-8">
-              <div class="flex flex-wrap gap-2">
-                {post.data.tags.map((tag) => (
-                  <span class="rounded-full bg-white/80 px-3 py-1 text-xs font-bold uppercase tracking-wider text-secondary">
-                    {tag}
-                  </span>
-                ))}
+            {post.data.image ? (
+              <div class="relative h-48 w-full overflow-hidden bg-gray-200">
+                <img
+                  src={post.data.image}
+                  alt={post.data.title}
+                  class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                <div class="absolute bottom-4 left-4 flex flex-wrap gap-2">
+                  {post.data.tags.map((tag) => (
+                    <span class="rounded-full bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wider text-secondary shadow-sm">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
+            ) : (
+              <div class="bg-secondary/10 p-8">
+                <div class="flex flex-wrap gap-2">
+                  {post.data.tags.map((tag) => (
+                    <span class="rounded-full bg-white/80 px-3 py-1 text-xs font-bold uppercase tracking-wider text-secondary">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
             <div class="flex flex-1 flex-col p-10">
               <h3 class="mb-3 text-lg font-bold text-gray-900 group-hover:text-secondary transition-colors">
                 {post.data.title}

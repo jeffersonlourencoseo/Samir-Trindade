@@ -3,27 +3,12 @@ title: "Plano de Saúde MEI no Rio de Janeiro: Guia Completo para Contratar com 
 description: "Descubra como o MEI pode contratar plano de saúde empresarial no Rio de Janeiro usando o CNPJ. Reduza custos em até 40%, isenta carência e inclua sua família. Guia completo com documentos, operadoras e passo a passo."
 publishDate: 2025-06-02T08:00:00Z
 tags: ["MEI", "empresarial", "CNPJ", "rio de janeiro"]
+image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&h=400&fit=crop"
 ---
 
 O **plano de saúde MEI no Rio de Janeiro** é uma das melhores oportunidades escondidas do mercado de saúde suplementar. Milhares de microempreendedores individuais ainda não sabem que, com o CNPJ ativo, podem acessar planos empresariais com valores até 40% menores do que os planos individuais.
 
 Se você é MEI e mora no Rio de Janeiro, Niterói, São Gonçalo ou qualquer cidade da Região Metropolitana, este guia foi feito para você. Vamos desmistificar o processo de contratação, mostrar as vantagens reais e dar o passo a passo completo para você garantir o melhor plano de saúde pelo menor preço possível.
-
-## Índice
-
-1. O que é o MEI e por que ele tem direito a plano empresarial
-2. Vantagens do plano de saúde MEI no Rio de Janeiro
-3. Quais operadoras aceitam MEI
-4. Documentos necessários para contratar
-5. Passo a passo completo para contratar
-6. Regras e restrições que você precisa saber
-7. Como escolher a melhor operadora para MEI
-8. Carências e isenções para MEI
-9. Comparativo de preços: MEI vs Individual vs Familiar
-10. Dúvidas frequentes sobre plano de saúde MEI
-11. Conclusão: não deixe dinheiro na mesa
-
----
 
 ## 1. O que é o MEI e por que ele tem direito a plano empresarial
 

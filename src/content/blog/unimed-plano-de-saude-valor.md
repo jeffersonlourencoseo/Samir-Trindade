@@ -1,4 +1,5 @@
 ---
+image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800&h=400&fit=crop"
 title: "Unimed Plano de Saúde Valor: Como Avaliar o Custo-Benefício Real no Rio de Janeiro"
 description: "Descubra como calcular o verdadeiro valor de um plano Unimed. Entenda coberturas, modalidades e como encontrar a melhor proposta no Rio de Janeiro e Região Metropolitana."
 publishDate: 2025-07-15T08:00:00Z
@@ -8,25 +9,6 @@ tags: ["unimed", "valor", "rio de janeiro"]
 Quando falamos em **unimed plano de saúde valor**, estamos falando de muito mais do que apenas uma mensalidade. O valor de um plano de saúde é determinado por uma combinação de fatores: rede credenciada, qualidade do atendimento, cobertura de procedimentos, rapidez na autorização e, claro, o suporte que você recebe após a contratação.
 
 Muitas pessoas no Rio de Janeiro buscam o unimed plano de saúde valor pensando apenas no preço. Mas um plano barato que não atende quando você precisa pode custar muito mais caro no final das contas. Neste guia completo, vamos desconstruir cada aspecto que compõe o valor real de um plano Unimed.
-
-## Índice
-
-1. O que compõe o valor de um plano de saúde
-2. Unimed: a maior cooperativa médica do Brasil
-3. Por que o Rio de Janeiro é um mercado privilegiado para Unimed
-4. Modalidades e como elas afetam o valor
-5. Fatores que influenciam o unimed plano de saúde valor
-6. Comparando Unimed com outras operadoras
-7. O valor do pós-venda na experiência do beneficiário
-8. Como empresas podem otimizar o valor do plano
-9. MEI e planos empresariais: vale a pena?
-10. Rede credenciada: onde o valor se materializa
-11. Carências e portabilidade: protegendo seu investimento
-12. Dicas para maximizar o valor do seu plano
-13. Perguntas frequentes
-14. Conclusão
-
----
 
 ## 1. O que compõe o valor de um plano de saúde
 

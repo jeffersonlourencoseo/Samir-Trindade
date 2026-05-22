@@ -1,4 +1,5 @@
 ---
+image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&h=400&fit=crop"
 title: "Plano de Saúde Santa Casa: Entenda a Cobertura e Encontre a Melhor Opção no Rio de Janeiro"
 description: "O plano de saúde Santa Casa é uma opção consolidada para quem busca atendimento de qualidade. Saiba como funciona, quem pode contratar e como encontrar o melhor custo-benefício no Rio de Janeiro."
 publishDate: 2025-07-25T08:00:00Z
@@ -8,24 +9,6 @@ tags: ["santa casa", "hospital", "rio de janeiro"]
 Quando falamos em **plano de saúde Santa Casa**, estamos falando de uma das instituições médicas mais tradicionais e respeitadas do Brasil. Com raízes centenárias e um compromisso com o atendimento humanizado, a Santa Casa se consolidou como referência em saúde, especialmente em grandes centros urbanos como o Rio de Janeiro.
 
 Neste guia completo, vamos explorar tudo sobre o plano de saúde Santa Casa: como funciona a cobertura, quem pode contratar, como funciona a estrutura de atendimento e como encontrar a melhor opção se você mora no Rio de Janeiro ou na Região Metropolitana.
-
-## Índice
-
-1. O que é a Santa Casa e sua história no Brasil
-2. Como funciona o plano de saúde Santa Casa
-3. Cobertura e procedimentos incluídos
-4. Quem pode contratar o plano de saúde Santa Casa
-5. Modalidades disponíveis
-6. Rede credenciada no Rio de Janeiro
-7. Diferença entre Santa Casa e outras operadoras
-8. Plano de saúde Santa Casa para empresas
-9. Carências e como funcionam
-10. O valor do atendimento humanizado
-11. Comparando custos: Santa Casa vs concorrentes
-12. Perguntas frequentes
-13. Conclusão: quando a Santa Casa é a escolha certa
-
----
 
 ## 1. O que é a Santa Casa e sua história no Brasil
 

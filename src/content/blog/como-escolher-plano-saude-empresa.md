@@ -3,28 +3,12 @@ title: "Como Escolher o Melhor Plano de Saúde para Empresas no Rio de Janeiro: 
 description: "Guia completo para empresas e RH escolherem o plano de saúde ideal no Rio de Janeiro. Compare operadoras, entenda coparticipação, carências e como reduzir custos sem perder qualidade."
 publishDate: 2025-05-15T08:00:00Z
 tags: ["empresarial", "PME", "dicas", "rio de janeiro"]
+image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&h=400&fit=crop"
 ---
 
 Escolher um **plano de saúde empresarial no Rio de Janeiro** não é apenas uma decisão de RH. É uma estratégia de retenção de talentos, produtividade e bem-estar da equipe. Empresas que oferecem um bom plano de saúde têm taxas de turnover até 25% menores e colaboradores mais engajados.
 
 Mas como escolher o plano certo em um mercado com tantas operadoras, modalidades e variáveis? Este guia foi escrito para empresários, gestores de RH e donos de pequenas e médias empresas que querem fazer a escolha mais inteligente possível.
-
-## Índice
-
-1. Por que o plano de saúde é um investimento, não um custo
-2. O mercado de planos empresariais no Rio de Janeiro
-3. Critérios essenciais para escolher o plano ideal
-4. As principais operadoras para empresas no RJ
-5. Plano empresarial, por adesão ou coletivo por adesão?
-6. Como funciona a coparticipação empresarial
-7. Carências e isenções para empresas
-8. Reajustes anuais: como se proteger
-9. Por que revisar o plano a cada 2 anos
-10. Erros comuns na contratação empresarial
-11. Perguntas frequentes
-12. Conclusão: o plano ideal é aquele que acompanha sua empresa
-
----
 
 ## 1. Por que o plano de saúde é um investimento, não um custo
 
