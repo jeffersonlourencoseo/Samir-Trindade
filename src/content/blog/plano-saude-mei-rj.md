@@ -4,6 +4,17 @@ description: "Descubra como o MEI pode contratar plano de saúde empresarial no 
 publishDate: 2025-06-02T08:00:00Z
 tags: ["MEI", "empresarial", "CNPJ", "rio de janeiro"]
 image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&h=400&fit=crop"
+faq:
+  - question: "Todo MEI pode contratar plano empresarial?"
+    answer: "Sim, desde que tenha CNPJ ativo e atenda às regras da operadora escolhida."
+  - question: "Quantas pessoas precisam estar no contrato do MEI?"
+    answer: "A maioria das operadoras exige no mínimo 2 vidas (titular + 1 dependente)."
+  - question: "O MEI pode incluir sócio no plano de saúde?"
+    answer: "Depende da operadora. Algumas aceitam sócio como beneficiário desde que haja vínculo comprovado."
+  - question: "O plano empresarial do MEI é igual ao de grande empresa?"
+    answer: "Em termos de cobertura e rede credenciada, sim. Em termos de preço, o MEI pode ter valores ligeiramente diferentes."
+  - question: "O CNPJ do MEI precisa estar ativo há quanto tempo?"
+    answer: "Regras variam por operadora. Em geral, CNPJs com mais de 6 meses não enfrentam restrições."
 ---
 
 O **plano de saúde MEI no Rio de Janeiro** é uma das melhores oportunidades escondidas do mercado de saúde suplementar. Milhares de microempreendedores individuais ainda não sabem que, com o CNPJ ativo, podem acessar planos empresariais com valores até 40% menores do que os planos individuais.

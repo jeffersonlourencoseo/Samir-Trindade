@@ -1,5 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import SchemaService from '../../components/SchemaService.astro';
+import SchemaBreadcrumb from '../../components/SchemaBreadcrumb.astro';
 import { getCollection } from 'astro:content';
 import { SITE_CONFIG } from '../../data/config';
 
@@ -13,9 +15,23 @@ export async function getStaticPaths() {
 
 const { servico } = Astro.props;
 const { Content } = await servico.render();
+
+const canonicalUrl = new URL(Astro.url.pathname, SITE_CONFIG.domain).toString();
+
+const breadcrumbItems = [
+  { name: 'Início', url: '/' },
+  { name: 'Serviços', url: '/servicos' },
+  { name: servico.data.title },
+];
 ---
 
 <Layout title={servico.data.title} description={servico.data.description}>
+  <SchemaService
+    name={`Plano de Saúde ${servico.data.operadora}`}
+    description={servico.data.description}
+    url={canonicalUrl}
+  />
+  <SchemaBreadcrumb items={breadcrumbItems} />
   <!-- HERO SERVIÇO -->
   <section class="bg-accent py-24 md:py-32">
     <div class="container mx-auto px-6 md:px-12">

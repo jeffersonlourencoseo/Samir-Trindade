@@ -4,6 +4,17 @@ description: "Descubra por que o pós-venda é o fator mais importante no plano 
 publishDate: 2025-06-20T08:00:00Z
 tags: ["pós-venda", "empresarial", "dicas", "economia"]
 image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=400&fit=crop"
+faq:
+  - question: "O que é pós-venda em plano de saúde?"
+    answer: "É o acompanhamento contínuo do contrato após a contratação, incluindo revisão de reajustes, resolução de problemas e troca de operadora."
+  - question: "Por que a maioria dos corretores não faz pós-venda?"
+    answer: "Porque a remuneração é na venda, não no acompanhamento. Muitos não têm incentivo econômico para continuar."
+  - question: "Quanto economizo com pós-venda de plano de saúde?"
+    answer: "Empresas economizam em média 25% em 5 anos. Famílias e individuais também conseguem reduções significativas."
+  - question: "Como funciona a revisão do plano a cada 2 anos?"
+    answer: "O corretor compara o mercado, cota com outras operadoras e negocia redução ou faz portabilidade."
+  - question: "O corretor cobra pelo pós-venda?"
+    answer: "Não. O pós-venda é parte do serviço e remunerado pela comissão da operadora."
 ---
 
 A maioria dos corretores de plano de saúde some depois da assinatura do contrato. O problema é que o plano de saúde exige acompanhamento constante: reajustes anuais, troca de rede credenciada, mudanças na equipe, problemas de autorização e sinistros mal resolvidos.

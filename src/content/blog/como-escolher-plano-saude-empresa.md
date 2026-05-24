@@ -4,6 +4,17 @@ description: "Guia completo para empresas e RH escolherem o plano de saúde idea
 publishDate: 2025-05-15T08:00:00Z
 tags: ["empresarial", "PME", "dicas", "rio de janeiro"]
 image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&h=400&fit=crop"
+faq:
+  - question: "Qual o número mínimo de colaboradores para plano empresarial?"
+    answer: "A maioria das operadoras exige no mínimo 2 vidas no contrato."
+  - question: "O MEI pode contratar plano de saúde empresarial?"
+    answer: "Sim, desde que tenha CNPJ ativo e pelo menos 2 vidas no contrato."
+  - question: "Reajustes anuais do plano de saúde podem ser contestados?"
+    answer: "Sim, especialmente quando superam o índice máximo definido pela ANS."
+  - question: "Como reduzir o valor do plano empresarial?"
+    answer: "Negocie coparticipação, compare operadoras, revise a cada 2 anos e tenha um corretor que negocia."
+  - question: "É obrigatório oferecer plano de saúde aos colaboradores?"
+    answer: "Não, exceto para empresas em determinados setores ou convenções coletivas."
 ---
 
 Escolher um **plano de saúde empresarial no Rio de Janeiro** não é apenas uma decisão de RH. É uma estratégia de retenção de talentos, produtividade e bem-estar da equipe. Empresas que oferecem um bom plano de saúde têm taxas de turnover até 25% menores e colaboradores mais engajados.

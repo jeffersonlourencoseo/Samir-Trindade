@@ -1,11 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import SchemaBreadcrumb from '../components/SchemaBreadcrumb.astro';
 import { getCollection } from 'astro:content';
 
 const servicos = await getCollection('servicos');
 ---
 
-<Layout title="Planos de Saúde">
+<Layout title="Planos de Saúde" description="Planos de saúde para empresas, MEI e famílias no Rio de Janeiro. Amil, Bradesco, SulAmérica, Unimed, Hapvida e mais. Compare operadoras e escolha o melhor plano.">
+  <SchemaBreadcrumb items={[{ name: 'Início', url: '/' }, { name: 'Serviços', url: '/servicos' }]} />
   <section class="bg-accent py-24 md:py-32">
     <div class="container mx-auto px-6 md:px-12">
       <div class="mx-auto max-w-3xl text-center">

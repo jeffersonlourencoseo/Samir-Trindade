@@ -1,5 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import SchemaArticle from '../../components/SchemaArticle.astro';
+import SchemaBreadcrumb from '../../components/SchemaBreadcrumb.astro';
+import SchemaFAQ from '../../components/SchemaFAQ.astro';
 import { getCollection } from 'astro:content';
 import { SITE_CONFIG } from '../../data/config';
 
@@ -25,9 +28,29 @@ const formattedDate = post.data.publishDate.toLocaleDateString('pt-BR', {
   month: 'long',
   year: 'numeric',
 });
+
+const canonicalUrl = new URL(Astro.url.pathname, SITE_CONFIG.domain).toString();
+
+const breadcrumbItems = [
+  { name: 'Início', url: '/' },
+  { name: 'Blog', url: '/blog' },
+  { name: post.data.title },
+];
 ---
 
 <Layout title={post.data.title} description={post.data.description} type="article">
+  <SchemaArticle
+    headline={post.data.title}
+    description={post.data.description}
+    image={post.data.image || ''}
+    url={canonicalUrl}
+    datePublished={post.data.publishDate.toISOString()}
+    dateModified={post.data.publishDate.toISOString()}
+  />
+  <SchemaBreadcrumb items={breadcrumbItems} />
+  {post.data.faq && post.data.faq.length > 0 && (
+    <SchemaFAQ questions={post.data.faq} />
+  )}
   <section class="bg-accent py-24 md:py-32">
     <div class="container mx-auto px-6 md:px-12">
       <div class="mx-auto max-w-4xl">

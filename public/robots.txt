@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://samirtrindade.com.br/sitemap.xml

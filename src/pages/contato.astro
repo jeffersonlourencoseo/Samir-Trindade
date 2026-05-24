@@ -1,9 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import SchemaBreadcrumb from '../components/SchemaBreadcrumb.astro';
 import { SITE_CONFIG } from '../data/config';
 ---
 
-<Layout title="Contato">
+<Layout title="Contato" description="Entre em contato com Samir Trindade, corretor de plano de saúde no Rio de Janeiro. Atendimento presencial e online. WhatsApp, telefone e formulário.">
+  <SchemaBreadcrumb items={[{ name: 'Início', url: '/' }, { name: 'Contato', url: '/contato' }]} />
   <section class="bg-accent py-24 md:py-32">
     <div class="container mx-auto px-6 md:px-12">
       <div class="mx-auto max-w-3xl text-center">

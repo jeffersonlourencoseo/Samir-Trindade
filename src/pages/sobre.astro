@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import SchemaBreadcrumb from '../components/SchemaBreadcrumb.astro';
 import { SITE_CONFIG } from '../data/config';
+import { Image } from 'astro:assets';
 
 const valores = [
   {
@@ -22,7 +24,9 @@ const valores = [
 ];
 ---
 
-<Layout title="Sobre">
+<Layout title="Sobre" description="Conheça Samir Trindade, corretor credenciado ANS no Rio de Janeiro. Especialista em planos de saúde empresariais, MEI e familiares. Atendimento humanizado e pós-venda de verdade.">
+  <link slot="head" rel="preload" as="image" href="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=750&fit=crop&crop=face" fetchpriority="high" />
+  <SchemaBreadcrumb items={[{ name: 'Início', url: '/' }, { name: 'Quem Somos', url: '/sobre' }]} />
   <!-- HERO -->
   <section class="bg-accent py-24 md:py-32">
     <div class="container mx-auto px-6 md:px-12">
@@ -76,11 +80,14 @@ const valores = [
 
         <div class="flex flex-col gap-8">
           <div class="rounded-2xl bg-gray-100 overflow-hidden aspect-[4/5] max-w-md mx-auto lg:mx-0 w-full">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=750&fit=crop&crop=face"
               alt="Samir Trindade — Corretor de Planos de Saúde no Rio de Janeiro"
+              width={600}
+              height={750}
               class="h-full w-full object-cover"
               loading="eager"
+              fetchpriority="high"
             />
           </div>
 

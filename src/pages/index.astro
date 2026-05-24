@@ -1,7 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import SchemaBreadcrumb from '../components/SchemaBreadcrumb.astro';
 import { getCollection } from 'astro:content';
 import { SITE_CONFIG } from '../data/config';
+import { Image } from 'astro:assets';
 
 const servicos = await getCollection('servicos');
 const blogPosts = (await getCollection('blog')).slice(0, 3);
@@ -48,7 +50,8 @@ const depoimentos = [
 ];
 ---
 
-<Layout title="Corretor de Plano de Saúde no Rio de Janeiro">
+<Layout title="Corretor de Plano de Saúde no Rio de Janeiro" description="Corretor de plano de saúde credenciado ANS no Rio de Janeiro. Planos empresariais, MEI e familiares com mais de 10 operadoras. Atendimento presencial e online. Solicite orçamento!">
+  <SchemaBreadcrumb items={[{ name: 'Início', url: '/' }]} />
   <!-- HERO -->
   <section class="relative overflow-hidden bg-accent py-24 md:py-32">
     <div class="absolute inset-0 opacity-10">
@@ -290,13 +293,13 @@ const depoimentos = [
           >
             {post.data.image ? (
               <div class="relative h-48 w-full overflow-hidden bg-gray-200">
-                <img
+                <Image
                   src={post.data.image}
                   alt={post.data.title}
-                  width="800"
-                  height="400"
+                  width={800}
+                  height={400}
                   class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
+                  loading="eager"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                 <div class="absolute bottom-4 left-4 flex flex-wrap gap-2">

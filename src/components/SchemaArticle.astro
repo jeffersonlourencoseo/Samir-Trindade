@@ -1,0 +1,52 @@
+---
+interface Props {
+  headline: string;
+  description: string;
+  image: string;
+  url: string;
+  datePublished: string;
+  dateModified?: string;
+  author?: string;
+  publisher?: string;
+  publisherLogo?: string;
+}
+
+const {
+  headline,
+  description,
+  image,
+  url,
+  datePublished,
+  dateModified = datePublished,
+  author = 'Samir Trindade',
+  publisher = 'Samir Trindade',
+  publisherLogo = 'https://samirtrindade.com.br/og-image.jpg',
+} = Astro.props;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline,
+  description,
+  image,
+  url,
+  datePublished,
+  dateModified,
+  author: {
+    '@type': 'Person',
+    name: author,
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: publisher,
+    logo: {
+      '@type': 'ImageObject',
+      url: publisherLogo,
+    },
+  },
+  articleSection: 'Plano de Saude',
+  inLanguage: 'pt-BR',
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

@@ -1,9 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import SchemaBreadcrumb from '../components/SchemaBreadcrumb.astro';
 import { SITE_CONFIG } from '../data/config';
 ---
 
-<Layout title="Política de Privacidade" noindex={true}>
+<Layout title="Política de Privacidade" description="Política de privacidade do site Samir Trindade. Entenda como protegemos seus dados pessoais conforme a LGPD." noindex={true}>
+  <SchemaBreadcrumb items={[{ name: 'Início', url: '/' }, { name: 'Privacidade', url: '/privacidade' }]} />
   <section class="bg-accent py-24 md:py-32">
     <div class="container mx-auto px-6 md:px-12">
       <div class="mx-auto max-w-3xl">
