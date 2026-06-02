@@ -1,0 +1,26 @@
+---
+import { SITE_CONFIG } from '../data/config';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: SITE_CONFIG.shortName,
+  url: SITE_CONFIG.domain,
+  logo: `${SITE_CONFIG.domain}/og-image.jpg`,
+  description: SITE_CONFIG.description,
+  telephone: SITE_CONFIG.phone,
+  email: SITE_CONFIG.email,
+  sameAs: [
+    SITE_CONFIG.social.whatsapp,
+  ],
+  contactPoint: {
+    '@type': 'ContactPoint',
+    telephone: SITE_CONFIG.phone,
+    contactType: 'sales',
+    areaServed: 'BR',
+    availableLanguage: 'Portuguese',
+  },
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

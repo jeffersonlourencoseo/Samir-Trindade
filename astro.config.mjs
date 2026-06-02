@@ -5,11 +5,14 @@ import vercel from '@astrojs/vercel/static';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://samirtrindade.com.br',
+  site: 'https://samirtrindade.vercel.app',
   output: 'static',
   adapter: vercel(),
   integrations: [tailwind(), sitemap({
     filter: (page) => !page.includes('/404'),
+    lastmod: new Date(),
+    changefreq: 'weekly',
+    priority: 0.7,
   })],
   build: {
     inlineStylesheets: 'always',
