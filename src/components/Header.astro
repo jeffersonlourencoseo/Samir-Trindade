@@ -12,13 +12,13 @@ const navLinks = [
 
 <header
   id="site-header"
-  class="sticky top-0 z-40 w-full border-b border-white/10 bg-accent/95 backdrop-blur-md transition-all duration-300"
+  class="sticky top-0 z-40 w-full border-b border-white/10 bg-secondary/95 backdrop-blur-md transition-all duration-300"
 >
   <div class="container mx-auto flex h-20 items-center justify-between px-6 md:px-12">
     <!-- Logo -->
     <a href="/" class="flex items-center gap-2 transition-transform duration-300 hover:scale-105">
-      <span class="text-xl font-black tracking-tighter text-primary">
-        SAMIR <span class="text-white">TRINDADE</span>
+      <span class="font-display text-xl font-semibold tracking-tight text-white">
+        Samir <span class="text-accent">Trindade</span>
       </span>
     </a>
 
@@ -27,7 +27,7 @@ const navLinks = [
       {navLinks.map((link) => (
         <a
           href={link.href}
-          class="relative text-sm font-medium text-gray-300 transition-all duration-300 hover:text-white"
+          class="relative text-sm font-medium text-stone-300 transition-all duration-300 hover:text-white"
         >
           {link.label}
         </a>
@@ -36,7 +36,7 @@ const navLinks = [
         href={SITE_CONFIG.whatsappLink}
         target="_blank"
         rel="noopener noreferrer"
-        class="rounded-full bg-primary px-6 py-2.5 text-sm font-bold text-accent transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/20 active:scale-95"
+        class="rounded-full bg-accent px-6 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-gold active:scale-95"
       >
         WhatsApp
       </a>
@@ -56,16 +56,16 @@ const navLinks = [
   </div>
 </header>
 
-<!-- Mobile Drawer (fora do header para evitar stacking context) -->
+<!-- Mobile Drawer -->
 <div
   id="mobile-menu"
-  class="fixed inset-0 z-[1000] flex translate-x-full flex-col items-center justify-center bg-accent transition-transform duration-500 md:hidden"
+  class="fixed inset-0 z-[1000] flex translate-x-full flex-col items-center justify-center bg-secondary transition-transform duration-500 md:hidden"
 >
   <nav class="flex flex-col items-center gap-8 px-6">
     {navLinks.map((link) => (
       <a
         href={link.href}
-        class="mobile-link text-3xl font-black tracking-tighter text-white transition-all duration-300 hover:text-primary"
+        class="mobile-link font-display text-3xl font-semibold tracking-tight text-white transition-all duration-300 hover:text-accent"
       >
         {link.label}
       </a>
@@ -74,10 +74,9 @@ const navLinks = [
       href={SITE_CONFIG.whatsappLink}
       target="_blank"
       rel="noopener noreferrer"
-      class="mt-6 rounded-full bg-primary px-10 py-4 text-lg font-bold text-accent shadow-xl transition-all duration-300 hover:scale-105 active:scale-95"
+      class="mt-6 rounded-full bg-accent px-10 py-4 text-lg font-semibold text-white shadow-gold transition-all duration-300 hover:scale-105 active:scale-95"
     >
       Falar no WhatsApp
     </a>
   </nav>
 </div>
-

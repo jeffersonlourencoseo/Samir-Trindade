@@ -1,0 +1,400 @@
+=======================================================
+PROMPT DE CORRECOES COMPLETAS — Projeto SEO Samir Trindade
+Gerado por: Agente Consultivo (auditoria frontend ao vivo)
+Data: 2026-05-24
+Site auditado: https://samirtrindade.vercel.app
+Canonical declarado: https://samirtrindade.com.br
+=======================================================
+
+INSTRUCAO GERAL
+---------------
+Voce e um engenheiro especialista em SEO tecnico. Execute as 10 correcoes
+abaixo UMA POR VEZ. Apos cada correcao, rode `npm run build` e confirme que
+passa sem erros. So entao passe para a proxima.
+
+IMPORTANTE: Este projeto usa Tailwind CSS. O framework base nao foi
+identificado com certeza (pode ser Astro, Next.js, ou outro). Verifique a
+estrutura de pastas e o package.json antes de comecar.
+
+---
+
+CORRECAO 1 — Meta description IGUAL em todas as paginas
+--------------------------------------------------------
+PRIORIDADE: CRITICA
+
+Problema:
+  TODAS as 15 paginas usam a MESMA meta description:
+  "Corretor credenciado ANS especializado em planos de saude empresariais,
+   MEI e familiares no Rio de Janeiro. Mais de 10 operadoras, atendimento
+   presencial e online."
+
+  Isso e duplicate content e prejudica o ranqueamento. Cada pagina precisa de
+  uma description unica refletindo seu conteudo real.
+
+Acao:
+  1. Identifique onde a meta description e gerada (componente SEO, layout,
+     ou hardcoded no head).
+  2. Crie descriptions unicas para cada pagina principal:
+
+     HOME:
+     "Corretor de plano de saude credenciado ANS no Rio de Janeiro.
+      Planos empresariais, MEI e familiares com mais de 10 operadoras.
+      Atendimento presencial e online. Solicite orcamento!"
+
+     /sobre:
+     "Conheca Samir Trindade, corretor credenciado ANS no Rio de Janeiro.
+      Especialista em planos de saude empresariais, MEI e familiares.
+      Atendimento humanizado e pos-venda de verdade."
+
+     /servicos:
+     "Planos de saude para empresas, MEI e familias no Rio de Janeiro.
+      Amil, Bradesco, SulAmerica, Unimed, Hapvida e mais.
+      Compare operadoras e escolha o melhor plano."
+
+     /servicos/amil:
+     "Plano de saude Amil no Rio de Janeiro. Planos empresariais, familiares
+      e individuais com cobertura nacional e excelente rede credenciada.
+      Solicite orcamento com Samir Trindade."
+
+     /servicos/bradesco-saude:
+     "Plano de saude Bradesco Saude no Rio de Janeiro. Ampla rede
+      credenciada, cobertura nacional e planos para empresas e familias.
+      Orcamento personalizado."
+
+     /servicos/sulamerica:
+     "Plano de saude SulAmerica no Rio de Janeiro. Planos para empresas,
+      MEI e familias com ampla rede credenciada e cobertura nacional.
+      Solicite orcamento."
+
+     /servicos/unimed-rj:
+     "Plano de saude Unimed Rio no Rio de Janeiro. Cooperativa medica com
+      ampla rede credenciada, atendimento de qualidade e planos para todas
+      as necessidades."
+
+     /servicos/hapvida:
+     "Plano de saude Hapvida no Rio de Janeiro. Planos acessiveis com boa
+      rede credenciada, ideal para empresas e familias. Orcamento gratis."
+
+     /servicos/notredame:
+     "Plano de saude NotreDame Intermedica no Rio de Janeiro. Planos
+      empresariais e familiares com rede propria de hospitais e qualidade
+      reconhecida."
+
+     /servicos/porto-seguro-saude:
+     "Plano de saude Porto Seguro Saude no Rio de Janeiro. Planos para
+      empresas e familias com excelente rede credenciada e atendimento
+      premium."
+
+     /servicos/prevent-senior:
+     "Plano de saude Prevent Senior no Rio de Janeiro. Especializado em
+      saude do idoso com atencao especializada e programas de prevencao.
+      Orcamento personalizado."
+
+     /servicos/assim-saude:
+     "Plano de saude Assim Saude no Rio de Janeiro. Planos acessiveis com
+      boa cobertura e rede credenciada em toda a regiao. Solicite orcamento."
+
+     /servicos/planos-empresariais:
+     "Planos de saude empresariais no Rio de Janeiro. Compare Amil, Bradesco,
+      SulAmerica, Unimed e mais. Reducao de custos sem perder qualidade.
+      Orcamento gratis."
+
+     /blog:
+     "Blog de plano de saude no Rio de Janeiro. Dicas, guias e novidades
+      sobre planos empresariais, MEI e familiares. Escolha o melhor plano."
+
+     /blog/como-escolher-plano-saude-empresa:
+     "Guia completo para empresas e RH escolherem o plano de saude ideal
+      no Rio de Janeiro. Compare operadoras, entenda coparticipacao,
+      carencias e como reduzir custos sem perder qualidade."
+
+     /blog/plano-saude-mei-rj:
+     "Plano de saude para MEI no Rio de Janeiro. Guia completo com precos,
+      documentos necessarios, melhores operadoras e como contratar com
+      CNPJ do MEI."
+
+     /blog/pos-venda-plano-saude:
+     "Pos-venda de plano de saude: o que fazer apos contratar? Entenda
+      reajustes, trocas de plano, inclusao de dependentes e como resolver
+      problemas com sua operadora."
+
+     /contato:
+     "Entre em contato com Samir Trindade, corretor de plano de saude no
+      Rio de Janeiro. Atendimento presencial e online. WhatsApp, telefone
+      e formulario."
+
+     /privacidade:
+     "Politica de privacidade do site Samir Trindade. Entenda como
+      protegemos seus dados pessoais conforme a LGPD."
+
+     /termos:
+     "Termos de uso do site Samir Trindade. Condicoes de acesso,
+      responsabilidades e direitos do usuario."
+
+  3. Limite cada description a ~155-160 caracteres.
+  4. Rode `npm run build` e confirme.
+
+---
+
+CORRECAO 2 — Corrigir Canonical URL para o dominio real
+-------------------------------------------------------
+PRIORIDADE: CRITICA
+
+Problema:
+  Todas as paginas declaram canonical para `https://samirtrindade.com.br/`
+  mas o site esta hospedado em `https://samirtrindade.vercel.app`.
+
+  Se o dominio final e .com.br, precisa garantir redirect 301 de .vercel.app
+  para .com.br. Se o dominio final e .vercel.app, os canonicals estao errados.
+
+Acao:
+  1. Confirme com o usuario qual e o dominio final pretendido.
+  2. Se for .com.br:
+     - Verifique se ja existe redirect 301 de .vercel.app para .com.br
+     - Se nao existir, configure no Vercel (vercel.json) ou no DNS/registrar
+  3. Se for .vercel.app:
+     - Atualize TODOS os canonicals para apontar para samirtrindade.vercel.app
+  4. Rode `npm run build` e confirme.
+
+---
+
+CORRECAO 3 — Criar robots.txt e corrigir referencia do sitemap
+---------------------------------------------------------------
+PRIORIDADE: CRITICA
+
+Problema:
+  1. /robots.txt retorna 404 (nao existe)
+  2. No <head>, o link aponta para /sitemap-index.xml (404)
+     mas o arquivo real e /sitemap.xml
+
+Acao:
+  1. Crie o arquivo public/robots.txt (ou equivalente) com:
+     ```
+     User-agent: *
+     Allow: /
+     Sitemap: https://samirtrindade.com.br/sitemap.xml
+     # ou https://samirtrindade.vercel.app/sitemap.xml se esse for o dominio final
+     ```
+  2. Corrija a referencia no <head> de TODAS as paginas:
+     De:  <link rel="sitemap" href="/sitemap-index.xml">
+     Para: <link rel="sitemap" href="/sitemap.xml">
+  3. Rode `npm run build` e confirme que dist/robots.txt existe.
+
+---
+
+CORRECAO 4 — Adicionar Article Schema nos posts do blog
+--------------------------------------------------------
+PRIORIDADE: ALTA
+
+Problema:
+  Os 3 posts do blog tem apenas LocalBusiness Schema. Falta Article Schema
+  para rich snippets de artigo no Google (titulo, autor, data, imagem).
+
+Acao:
+  1. Em cada pagina de blog (/blog/[slug] ou template equivalente),
+     adicione um bloco JSON-LD do tipo Article com:
+     - @type: "Article"
+     - headline: titulo do artigo
+     - description: meta description do artigo
+     - author: { @type: "Person", name: "Samir Trindade" }
+     - publisher: { @type: "Organization", name: "Samir Trindade", logo: URL }
+     - datePublished: data do artigo
+     - dateModified: mesma data (ou data real de edicao)
+     - image: URL da imagem do artigo
+     - url: canonical do artigo
+     - articleSection: "Plano de Saude"
+  2. Mantenha o LocalBusiness Schema tambem (pode haver multiplos blocos
+     JSON-LD na mesma pagina).
+  3. Rode `npm run build` e valide com Google Rich Results Test.
+
+---
+
+CORRECAO 5 — Adicionar Service Schema nas paginas de servico
+------------------------------------------------------------
+PRIORIDADE: ALTA
+
+Problema:
+  As paginas /servicos/* tem apenas LocalBusiness Schema. Falta Service
+  Schema para rich snippets de servico no Google.
+
+Acao:
+  1. Em cada pagina /servicos/[slug], adicione um bloco JSON-LD do tipo
+     Service com:
+     - @type: "Service"
+     - name: "Plano de Saude [Operadora]" (ex: "Plano de Saude Amil")
+     - description: meta description da pagina
+     - provider: referencia ao LocalBusiness existente (use @id)
+     - areaServed: { @type: "City", name: "Rio de Janeiro" }
+     - url: canonical da pagina
+     - image: URL da imagem do servico (se houver)
+  2. Mantenha o LocalBusiness Schema tambem.
+  3. Rode `npm run build` e confirme.
+
+---
+
+CORRECAO 6 — Adicionar BreadcrumbList Schema em todas as paginas
+----------------------------------------------------------------
+PRIORIDADE: ALTA
+
+Problema:
+  Nenhuma pagina tem BreadcrumbList Schema. O Google nao exibe breadcrumbs
+  nos resultados de busca.
+
+Acao:
+  1. Crie um componente SchemaBreadcrumb.astro (ou equivalente) que receba
+     um array de items {name, url} e renderize:
+     ```json
+     {
+       "@context": "https://schema.org",
+       "@type": "BreadcrumbList",
+       "itemListElement": [
+         { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://.../" },
+         { "@type": "ListItem", "position": 2, "name": "Servicos", "item": "https://.../servicos/" },
+         { "@type": "ListItem", "position": 3, "name": "Plano de Saude Amil" }
+       ]
+     }
+     ```
+  2. Adicione em todas as paginas com hierarquia:
+     - Home: apenas "Inicio"
+     - /sobre: Inicio > Quem Somos
+     - /servicos: Inicio > Servicos
+     - /servicos/amil: Inicio > Servicos > Plano de Saude Amil
+     - /blog: Inicio > Blog
+     - /blog/artigo: Inicio > Blog > Titulo do Artigo
+     - /contato: Inicio > Contato
+  3. Rode `npm run build` e confirme.
+
+---
+
+CORRECAO 7 — Adicionar FAQPage Schema nas paginas com FAQ
+---------------------------------------------------------
+PRIORIDADE: ALTA
+
+Problema:
+  Nenhuma pagina tem FAQPage Schema. Se houver secao de perguntas frequentes,
+  o Google pode exibir accordion nos resultados.
+
+Acao:
+  1. Verifique se alguma pagina (home, /servicos, ou posts) tem secao de FAQ.
+  2. Se houver, adicione FAQPage Schema:
+     ```json
+     {
+       "@context": "https://schema.org",
+       "@type": "FAQPage",
+       "mainEntity": [
+         {
+           "@type": "Question",
+           "name": "Pergunta 1",
+           "acceptedAnswer": {
+             "@type": "Answer",
+             "text": "Resposta 1"
+           }
+         }
+       ]
+     }
+     ```
+  3. Minimo 3 perguntas por pagina.
+  4. Rode `npm run build` e confirme.
+
+---
+
+CORRECAO 8 — Adicionar GTM / Google Analytics para rastreamento
+---------------------------------------------------------------
+PRIORIDADE: ALTA
+
+Problema:
+  Nenhum script de rastreamento detectado. Sem dados de trafego, nao e
+  possivel medir resultados de SEO.
+
+Acao:
+  1. Peça ao usuario o ID do GTM ou GA4.
+  2. Se tiver GTM ID (ex: GTM-XXXXXXX):
+     - Adicione o snippet do GTM no <head> e <noscript> no <body>
+     - Se o projeto for Astro, considere usar @astrojs/partytown para
+       nao bloquear o main thread
+  3. Se nao tiver GTM ainda:
+     - Instale o GA4 basico (gtag.js)
+     - Ou deixe um placeholder para o usuario trocar depois
+  4. Rode `npm run build` e confirme que o script aparece no HTML.
+
+---
+
+CORRECAO 9 — Otimizar performance (preconnect, preload LCP)
+-------------------------------------------------------------
+PRIORIDADE: MEDIA
+
+Problema:
+  - Sem preconnect para images.unsplash.com
+  - Sem preload para imagem hero/LCP
+  - Sem fetchpriority="high" em nenhuma imagem
+
+Acao:
+  1. Adicione no <head>:
+     ```html
+     <link rel="preconnect" href="https://images.unsplash.com">
+     <link rel="dns-prefetch" href="https://images.unsplash.com">
+     ```
+  2. Identifique a imagem hero/LCP de cada pagina.
+  3. Adicione preload:
+     ```html
+     <link rel="preload" as="image" href="/hero.jpg"
+           fetchpriority="high" imagesrcset="...">
+     ```
+  4. Adicione `fetchpriority="high"` na tag <img> da imagem hero.
+  5. Rode `npm run build` e confirme.
+
+---
+
+CORRECAO 10 — Corrigir copyright do rodape (© 2026)
+-------------------------------------------------
+PRIORIDADE: MEDIA
+
+Problema:
+  O rodape exibe "© 2026", que e uma data futura. Isso passa sinal estranho
+  para o usuario e para o Google.
+
+Acao:
+  1. Localize o texto do rodape no componente/layout.
+  2. Substitua "2026" por ano atual (2026) ou use geracao dinamica:
+     ```js
+     const year = new Date().getFullYear();
+     ```
+  3. Se for 2026 mesmo (ano atual = 2026), mantenha. O problema so existe
+     se o ano estiver errado.
+  4. Rode `npm run build` e confirme.
+
+---
+
+CHECKLIST FINAL DE VALIDACAO
+------------------------------
+Apos TODAS as correcoes, execute:
+
+  [ ] npm run build passa sem erros
+  [ ] Cada pagina tem meta description UNICA (nenhuma duplicada)
+  [ ] Canonical aponta para o dominio correto (.com.br ou .vercel.app)
+  [ ] dist/robots.txt existe e aponta para sitemap.xml correto
+  [ ] <link rel="sitemap"> aponta para /sitemap.xml (nao sitemap-index.xml)
+  [ ] Posts do blog tem Article Schema (validar no Rich Results Test)
+  [ ] Paginas /servicos/* tem Service Schema
+  [ ] Todas as paginas tem BreadcrumbList Schema
+  [ ] Paginas com FAQ tem FAQPage Schema (se aplicavel)
+  [ ] GTM/GA4 snippet presente no HTML gerado
+  [ ] Preconnect para images.unsplash.com existe
+  [ ] Hero image tem preload + fetchpriority="high"
+  [ ] Rodape tem ano correto
+
+---
+
+FORMATO DE RESPOSTA
+-------------------
+Para cada correcao, responda:
+1. Arquivo(s) modificados
+2. O que mudou (trecho antes vs depois)
+3. Resultado de `npm run build`
+4. Screenshots ou trechos de codigo relevantes
+
+Se encontrar obstaculo inesperado, pare e pergunte antes de seguir.
+
+=======================================================
+FIM DO PROMPT
+=======================================================

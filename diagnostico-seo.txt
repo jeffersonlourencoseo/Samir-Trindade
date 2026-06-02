@@ -1,0 +1,67 @@
+DIAGNOSTICO SEO - PROJETO ASTRO SAMIR TRINDADE
+Gerado em: 2026-05-23
+
+---
+
+1. CAMPO `site` NO astro.config.mjs
+   Local: astro.config.mjs:7
+   Valor: https://samirtrindade.com.br
+   Status: CORRETO
+
+---
+
+2. @astrojs/sitemap INSTALADO E CONFIGURADO?
+   Instalado: Sim (package.json:14)
+   Configurado no astro.config.mjs: NAO
+   Observacao: Existe um public/sitemap.xml manual estatico, mas a integracao
+               sitemap() nao esta no array `integrations`. Sem ela, o Astro
+               nao gera o sitemap automaticamente em cada build.
+
+---
+
+3. SCHEMA JSON-LD (application/ld+json)
+   Arquivo: src/components/SchemaLocalBusiness.astro
+   Tipo: LocalBusiness
+   Status: PRESENTE E ATIVO no Layout.astro:23
+
+---
+
+4. LAYOUT BASE COM <head>
+   Arquivo: src/layouts/Layout.astro
+   Status: CORRETO. O <head> e gerenciado ali e delega para SEO.astro.
+
+---
+
+5. public/robots.txt
+   Status: NAO EXISTE. Nao ha arquivo robots.txt na pasta public/.
+
+---
+
+6. IMAGENS: <img> PURO vs <Image> DO ASTRO
+   Status: O projeto usa <img> PURO em todas as paginas.
+   Exemplos:
+     - src/pages/index.astro:293
+     - src/pages/sobre.astro:79
+     - src/pages/blog.astro:30
+   O componente nativo <Image> do astro:assets NAO e utilizado.
+
+---
+
+7. CANONICAL DINAMICO OU HARDCODED?
+   Arquivo: src/components/SEO.astro:21
+   Logica:
+     const canonical = new URL(Astro.url.pathname, SITE_CONFIG.domain).toString();
+   Status: DINAMICO E CORRETO
+
+---
+
+RESUMO - O QUE PRECISA SER CRIADO OU ALTERADO
+
+| # | O que fazer                                        | Motivo                                              |
+|---|----------------------------------------------------|-----------------------------------------------------|
+| 1 | Adicionar `sitemap()` em `astro.config.mjs`       | Pacote ja instalado, mas nao integrado na build   |
+| 2 | Criar `public/robots.txt`                          | Arquivo essencial ausente                           |
+| 3 | (Opcional) Migrar <img> para <Image> do Astro      | Otimizacao automatica, formatos modernos, CLS       |
+
+---
+FIM DO DIAGNOSTICO

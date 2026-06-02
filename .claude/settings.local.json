@@ -20,7 +20,20 @@
       "Bash(git push *)",
       "WebFetch(domain:samir-trindade.vercel.app)",
       "Bash(npm list *)",
-      "Bash(curl -sI \"https://samir-trindade.vercel.app/\")"
+      "Bash(curl -sI \"https://samir-trindade.vercel.app/\")",
+      "Bash(Rename-Item scripts/add-links.js scripts/add-links.cjs)",
+      "Bash(git checkout *)",
+      "Bash(curl *)",
+      "Bash(py *)",
+      "WebFetch(domain:pagespeed.web.dev)",
+      "Bash(python3 -c ' *)",
+      "Bash(Get-Content .vercel/output/static/index.html)",
+      "Bash(Select-String -Pattern \"<style|<script\")",
+      "Bash(Select-Object -First 20)",
+      "Bash(npm run *)",
+      "Bash(npm view *)",
+      "Bash(Get-ChildItem \"src/content/blog\")",
+      "Bash(Select-Object Name)"
     ]
   }
 }
