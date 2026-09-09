@@ -1,7 +1,7 @@
 export const SITE_CONFIG = {
   name: 'Samir Trindade — Consultor de Planos de Saúde',
   shortName: 'Samir Trindade',
-  domain: 'https://samirtrindade.com.br',
+  domain: 'https://www.planodesaudenorio.com.br',
   description: 'Corretor credenciado ANS especializado em planos de saúde empresariais, MEI e familiares no Rio de Janeiro. Mais de 10 operadoras, atendimento presencial e online.',
   email: 'samirtrindade1983@gmail.com',
   phone: '(21) 96462-5163',
