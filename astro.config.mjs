@@ -5,7 +5,7 @@ import vercel from '@astrojs/vercel/static';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://samirtrindade.vercel.app',
+  site: 'https://www.planodesaudenorio.com.br',
   output: 'static',
   adapter: vercel(),
   integrations: [tailwind(), sitemap({
