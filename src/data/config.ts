@@ -20,6 +20,7 @@ export const SITE_CONFIG = {
   hours: 'Segunda a sexta das 8h às 19h. Sábado das 8h às 15h.',
   social: {
     whatsapp: 'https://wa.me/5521964625163',
+    instagram: 'https://www.instagram.com/samir_trindade_oficial/',
   },
   author: 'Samir Trindade',
   ogImage: '/og-image.jpg',
