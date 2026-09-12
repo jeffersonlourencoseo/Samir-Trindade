@@ -4,6 +4,35 @@ title: "Plano de Saúde Santa Casa: Entenda a Cobertura e Encontre a Melhor Opç
 description: "O plano de saúde Santa Casa é uma opção consolidada para quem busca atendimento de qualidade. Saiba como funciona, quem pode contratar e como encontrar o melhor custo-benefício no Rio de Janeiro."
 publishDate: 2025-07-25T08:00:00Z
 tags: ["santa casa", "hospital", "rio de janeiro"]
+faq:
+  - question: "O plano de saúde Santa Casa é confiável?"
+    answer: "Sim. É uma instituição com mais de 500 anos de história e regulada pela ANS."
+  - question: "Quem pode contratar?"
+    answer: "Pessoas físicas, famílias, empresas e MEI."
+  - question: "O plano Santa Casa tem cobertura no Rio de Janeiro?"
+    answer: "Sim, com presença especialmente forte na Região Serrana e Metropolitana."
+  - question: "Qual a diferença entre Santa Casa e outras operadoras?"
+    answer: "Tradição filantrópica, atendimento humanizado e gestão sem fins lucrativos."
+  - question: "É possível contratar plano individual?"
+    answer: "Sim, desde que atenda aos critérios de aceitação."
+  - question: "Como funciona a carência?"
+    answer: "Segue padrão da ANS: 30 dias para consultas, 180 para cirurgias, 300 para parto."
+  - question: "Posso isentar a carência?"
+    answer: "Sim, se já teve plano nos últimos 12 meses."
+  - question: "O plano cobre odontologia?"
+    answer: "Quando contratada como adicional."
+  - question: "Como cancelar o plano Santa Casa?"
+    answer: "Solicitação por escrito à operadora, seguindo as regras do contrato."
+  - question: "A Santa Casa é mais barata que outras operadoras?"
+    answer: "Depende do perfil e da região. Uma cotação comparativa é necessária."
+  - question: "O atendimento é humanizado?"
+    answer: "Sim. É um dos diferenciais históricos da instituição."
+  - question: "Posso usar o plano em qualquer hospital?"
+    answer: "Apenas em hospitais e unidades credenciadas."
+  - question: "Como verificar a rede credenciada?"
+    answer: "Consultando diretamente a operadora ou através de um corretor especializado."
+  - question: "O plano Santa Casa é bom para empresas?"
+    answer: "Sim. Oferece condições empresariais competitivas."
 ---
 
 Quando falamos em **plano de saúde Santa Casa**, estamos falando de uma das instituições médicas mais tradicionais e respeitadas do Brasil. Com raízes centenárias e um compromisso com o atendimento humanizado, a Santa Casa se consolidou como referência em saúde, especialmente em grandes centros urbanos como o Rio de Janeiro.

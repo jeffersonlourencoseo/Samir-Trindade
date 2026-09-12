@@ -4,6 +4,35 @@ title: "Plano de Saúde Unimed Preço: Guia Completo para Escolher com Inteligê
 description: "Entenda como funciona o plano de saúde Unimed preço, coberturas, modalidades e como encontrar o melhor custo-benefício no Rio de Janeiro."
 publishDate: 2025-07-10T08:00:00Z
 tags: ["unimed", "preço", "rio de janeiro"]
+faq:
+  - question: "O plano de saúde Unimed preço é fixo ou varia por idade?"
+    answer: "O valor varia conforme a faixa etária do beneficiário. Quanto mais velho, maior o preço."
+  - question: "Posso contratar o plano Unimed individualmente?"
+    answer: "Sim. A Unimed oferece planos individuais, familiares e empresariais."
+  - question: "Qual a diferença entre plano regional e nacional?"
+    answer: "O plano regional cobre atendimentos apenas em determinadas regiões, enquanto o nacional permite atendimento em todo o Brasil."
+  - question: "O MEI pode contratar plano empresarial da Unimed?"
+    answer: "Sim. Com o CNPJ ativo e pelo menos 2 vidas, o MEI tem acesso ao plano empresarial."
+  - question: "Como funciona a coparticipação na Unimed?"
+    answer: "O beneficiário paga uma parte dos custos de consultas e exames. Em troca, a mensalidade é reduzida."
+  - question: "A Unimed tem plano odontológico?"
+    answer: "Sim. É possível contratar o plano odontológico junto ou separadamente."
+  - question: "Quanto tempo dura a carência?"
+    answer: "Depende do procedimento. Consultas simples têm 30 dias, cirurgias 180 dias e parto 300 dias."
+  - question: "É possível isentar a carência?"
+    answer: "Sim, se você já teve plano de saúde nos últimos 12 meses."
+  - question: "Como funciona o reajuste anual?"
+    answer: "A ANS define um índice máximo de reajuste, mas as operadoras podem aplicar percentuais diferentes conforme a utilização do plano."
+  - question: "O que é portabilidade?"
+    answer: "É a possibilidade de trocar de operadora sem cumprir nova carência, desde que você já tenha plano há mais de 12 meses."
+  - question: "A Unimed atende em Niterói?"
+    answer: "Sim. A Unimed possui rede credenciada na Região Metropolitana do Rio, incluindo Niterói, São Gonçalo e outras cidades."
+  - question: "Como faço para cancelar o plano Unimed?"
+    answer: "O cancelamento deve ser solicitado por escrito à operadora. Recomenda-se avisar com antecedência para evitar cobranças indevidas."
+  - question: "Posso incluir meus pais no plano familiar?"
+    answer: "Depende da regra da operadora. Geralmente, pais só podem ser incluídos como dependentes em planos empresariais específicos."
+  - question: "Qual o melhor plano Unimed para idosos?"
+    answer: "O ideal é um plano sem coparticipação e com rede robusta em geriatria. A escolha depende do perfil de saúde do idoso."
 ---
 
 Escolher um plano de saúde no Rio de Janeiro não é uma tarefa simples. Com tantas operadoras, modalidades e opções de cobertura, é natural sentir-se perdido. Entre as principais escolhas do mercado carioca, a [Unimed](/servicos) se destaca como uma das operadoras mais tradicionais e confiáveis. Mas quando o assunto é **plano de saúde [Unimed](/servicos) preço**, muitas dúvidas surgem: qual o valor ideal? O que está incluso? Como comparar de forma justa?
