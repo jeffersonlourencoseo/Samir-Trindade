@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import SchemaBreadcrumb from '../components/SchemaBreadcrumb.astro';
 import { getCollection } from 'astro:content';
+import { SITE_CONFIG } from '../data/config';
 
 const servicos = await getCollection('servicos');
 ---
@@ -57,7 +58,7 @@ const servicos = await getCollection('servicos');
           Eu analiso o perfil da sua empresa ou família e indico a operadora que entrega o melhor custo-benefício no Rio de Janeiro.
         </p>
         <a
-          href="https://wa.me/5521964625163"
+          href={SITE_CONFIG.whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-bold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:scale-105 active:scale-95"

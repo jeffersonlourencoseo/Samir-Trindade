@@ -6,7 +6,7 @@ export const SITE_CONFIG = {
   email: 'samirtrindade1983@gmail.com',
   phone: '(21) 96462-5163',
   phoneRaw: '5521964625163',
-  whatsappLink: 'https://wa.me/5521964625163',
+  whatsappLink: 'https://wa.me/5521964625163?text=Ol%C3%A1%2C%20vi%20seu%20site%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21',
   address: {
     street: 'Avenida Rio Branco, 108, 21º andar',
     neighborhood: 'Centro',
@@ -19,7 +19,7 @@ export const SITE_CONFIG = {
   ansRegister: '73719199730',
   hours: 'Segunda a sexta das 8h às 19h. Sábado das 8h às 15h.',
   social: {
-    whatsapp: 'https://wa.me/5521964625163',
+    whatsapp: 'https://wa.me/5521964625163?text=Ol%C3%A1%2C%20vi%20seu%20site%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21',
     instagram: 'https://www.instagram.com/samir_trindade_oficial/',
   },
   author: 'Samir Trindade',
