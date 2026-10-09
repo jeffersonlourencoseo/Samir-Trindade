@@ -1,9 +1,9 @@
 ---
 title: "Carência para Plano de Saúde: Guia Completo para 2026"
 description: "Entenda tudo sobre carência para plano de saúde em 2026, prazos, regras, exceções e como evitar surpresas na contratação do seu plano."
-pubDate: "2026-10-09T22:45:32.151Z"
-heroImage: "https://btgaizddojvvnbwxdags.supabase.co/storage/v1/object/public/public/images/1791585098973_health_insurance_waiting_period.jpg"
-keyword: "carencia para plano de saude"
+publishDate: 2026-10-09T22:45:32.151Z
+image: "https://btgaizddojvvnbwxdags.supabase.co/storage/v1/object/public/public/images/1791585098973_health_insurance_waiting_period.jpg"
+tags: ["carência", "plano de saúde", "dicas"]
 ---
 
 ## O que é carência para plano de saúde?
