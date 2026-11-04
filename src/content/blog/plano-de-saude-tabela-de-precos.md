@@ -1,8 +1,12 @@
 ---
 title: "Plano de Saúde Tabela de Preços 2026: Guia Completo para Escolher o Melhor"
-description: "Entenda como funciona a tabela de preços do plano de saúde em 2026: faixas etárias, tipos de plano, reajuste da ANS de 5,11% e como comparar valores no Rio de Janeiro."
+seoTitle: "Tabela de Preços de Plano de Saúde 2026"
+image: "../../assets/blog/plano-de-saude-tabela-de-precos-capa.webp"
+imageAlt: "Cartelas de comprimidos ao lado de notas de dinheiro, simbolizando o preço do plano de saúde"
+imageCredit: "Kaboompics / Pexels"
+servicos: ["valor-plano-de-saude-bradesco","unimed-rj"]
+description: "Como funciona a tabela de preços do plano de saúde em 2026: faixas etárias, tipos de plano, reajuste da ANS e por que o valor é consultado pelo WhatsApp."
 publishDate: 2026-10-22T21:00:00.000Z
-image: "https://btgaizddojvvnbwxdags.supabase.co/storage/v1/object/public/public/images/1792704939646_health_insurance_pricing.jpg"
 tags: ["preços", "plano de saúde", "dicas", "rio de janeiro"]
 faq:
   - question: "O que é a tabela de preços do plano de saúde?"
@@ -25,7 +29,7 @@ Os preços variam conforme a idade do beneficiário, a abrangência geográfica,
 
 ## Tipos de planos de saúde e suas tabelas de preços
 
-Existem três modalidades principais: **individual ou familiar**, **coletivo por adesão** e **coletivo empresarial**. O plano individual é contratado diretamente pela pessoa física e pode incluir dependentes. O coletivo por adesão é oferecido por meio de entidades de classe e associações, e o empresarial é contratado por empresas — inclusive [MEI e pequenas empresas](/blog/plano-saude-mei-rj) — normalmente com preços mais competitivos. Cada modalidade tem uma tabela própria.
+Existem três modalidades principais: **individual ou familiar**, **coletivo por adesão** e **coletivo empresarial**. O plano individual é contratado diretamente pela pessoa física e pode incluir dependentes. O coletivo por adesão é oferecido por meio de entidades de classe e associações, e o empresarial é contratado por empresas — inclusive [MEI e pequenas empresas](/blog/plano-saude-mei-rj/) — normalmente com preços mais competitivos. Cada modalidade tem uma tabela própria.
 
 Também muda o tipo de cobertura: planos **ambulatoriais** cobrem consultas e exames; **hospitalares** incluem internações; e os planos **com obstetrícia** cobrem também o parto. A acomodação (enfermaria ou apartamento) e a presença de coparticipação também alteram o valor final.
 
@@ -41,10 +45,8 @@ Comparar preços entre operadoras exige atenção à cobertura, à rede credenci
 
 ## Principais operadoras e o que muda na tabela em 2026
 
-![Imagem que relaciona saúde financeira com medicamentos e dinheiro.](https://btgaizddojvvnbwxdags.supabase.co/storage/v1/object/public/public/images/1792704939646_health_insurance_pricing.jpg)
-*Kaboompics / Pexels*
 
-No Rio de Janeiro, as operadoras mais procuradas incluem [Amil](/servicos/amil), [Bradesco Saúde](/servicos/bradesco-saude), [SulAmérica](/servicos/sulamerica), [Unimed](/servicos/unimed-rj), [NotreDame Intermédica](/servicos/notredame), [Hapvida](/servicos/hapvida), [Porto Seguro Saúde](/servicos/porto-seguro-saude), [Assim Saúde](/servicos/assim-saude) e [Prevent Senior](/servicos/prevent-senior). Cada uma tem tabelas diferentes conforme região, modalidade e faixa etária.
+No Rio de Janeiro, as operadoras mais procuradas incluem [Amil](/servicos/amil/), [Bradesco Saúde](/servicos/bradesco-saude/), [SulAmérica](/servicos/sulamerica/), [Unimed](/servicos/unimed-rj/), [NotreDame Intermédica](/servicos/notredame/), [Hapvida](/servicos/hapvida/), [Porto Seguro Saúde](/servicos/porto-seguro-saude/), [Assim Saúde](/servicos/assim-saude/) e [Prevent Senior](/servicos/prevent-senior/). Cada uma tem tabelas diferentes conforme região, modalidade e faixa etária.
 
 Por isso, não existe um "preço único" de plano de saúde: o mesmo produto pode ter valores bem diferentes para uma pessoa de 25 anos e para uma de 60, ou para um contrato individual e um empresarial. A forma mais segura de saber o valor real para o seu perfil é fazer uma cotação com as tabelas vigentes.
 
@@ -54,9 +56,9 @@ Operadoras maiores costumam ter mais opções e rede mais ampla, enquanto planos
 
 Comece avaliando as necessidades pessoais e da família: frequência de consultas, exames, tratamentos em andamento e hospitais de preferência. Verifique se a rede credenciada atende a sua região e se a cobertura contempla o que é essencial para você.
 
-A tabela de preços deve ser analisada junto com o contrato, observando [carências](/blog/carencia-para-plano-de-saude-guia-completo-para-2026), regras para inclusão de dependentes, coparticipação e cláusulas de reajuste. Um plano mais barato pode não compensar se tiver pouca cobertura ou rede limitada.
+A tabela de preços deve ser analisada junto com o contrato, observando [carências](/blog/carencia-para-plano-de-saude-guia-completo-para-2026/), regras para inclusão de dependentes, coparticipação e cláusulas de reajuste. Um plano mais barato pode não compensar se tiver pouca cobertura ou rede limitada.
 
-Compare operadoras e modalidades para equilibrar preço e benefícios. Se quiser um ponto de partida, veja também nosso guia sobre [qual é o melhor plano de saúde](/blog/melhor-plano-de-saude).
+Compare operadoras e modalidades para equilibrar preço e benefícios. Se quiser um ponto de partida, veja também nosso guia sobre [qual é o melhor plano de saúde](/blog/melhor-plano-de-saude/).
 
 ## Reajustes e atualizações na tabela de preços
 
@@ -68,10 +70,8 @@ O reajuste por faixa etária acontece quando o beneficiário muda de faixa, dent
 
 ## Dicas para economizar na contratação do plano de saúde
 
-![Imagem ilustrativa sobre custos de saúde e economia pessoal.](https://btgaizddojvvnbwxdags.supabase.co/storage/v1/object/public/public/images/1792704942377_health_insurance_cost_savings.jpg)
-*Kaboompics / Pexels*
 
-Planos coletivos empresariais costumam ter mensalidades mais baixas que os individuais. Se você tem CNPJ, vale avaliar essa opção — veja como funciona o [plano de saúde empresarial no Rio de Janeiro](/blog/como-escolher-plano-saude-empresa).
+Planos coletivos empresariais costumam ter mensalidades mais baixas que os individuais. Se você tem CNPJ, vale avaliar essa opção — veja como funciona o [plano de saúde empresarial no Rio de Janeiro](/blog/como-escolher-plano-saude-empresa/).
 
 Outras formas de economizar:
 
@@ -97,7 +97,7 @@ Outra tendência é a valorização dos programas de saúde preventiva, como aco
 
 Um corretor de plano de saúde compara as tabelas de várias operadoras ao mesmo tempo, explica as diferenças de cobertura e rede e ajuda a escolher o plano com melhor custo-benefício para o seu perfil — **sem custo extra para você**. Também acompanha o pós-venda, com dúvidas, boletos e reembolsos.
 
-Quer saber quanto custa um plano para você, sua família ou sua empresa? [Fale com o corretor Samir Trindade](/contato) e peça uma cotação gratuita.
+Quer saber quanto custa um plano para você, sua família ou sua empresa? [Fale com o corretor Samir Trindade](/contato/) e peça uma cotação gratuita.
 
 ## Perguntas frequentes sobre plano de saúde e tabela de preços
 

@@ -1,15 +1,17 @@
 ---
 title: "Carência para Plano de Saúde: Guia Completo para 2026"
-description: "Entenda tudo sobre carência para plano de saúde em 2026, prazos, regras, exceções e como evitar surpresas na contratação do seu plano."
+seoTitle: "Carência de Plano de Saúde: Prazos e Regras"
+image: "../../assets/blog/carencia-para-plano-de-saude-guia-completo-para-2026-capa.webp"
+imageAlt: "Caderno aberto com letras formando a palavra health insurance e comprimidos azuis sobre fundo lilás"
+imageCredit: "Leeloo The First / Pexels"
+servicos: ["plano-empresarial-de-saude","unimed-rj"]
+description: "Entenda a carência do plano de saúde: prazos máximos da ANS, exceções, portabilidade e como evitar surpresas ao contratar. Guia atualizado e completo para 2026."
 publishDate: 2026-10-09T22:45:32.151Z
-image: "https://btgaizddojvvnbwxdags.supabase.co/storage/v1/object/public/public/images/1791585098973_health_insurance_waiting_period.jpg"
 tags: ["carência", "plano de saúde", "dicas"]
 ---
 
 ## O que é carência para plano de saúde?
 
-![Imagem ilustrativa de planejamento de saúde e seguro, com blocos de letras e medicamentos coloridos sobre um calendário aberto.](https://btgaizddojvvnbwxdags.supabase.co/storage/v1/object/public/public/images/1791585098973_health_insurance_waiting_period.jpg)
-*Leeloo The First / Pexels*
 
 
 Carência para plano de saúde é o período que o beneficiário precisa aguardar após contratar o serviço para começar a utilizar determinados procedimentos e consultas. Durante esse tempo, o usuário não tem direito a coberturas específicas, como exames complexos, cirurgias ou internações, mesmo que o plano já esteja ativo. A carência é uma forma de proteger as operadoras contra contratações feitas apenas para uso imediato, evitando prejuízos financeiros.
@@ -30,8 +32,6 @@ Além disso, o Código de Defesa do Consumidor assegura direitos importantes, co
 
 ## Exceções e situações que eliminam ou reduzem a carência
 
-![Imagem de uma agenda com blocos de letras formando a palavra 'HEALTH INSURANCE', destacando temas de seguros de saúde e planejamento de bem-estar.](https://btgaizddojvvnbwxdags.supabase.co/storage/v1/object/public/public/images/1791585102279_health_insurance_exceptions.jpg)
-*Leeloo The First / Pexels*
 
 
 Existem situações em que a carência é eliminada ou reduzida, facilitando o acesso do consumidor aos serviços. A portabilidade de carências permite que o beneficiário migre de um plano para outro sem precisar cumprir novos períodos, desde que respeitados alguns requisitos, como manter o plano anterior ativo por um tempo mínimo.
@@ -52,8 +52,6 @@ Outra dica importante é informar corretamente todas as doenças preexistentes p
 
 ## Impactos da carência para o consumidor e para a operadora
 
-![Imagem de um planejamento financeiro com blocos de letras formando a palavra 'Health Insurance' e itens de papelaria sobre uma agenda, simbolizando organização e cuidados com a saúde financeira.](https://btgaizddojvvnbwxdags.supabase.co/storage/v1/object/public/public/images/1791585105697_health_insurance_waiting_period.jpg)
-*Leeloo The First / Pexels*
 
 
 Para o consumidor, a carência pode representar um período de espera frustrante, especialmente em casos de necessidade urgente de atendimento. Isso pode gerar insegurança e até riscos à saúde, caso o beneficiário precise de procedimentos que ainda não estão liberados. Por outro lado, a carência ajuda a manter os custos dos planos mais equilibrados.
