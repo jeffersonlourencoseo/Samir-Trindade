@@ -7,7 +7,7 @@ updatedDate: 2026-11-03T12:00:00Z
 operadora: "Assim Saúde"
 modalidade: "Empresarial, Familiar"
 etiqueta: "Operadora com origem no Rio"
-posts: ["plano-de-saude-santa-casa","melhor-plano-de-saude"]
+posts: ["melhor-plano-de-saude"]
 faq:
   - question: "A Assim Saúde atende só no Rio de Janeiro?"
     answer: "A operação da Assim Saúde é concentrada no estado do Rio de Janeiro. Se você viaja com frequência ou precisa de cobertura em outros estados, confirmo na cotação a abrangência do produto e, se for o caso, comparo com planos nacionais."

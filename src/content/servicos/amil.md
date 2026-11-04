@@ -7,7 +7,7 @@ updatedDate: 2026-11-03T12:00:00Z
 operadora: "Amil"
 modalidade: "Empresarial, Adesão"
 etiqueta: "Rede ampla e cobertura nacional"
-posts: ["melhor-plano-de-saude","plano-de-saude-santa-casa"]
+posts: ["melhor-plano-de-saude"]
 faq:
   - question: "A Amil é boa para quem viaja ou tem filial em outro estado?"
     answer: "Costuma ser uma das opções a considerar, porque a Amil trabalha com planos de abrangência nacional. A abrangência varia de produto para produto, então eu confirmo na cotação se o plano escolhido cobre os estados que você precisa."

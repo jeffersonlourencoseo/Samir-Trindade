@@ -31,6 +31,16 @@
       "statusCode": 301
     },
     {
+      "source": "/blog/plano-de-saude-santa-casa",
+      "destination": "/blog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/plano-de-saude-santa-casa/",
+      "destination": "/blog/",
+      "statusCode": 301
+    },
+    {
       "source": "/:path(.*)",
       "has": [{ "type": "host", "value": "planodesaudenorio.com.br" }],
       "destination": "https://www.planodesaudenorio.com.br/:path",
