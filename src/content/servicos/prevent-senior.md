@@ -1,23 +1,44 @@
 ---
 title: "Plano de Saúde Prevent Senior"
-description: "Referência em saúde do idoso no Brasil. Prevent Senior oferece planos com foco em geriatria, longevidade e qualidade de vida para empresas e famílias no RJ."
+seoTitle: "Plano de Saúde Prevent Senior no Rio"
+description: "Plano de saúde Prevent Senior no Rio de Janeiro: entenda o foco no público 50+, as regras de contratação e peça sua cotação ao corretor Samir Trindade."
+publishDate: 2025-05-01T08:00:00Z
+updatedDate: 2026-11-03T12:00:00Z
 operadora: "Prevent Senior"
-modalidade: "Empresarial, Familiar, Individual"
+modalidade: "Familiar, Individual"
+etiqueta: "Foco no público 50+"
+posts: ["carencia-para-plano-de-saude-guia-completo-para-2026","melhor-plano-de-saude"]
+faq:
+  - question: "O plano Prevent Senior é só para idosos?"
+    answer: "A operadora tem foco no público mais velho e oferece produtos voltados a essa faixa etária. As regras de idade para contratar variam por produto, e eu confirmo na cotação quem pode entrar."
+  - question: "A Prevent Senior atende em qualquer hospital?"
+    answer: "O atendimento acontece principalmente na rede própria da operadora e em serviços credenciados do produto. Antes de assinar, confiro com você quais unidades ficam mais perto de casa."
+  - question: "Existe carência no plano Prevent Senior?"
+    answer: "Sim, as regras de carência seguem a legislação e o contrato. O prazo exato depende do produto e de você já ter ou não plano anterior, com possibilidade de portabilidade em alguns casos. Veja o guia de [carência em plano de saúde](/blog/carencia-para-plano-de-saude-guia-completo-para-2026/)."
+  - question: "Posso contratar para meus pais?"
+    answer: "Em geral sim, desde que o produto permita e os documentos estejam em ordem. Converse comigo com a idade e os dados deles, e eu verifico as condições antes de sugerir qualquer proposta."
 ---
+A Prevent Senior é uma operadora com foco no público mais velho, com atendimento centrado em rede própria e em acompanhamento de saúde ao longo do tempo. É uma opção a considerar por famílias que procuram um plano para os pais e por pessoas 50+ que valorizam a estrutura voltada à sua faixa etária. Eu explico como funciona antes de qualquer cotação.
 
-A Prevent Senior é a maior operadora de saúde focada no público 50+ do Brasil. Com um modelo de atenção integral à saúde do idoso, oferece planos que vão além da cobertura médica tradicional.
+## O que observar na Prevent Senior
 
-## Diferenciais Prevent Senior
+- **Foco no público 50+**, com produtos e atendimento desenhados para essa fase da vida.
+- **Rede própria** de unidades e hospitais, complementada por credenciados em parte dos casos.
+- **Medicina preventiva** como parte da proposta de cuidado, dependendo do produto.
 
-- **Medicina preventiva** — Foco em check-ups, vacinas e prevenção de quedas.
-- **Rede geriátrica** — Hospitais, clínicas e profissionais especializados em saúde do idoso.
-- **Programa Viver Bem** — Acompanhamento multidisciplinar com nutrição, fisioterapia e psicologia.
-- **Cobertura para terceira idade** — Planos que não expulsam o beneficiário ao envelhecer.
+## Modalidades que eu costumo cotar
 
-## Para quem é indicado
+- **Familiar e individual**, conforme a disponibilidade para a sua idade e região.
 
-- Empresas com colaboradores acima de 50 anos
-- Famílias com idosos que precisam de atenção especializada
-- Quem busca qualidade de vida e longevidade
+## Para quem faz sentido
 
-Saiba mais sobre os planos Prevent Senior no Rio de Janeiro. [Solicite uma cotação](https://wa.me/5521964625163).
+Faz sentido para quem tem 50 anos ou mais, ou para quem contrata em nome dos pais, e aceita utilizar a rede própria da operadora. Se a prioridade for ampla escolha de hospitais, vale comparar com [Amil](/servicos/amil/) ou [SulAmérica](/servicos/sulamerica/).
+
+## O que conferir antes de assinar
+
+1. **Idade mínima e máxima de entrada** no produto.
+2. **Carência** para consultas, exames, internação e procedimentos complexos.
+3. **Unidades próximas** da casa do beneficiário.
+4. **Faixas etárias e reajustes:** como o preço evolui com a idade.
+
+Se a pessoa já tem plano, saiba como funciona a [carência e a portabilidade](/blog/carencia-para-plano-de-saude-guia-completo-para-2026/).
