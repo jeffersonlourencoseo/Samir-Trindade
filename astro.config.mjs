@@ -37,11 +37,14 @@ const redirecionamentos = {
   '/blog/plano-de-saude-unimed-preco': '/blog/valor-de-um-plano-de-saude-unimed/',
   '/blog/preco-plano-de-saude-unimed': '/blog/valor-de-um-plano-de-saude-unimed/',
   '/blog/unimed-plano-de-saude-valor': '/blog/valor-de-um-plano-de-saude-unimed/',
+  // Post removido (Santa Casa não está no portfólio de operadoras)
+  '/blog/plano-de-saude-santa-casa': '/blog/',
 };
 
 // Links de WhatsApp e telefone escritos em markdown (posts) ganham target, rel e os
 // atributos de evento do GA4, para ficarem iguais aos botões dos componentes.
 function rehypeCtaLinks() {
+  let local = 'post-texto';
   const visitar = (no) => {
     if (no.type === 'element' && no.tagName === 'a' && typeof no.properties?.href === 'string') {
       const href = no.properties.href;
@@ -49,15 +52,19 @@ function rehypeCtaLinks() {
         no.properties.target = '_blank';
         no.properties.rel = 'noopener';
         no.properties['data-evento'] = 'clique_whatsapp';
-        no.properties['data-local'] = 'post-texto';
+        no.properties['data-local'] = local;
       } else if (href.startsWith('tel:')) {
         no.properties['data-evento'] = 'clique_telefone';
-        no.properties['data-local'] = 'post-texto';
+        no.properties['data-local'] = local;
       }
     }
     (no.children ?? []).forEach(visitar);
   };
-  return (arvore) => visitar(arvore);
+  return (arvore, arquivo) => {
+    // conteúdo de serviço usa o local "servico"; posts usam "post-texto"
+    local = /[\\/]servicos[\\/]/.test(arquivo?.path ?? '') ? 'servico' : 'post-texto';
+    visitar(arvore);
+  };
 }
 
 // https://astro.build/config

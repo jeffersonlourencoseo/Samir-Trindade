@@ -40,7 +40,7 @@ const graph = buildGraph({
   datePublished,
   dateModified,
   catalog: servicos.map((s) => ({
-    name: `Plano de Saúde ${s.data.operadora ?? s.data.title}`,
+    name: s.data.operadora && !/^Várias/.test(s.data.operadora) ? `Plano de Saúde ${s.data.operadora}` : s.data.title,
     url: absUrl(`/servicos/${s.slug}/`),
     description: s.data.description,
   })),
