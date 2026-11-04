@@ -46,8 +46,8 @@ export const SITE_CONFIG = {
   maps: 'https://maps.app.goo.gl/gowgcwBiBtbi5EKd7',
   ogImage: '/og-image.jpg',
   ogImageSize: { width: 1200, height: 630 },
-  // GA4 ainda não foi criado. Quando existir, colocar o ID (G-XXXXXXXXXX) aqui.
-  ga4Id: '',
+  // ID de medição do GA4 (propriedade "Plano de Saúde Samir Trindade").
+  ga4Id: 'G-KH3RB77HEF',
 };
 
 export const whatsappUrl = whatsappLink;
