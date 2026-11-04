@@ -3,9 +3,10 @@ import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import { SITE_CONFIG } from '../data/config';
 import { Image } from 'astro:assets';
+import { AVALIACOES_GOOGLE } from '../data/avaliacoes';
 
 const servicos = await getCollection('servicos');
-const destaques = ['plano-empresarial-de-saude', 'unimed-rj', 'valor-plano-de-saude-bradesco', 'amil', 'sulamerica', 'hapvida'];
+const destaques = ['plano-de-saude-para-idosos', 'plano-de-saude-mei', 'plano-empresarial-de-saude', 'plano-de-saude-individual-e-familiar', 'unimed-rj', 'valor-plano-de-saude-bradesco', 'amil', 'sulamerica', 'hapvida'];
 const servicosDestaque = destaques
   .map((slug) => servicos.find((s) => s.slug === slug))
   .filter((s): s is NonNullable<typeof s> => Boolean(s));
@@ -229,6 +230,34 @@ const diferenciais = [
       </div>
     </div>
   </section>
+
+  <!-- AVALIAÇÕES REAIS DO GOOGLE (sem schema Review) -->
+  {AVALIACOES_GOOGLE.itens.length > 0 && (
+    <section class="py-24 md:py-32 bg-white">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="mb-16 text-center">
+          <h2 class="font-display text-3xl font-semibold tracking-tight text-charcoal md:text-5xl">
+            O que dizem os clientes
+          </h2>
+          <p class="mx-auto mt-4 max-w-xl text-stone-600">
+            Nota {AVALIACOES_GOOGLE.nota} com {AVALIACOES_GOOGLE.total} avaliações no Google.
+          </p>
+        </div>
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {AVALIACOES_GOOGLE.itens.map((a) => (
+            <figure class="flex flex-col rounded-xl border border-stone-200 bg-cream p-8">
+              <p class="mb-4 text-lg tracking-widest text-accent" role="img" aria-label="5 estrelas de 5">★★★★★</p>
+              <blockquote class="mb-6 flex-1 leading-relaxed text-stone-700">“{a.texto}”</blockquote>
+              <figcaption class="text-sm text-stone-600">
+                <span class="font-semibold text-charcoal">{a.nome}</span><br />
+                {AVALIACOES_GOOGLE.fonte}
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
 
   <!-- BLOG -->
   <section class="py-24 md:py-32 bg-sage">

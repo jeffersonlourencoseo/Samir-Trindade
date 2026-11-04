@@ -39,3 +39,19 @@ Sem push, sem publicação. Build (`npm run build`) passa, 27 páginas. Verifica
 - Validar depois do deploy: Rich Results Test, Tempo real do GA4, CSP no console (se bloquear algo do mapa/Formspree, ajustar).
 - Não consegui checar visualmente no navegador (ferramenta travou); a conferência foi feita no HTML gerado. Olhar menu mobile e páginas novas no `npm run dev`.
 - Pendência de commit: `scripts/add-links*.cjs` só mudaram fim de linha, não commitei.
+
+## Rodada 04/11/2026 (sem push)
+Build passa, 31 páginas. Verificação no HTML gerado: title 50-60, meta 150-160, 1 H1 e links internos sem quebra em todas as páginas indexáveis; cada "Resposta direta" das páginas novas tem 40-60 palavras.
+
+1. **5 páginas de serviço novas** (sem preço/valor/tabela, só operadoras do portfólio, FAQ com schema a partir do `serp/paa.csv`, WhatsApp com `data-evento`/`data-local`, mensagem padrão do config):
+   - `/servicos/plano-de-saude-para-idosos/` (prioridade 1; cita Prevent Senior e MedSênior; carência, rede, reajuste por faixa etária, coparticipação, contratar para os pais)
+   - `/servicos/plano-de-saude-mei/` (o post `plano-saude-mei-rj` virou apoio: linka a página, ganhou aviso no topo e novo seoTitle "Guia do MEI..." para não canibalizar)
+   - `/servicos/medsenior/`
+   - `/servicos/leve-saude/` (Leve Top 200 e lista de dependentes: cônjuge, filhos, pais, avós, sogros, cunhados, sobrinhos, primos, conforme informado pelo Jefferson)
+   - `/servicos/plano-de-saude-individual-e-familiar/`
+   Linkadas entre si, com posts e com as operadoras. Entram no sitemap automaticamente (lastmod = data do conteúdo), em `/servicos/`, no llms.txt, na home (9 cards) e no rodapé "Mais procurados". Prevent Senior e plano empresarial agora linkam as novas.
+2. **Post Santa Casa removido**: arquivo e capa apagados, 301 para `/blog/` (vercel.json e astro `redirects`), tirado dos `posts` de Amil e Assim; some do sitemap e do llms.txt.
+3. **Avaliações reais do Google na home** (`src/data/avaliacoes.ts`, 6 avaliações de `avaliacoes-gmn.md`, textos fiéis, fonte "Avaliação no Google", 5 estrelas, nota 5,0 com 33 avaliações). Sem schema Review. Para trocar/adicionar, editar só esse arquivo; array vazio esconde a seção.
+4. Ajustes técnicos: links de WhatsApp escritos em markdown de páginas de serviço agora levam `data-local="servico"` (posts seguem `post-texto`); o catálogo de serviços do schema da home não escreve mais "Plano de Saúde Várias operadoras".
+
+Pendências desta rodada: confirmar com o Samir as regras do Leve Top 200 e de entrada de idade na MedSênior/Prevent; confirmar que ele vende plano individual/familiar; as afirmações antigas ("até 40%", "2 a 3000 vidas" etc.) foram mantidas como pedido.
