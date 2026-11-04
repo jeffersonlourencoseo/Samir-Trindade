@@ -1,28 +1,89 @@
 ---
 import SEO from '../components/SEO.astro';
-import SchemaLocalBusiness from '../components/SchemaLocalBusiness.astro';
-import SchemaOrganization from '../components/SchemaOrganization.astro';
 import WhatsAppBtn from '../components/WhatsAppBtn.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { getCollection } from 'astro:content';
+import { SITE_CONFIG } from '../data/config';
+import { buildGraph, absUrl } from '../data/schema';
+import type { Crumb, FaqItem, ServiceInfo, ArticleInfo } from '../data/schema';
 
 interface Props {
   title?: string;
+  rawTitle?: string;
+  pageType?: 'home' | 'page' | 'contact' | 'about' | 'service' | 'article';
+  crumbs?: Crumb[];
+  faq?: FaqItem[];
+  service?: ServiceInfo;
+  article?: ArticleInfo;
+  datePublished?: string;
+  dateModified?: string;
   description?: string;
   image?: string;
   type?: string;
   noindex?: boolean;
 }
 
-const { title, description, image, type, noindex } = Astro.props;
+const { title, rawTitle, description, image, type, noindex, pageType, crumbs, faq, service, article, datePublished, dateModified } = Astro.props;
+
+const path = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
+const servicos = pageType === 'home' ? await getCollection('servicos') : [];
+const graph = buildGraph({
+  path,
+  title: rawTitle ?? (title ? `${title} | ${SITE_CONFIG.shortName}` : SITE_CONFIG.name),
+  description: description ?? SITE_CONFIG.description,
+  pageType,
+  crumbs,
+  faq,
+  service,
+  article,
+  datePublished,
+  dateModified,
+  catalog: servicos.map((s) => ({
+    name: `Plano de Saúde ${s.data.operadora ?? s.data.title}`,
+    url: absUrl(`/servicos/${s.slug}/`),
+    description: s.data.description,
+  })),
+});
 ---
 
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <SEO title={title} description={description} image={image} type={type} noindex={noindex} />
-    <SchemaLocalBusiness />
-    <SchemaOrganization />
+    <SEO title={title} rawTitle={rawTitle} description={description} image={image} type={type} noindex={noindex} />
+    <script type="application/ld+json" set:html={JSON.stringify(graph)} />
+    {SITE_CONFIG.ga4Id && (
+      <>
+        <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${SITE_CONFIG.ga4Id}`}></script>
+        <script is:inline define:vars={{ id: SITE_CONFIG.ga4Id }}>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){ window.dataLayer.push(arguments); }
+          window.gtag = gtag;
+          gtag('js', new Date());
+          gtag('config', id);
+        </script>
+      </>
+    )}
+    <script is:inline>
+      function enviarEvento(nome, local) {
+        if (typeof window.gtag !== 'function') return;
+        window.gtag('event', nome, { local_botao: local || 'sem-local', transport_type: 'beacon' });
+      }
+      document.addEventListener('click', function (e) {
+        var el = e.target.closest('[data-evento]');
+        if (el) { enviarEvento(el.dataset.evento, el.dataset.local); return; }
+        // links de WhatsApp e telefone escritos dentro dos textos (markdown) dos posts
+        var a = e.target.closest('a[href]');
+        if (!a) return;
+        var h = a.getAttribute('href') || '';
+        if (h.indexOf('wa.me') !== -1) enviarEvento('clique_whatsapp', 'post-texto');
+        else if (h.indexOf('tel:') === 0) enviarEvento('clique_telefone', 'post-texto');
+      });
+      document.addEventListener('submit', function (e) {
+        var f = e.target.closest('[data-evento-envio]');
+        if (f) enviarEvento(f.dataset.eventoEnvio, 'contato');
+      });
+    </script>
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />

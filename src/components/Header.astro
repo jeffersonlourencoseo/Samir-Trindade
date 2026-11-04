@@ -3,10 +3,10 @@ import { SITE_CONFIG } from '../data/config';
 
 const navLinks = [
   { href: '/', label: 'Início' },
-  { href: '/sobre', label: 'Sobre' },
-  { href: '/servicos', label: 'Planos' },
-  { href: '/blog', label: 'Blog' },
-  { href: '/contato', label: 'Contato' },
+  { href: '/sobre/', label: 'Sobre' },
+  { href: '/servicos/', label: 'Planos' },
+  { href: '/blog/', label: 'Blog' },
+  { href: '/contato/', label: 'Contato' },
 ];
 ---
 
@@ -18,7 +18,7 @@ const navLinks = [
     <!-- Logo -->
     <a href="/" class="flex items-center gap-2 transition-transform duration-300 hover:scale-105">
       <span class="font-display text-xl font-semibold tracking-tight text-white">
-        Samir <span class="text-accent">Trindade</span>
+        Samir <span class="text-gold">Trindade</span>
       </span>
     </a>
 
@@ -33,7 +33,7 @@ const navLinks = [
         </a>
       ))}
       <a
-        href={SITE_CONFIG.whatsappLink}
+        href={SITE_CONFIG.whatsappLink} data-evento="clique_whatsapp" data-local="header"
         target="_blank"
         rel="noopener noreferrer"
         class="rounded-full bg-accent px-6 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-gold active:scale-95"
@@ -65,13 +65,13 @@ const navLinks = [
     {navLinks.map((link) => (
       <a
         href={link.href}
-        class="mobile-link font-display text-3xl font-semibold tracking-tight text-white transition-all duration-300 hover:text-accent"
+        class="mobile-link font-display text-3xl font-semibold tracking-tight text-white transition-all duration-300 hover:text-gold"
       >
         {link.label}
       </a>
     ))}
     <a
-      href={SITE_CONFIG.whatsappLink}
+      href={SITE_CONFIG.whatsappLink} data-evento="clique_whatsapp" data-local="header"
       target="_blank"
       rel="noopener noreferrer"
       class="mt-6 rounded-full bg-accent px-10 py-4 text-lg font-semibold text-white shadow-gold transition-all duration-300 hover:scale-105 active:scale-95"

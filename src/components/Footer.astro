@@ -6,17 +6,26 @@ const footerLinks = [
     title: 'Navegação',
     links: [
       { href: '/', label: 'Início' },
-      { href: '/sobre', label: 'Sobre' },
-      { href: '/servicos', label: 'Planos' },
-      { href: '/blog', label: 'Blog' },
-      { href: '/contato', label: 'Contato' },
+      { href: '/sobre/', label: 'Sobre' },
+      { href: '/servicos/', label: 'Planos' },
+      { href: '/blog/', label: 'Blog' },
+      { href: '/contato/', label: 'Contato' },
+    ],
+  },
+  {
+    title: 'Mais procurados',
+    links: [
+      { href: '/servicos/plano-empresarial-de-saude/', label: 'Plano empresarial de saúde' },
+      { href: '/servicos/unimed-rj/', label: 'Unimed plano de saúde' },
+      { href: '/servicos/valor-plano-de-saude-bradesco/', label: 'Valor do plano Bradesco Saúde' },
+      { href: '/blog/plano-de-saude-tabela-de-precos/', label: 'Tabela de preços' },
     ],
   },
   {
     title: 'Legal',
     links: [
-      { href: '/privacidade', label: 'Privacidade' },
-      { href: '/termos', label: 'Termos de Uso' },
+      { href: '/privacidade/', label: 'Privacidade' },
+      { href: '/termos/', label: 'Termos de Uso' },
     ],
   },
 ];
@@ -24,18 +33,18 @@ const footerLinks = [
 
 <footer class="bg-secondary pt-24 text-white">
   <div class="container mx-auto px-6 md:px-12">
-    <div class="grid gap-12 md:grid-cols-3">
+    <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
       <!-- Brand -->
       <div class="space-y-6">
         <a href="/" class="inline-block font-display text-2xl font-semibold tracking-tight text-white transition-transform duration-300 hover:scale-105">
-          Samir <span class="text-accent">Trindade</span>
+          Samir <span class="text-gold">Trindade</span>
         </a>
-        <p class="max-w-sm text-stone-400 leading-relaxed">
+        <p class="max-w-sm text-stone-300 leading-relaxed">
           Corretor de planos de saúde credenciado ANS. Atendimento presencial no Centro do Rio e online para todo o estado do RJ.
         </p>
         <div class="flex gap-4">
           <a
-            href={SITE_CONFIG.whatsappLink}
+            href={SITE_CONFIG.whatsappLink} data-evento="clique_whatsapp" data-local="footer"
             target="_blank"
             rel="noopener noreferrer"
             class="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white transition-all duration-300 hover:scale-105 hover:border-accent hover:bg-accent hover:text-white"
@@ -62,13 +71,13 @@ const footerLinks = [
       <!-- Links -->
       {footerLinks.map((group) => (
         <div class="space-y-6">
-          <h4 class="text-sm font-semibold uppercase tracking-widest text-accent">{group.title}</h4>
+          <p class="text-sm font-semibold uppercase tracking-widest text-gold">{group.title}</p>
           <ul class="space-y-3">
             {group.links.map((link) => (
               <li>
                 <a
                   href={link.href}
-                  class="text-stone-400 transition-all duration-300 hover:text-white hover:translate-x-1 inline-block"
+                  class="text-stone-300 transition-all duration-300 hover:text-white hover:translate-x-1 inline-block"
                 >
                   {link.label}
                 </a>
@@ -80,17 +89,17 @@ const footerLinks = [
 
       <!-- Contact -->
       <div class="space-y-6">
-        <h4 class="text-sm font-semibold uppercase tracking-widest text-accent">Contato</h4>
-        <address class="not-italic space-y-3 text-stone-400">
+        <p class="text-sm font-semibold uppercase tracking-widest text-gold">Contato</p>
+        <address class="not-italic space-y-3 text-stone-300">
           <p>{SITE_CONFIG.address.street}<br />{SITE_CONFIG.address.neighborhood} — {SITE_CONFIG.address.city}/{SITE_CONFIG.address.state}</p>
-          <p>{SITE_CONFIG.phone}</p>
+          <p><a href={SITE_CONFIG.telefoneLink} data-evento="clique_telefone" data-local="footer" class="transition-colors hover:text-white">{SITE_CONFIG.phone}</a></p>
           <p>{SITE_CONFIG.email}</p>
         </address>
       </div>
     </div>
 
     <div class="mt-16 border-t border-white/10 py-8">
-      <div class="flex flex-col items-center justify-between gap-4 text-sm text-stone-500 md:flex-row">
+      <div class="flex flex-col items-center justify-between gap-4 text-sm text-stone-300 md:flex-row">
         <p>&copy; {new Date().getFullYear()} {SITE_CONFIG.shortName}. Todos os direitos reservados.</p>
         <p>Credenciado ANS {SITE_CONFIG.ansRegister}</p>
       </div>
