@@ -32,7 +32,7 @@ A Prevent Senior é uma operadora com foco no público mais velho, com atendimen
 
 ## Para quem faz sentido
 
-Faz sentido para quem tem 50 anos ou mais, ou para quem contrata em nome dos pais, e aceita utilizar a rede própria da operadora. Se a prioridade for ampla escolha de hospitais, vale comparar com [Amil](/servicos/amil/) ou [SulAmérica](/servicos/sulamerica/).
+Faz sentido para quem tem 50 anos ou mais, ou para quem contrata em nome dos pais, e aceita utilizar a rede própria da operadora. Se a prioridade for ampla escolha de hospitais, vale comparar com [Amil](/servicos/amil/) ou [SulAmérica](/servicos/sulamerica/). Para ver as operadoras voltadas ao público sênior lado a lado, leia a página de [plano de saúde para idosos](/servicos/plano-de-saude-para-idosos/) e conheça também a [MedSênior](/servicos/medsenior/).
 
 ## O que conferir antes de assinar
 

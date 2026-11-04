@@ -34,7 +34,7 @@ Esse formato vale para uma empresa de dois sócios e para uma empresa com centen
 **Resposta direta:** pode contratar quem tem CNPJ ativo, incluindo pequenas e médias empresas, empresas individuais e MEI, conforme o produto de cada operadora. Em geral, é preciso comprovar o vínculo dos beneficiários com a empresa e reunir o número mínimo de vidas exigido.
 
 - **PME e empresas maiores:** inclusão de sócios, funcionários e dependentes, de acordo com a regra do contrato.
-- **MEI:** o microempreendedor pode ser elegível, com CNPJ ativo e o mínimo de beneficiários que a operadora pedir. Leia o guia de [plano de saúde MEI no Rio de Janeiro](/blog/plano-saude-mei-rj/).
+- **MEI:** o microempreendedor pode ser elegível, com CNPJ ativo e o mínimo de beneficiários que a operadora pedir. Veja a página de [plano de saúde MEI no Rio de Janeiro](/servicos/plano-de-saude-mei/) e o guia de apoio em [plano de saúde MEI: guia completo](/blog/plano-saude-mei-rj/).
 - **Profissionais liberais:** em alguns casos, é possível entrar por entidade de classe, em contrato de adesão.
 
 ## Documentos geralmente pedidos
