@@ -2,6 +2,9 @@
 title: "Plano de Saúde Barato no Rio de Janeiro: Como Escolher Sem Perder Cobertura"
 seoTitle: "Plano de Saúde Barato no RJ: Como Escolher"
 description: "Quer um plano de saúde barato no Rio de Janeiro? Veja o que baixa a mensalidade de verdade (rede, coparticipação, segmentação, tipo de contrato) e o que evitar."
+image: "../../assets/blog/plano-de-saude-barato-rj-capa.webp"
+imageAlt: "Duas pessoas analisando um contrato de plano de saúde em uma mesa com documentos e dispositivos"
+imageCredit: "Mikhail Nilov / Pexels"
 publishDate: 2026-11-04T08:00:00Z
 servicos: ["plano-de-saude-individual-e-familiar","plano-de-saude-mei"]
 tags: ["plano de saúde barato", "economizar", "rio de janeiro", "coparticipação"]
@@ -32,7 +35,7 @@ Os valores mudam por operadora, idade, tipo de contrato e momento, por isso este
 
 **Abrangência.** Plano que vale só no município ou na região costuma sair mais em conta que o de cobertura nacional. Se você não viaja a trabalho, pode ser uma boa economia.
 
-**Tipo de contrato.** Individual/familiar, empresarial (para CNPJ) e coletivo por adesão têm regras de preço e reajuste diferentes. Em muitos casos, quem tem CNPJ ativo, incluindo MEI, encontra condições que não existem para pessoa física. Veja a página de [plano de saúde para MEI](/servicos/plano-de-saude-mei/) e a de [plano individual e familiar](/servicos/plano-de-saude-individual-e-familiar/).
+**Tipo de contrato.** Individual/familiar, empresarial (para CNPJ) e coletivo por adesão têm regras de preço e reajuste diferentes. Em muitos casos, quem tem CNPJ ativo, incluindo MEI, encontra condições que não existem para pessoa física. Veja a página de [plano empresarial](/servicos/plano-empresarial-de-saude/), a de [plano de saúde para MEI](/servicos/plano-de-saude-mei/) e a de [plano individual e familiar](/servicos/plano-de-saude-individual-e-familiar/).
 
 ## O que não vale a pena cortar
 
@@ -51,6 +54,8 @@ Mensalidade baixa no primeiro ano não diz tudo. Pergunte como funciona o reajus
 3. Defina se aceita coparticipação.
 4. Veja que tipos de contrato estão ao seu alcance (pessoa física, MEI, empresa).
 5. Compare pelo mesmo critério: cobertura, rede, abrangência e regra de reajuste, não só a mensalidade.
+
+Quer ver como o preço é montado por faixa etária e operadora? Leia também [plano de saúde: tabela de preços](/blog/plano-de-saude-tabela-de-precos/) e [quanto custa um plano de saúde](/blog/quanto-custa-um-plano-de-saude/).
 
 ## Como o corretor ajuda a economizar
 

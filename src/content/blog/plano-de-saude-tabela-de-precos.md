@@ -70,6 +70,8 @@ O reajuste por faixa etária acontece quando o beneficiário muda de faixa, dent
 
 ## Dicas para economizar na contratação do plano de saúde
 
+Veja também [plano de saúde barato no Rio de Janeiro](/blog/plano-de-saude-barato-rj/) e [quanto custa um plano de saúde](/blog/quanto-custa-um-plano-de-saude/).
+
 
 Planos coletivos empresariais costumam ter mensalidades mais baixas que os individuais. Se você tem CNPJ, vale avaliar essa opção — veja como funciona o [plano de saúde empresarial no Rio de Janeiro](/blog/como-escolher-plano-saude-empresa/).
 
