@@ -1,12 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import SchemaBreadcrumb from '../components/SchemaBreadcrumb.astro';
 import { getCollection } from 'astro:content';
 import { SITE_CONFIG } from '../data/config';
 import { Image } from 'astro:assets';
 
 const servicos = await getCollection('servicos');
-const blogPosts = (await getCollection('blog')).slice(0, 3);
+const destaques = ['plano-empresarial-de-saude', 'unimed-rj', 'valor-plano-de-saude-bradesco', 'amil', 'sulamerica', 'hapvida'];
+const servicosDestaque = destaques
+  .map((slug) => servicos.find((s) => s.slug === slug))
+  .filter((s): s is NonNullable<typeof s> => Boolean(s));
+const blogPosts = (await getCollection('blog'))
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+  .slice(0, 3);
 
 const diferenciais = [
   {
@@ -31,27 +36,9 @@ const diferenciais = [
   },
 ];
 
-const depoimentos = [
-  {
-    nome: 'Carla Mendes',
-    cargo: 'RH — Construtora Norte RJ',
-    texto: 'Conseguimos reduzir 28% da mensalidade do plano sem perder um hospital da nossa rede. O pós-venda do Samir faz toda a diferença.',
-  },
-  {
-    nome: 'Roberto Lima',
-    cargo: 'Sócio — Agência Digital',
-    texto: 'Troquei de corretor porque o anterior sumia depois da venda. Com o Samir, tenho resposta no mesmo dia para qualquer problema.',
-  },
-  {
-    nome: 'Fernanda Oliveira',
-    cargo: 'MEI — Estética',
-    texto: 'Usando meu CNPJ, paguei 35% a menos no plano familiar. Ele explicou cada detalhe e não teve surpresa depois.',
-  },
-];
 ---
 
-<Layout title="Corretor de Plano de Saúde no Rio de Janeiro" description="Corretor de plano de saúde credenciado ANS no Rio de Janeiro. Planos empresariais, MEI e familiares com mais de 10 operadoras. Atendimento presencial e online. Solicite orçamento!">
-  <SchemaBreadcrumb items={[{ name: 'Início', url: '/' }]} />
+<Layout rawTitle="Corretor de Plano de Saúde Rio de Janeiro | Samir Trindade" description="Corretor de plano de saúde credenciado ANS no Rio de Janeiro. Planos empresariais, MEI e familiares com mais de 10 operadoras. Cotação gratuita pelo WhatsApp." pageType="home">
 
   <!-- HERO -->
   <section class="relative overflow-hidden bg-secondary py-28 md:py-40">
@@ -68,7 +55,7 @@ const depoimentos = [
 
     <div class="container relative mx-auto px-6 md:px-12">
       <div class="mx-auto max-w-4xl text-center">
-        <span class="mb-8 inline-block rounded-full border border-accent/40 bg-accent/10 px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-accent"
+        <span class="mb-8 inline-block rounded-full border border-accent/40 bg-accent/10 px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-gold"
         >
           Corretor Credenciado ANS {SITE_CONFIG.ansRegister}
         </span>
@@ -84,7 +71,7 @@ const depoimentos = [
 
         <div class="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href={SITE_CONFIG.whatsappLink}
+            href={SITE_CONFIG.whatsappLink} data-evento="clique_whatsapp" data-local="hero"
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex items-center gap-2 rounded-full bg-accent px-8 py-4 text-base font-semibold text-white shadow-gold transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95"
@@ -96,7 +83,7 @@ const depoimentos = [
           </a>
 
           <a
-            href="/servicos"
+            href="/servicos/"
             class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-8 py-4 text-base font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:bg-white/10 active:scale-95"
           >
             Conhecer Planos
@@ -113,7 +100,7 @@ const depoimentos = [
         <h2 class="font-display text-3xl font-semibold tracking-tight text-charcoal md:text-5xl">
           Por que contratar comigo?
         </h2>
-        <p class="mx-auto mt-4 max-w-xl text-stone-500">
+        <p class="mx-auto mt-4 max-w-xl text-stone-600">
           Não vendo plano. Entrego solução de saúde com acompanhamento contínuo.
         </p>
       </div>
@@ -121,9 +108,9 @@ const depoimentos = [
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         {diferenciais.map((item) => (
           <div class="group rounded-xl border border-stone-200 bg-white p-8 transition-all duration-300 hover:border-accent/20 hover:shadow-elegant">
-            <div class="mb-4 text-2xl">{item.icon}</div>
+            <div class="mb-4 text-2xl" aria-hidden="true">{item.icon}</div>
             <h3 class="font-display mb-3 text-lg font-semibold text-charcoal">{item.title}</h3>
-            <p class="text-sm leading-relaxed text-stone-500">{item.desc}</p>
+            <p class="text-sm leading-relaxed text-stone-600">{item.desc}</p>
           </div>
         ))}
       </div>
@@ -150,7 +137,7 @@ const depoimentos = [
             sempre reduzindo a parcela e mantendo a qualidade.
           </p>
           <a
-            href="/sobre"
+            href="/sobre/"
             class="inline-flex items-center gap-2 rounded-full bg-secondary px-8 py-4 text-base font-semibold text-white shadow-elevated transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95"
           >
             Conheça minha história
@@ -160,31 +147,31 @@ const depoimentos = [
         <div class="rounded-xl bg-white p-10 shadow-elegant border border-stone-100">
           <div class="space-y-6">
             <div class="flex items-start gap-4">
-              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10 text-xl">📍</div>
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10 text-xl" aria-hidden="true">📍</div>
               <div>
                 <p class="font-semibold text-charcoal">Localização</p>
-                <p class="text-sm text-stone-500">Av. Rio Branco, 108, 21º andar — Centro, Rio de Janeiro/RJ</p>
+                <p class="text-sm text-stone-600">Av. Rio Branco, 108, 21º andar — Centro, Rio de Janeiro/RJ</p>
               </div>
             </div>
             <div class="flex items-start gap-4">
-              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10 text-xl">📞</div>
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10 text-xl" aria-hidden="true">📞</div>
               <div>
                 <p class="font-semibold text-charcoal">Contato</p>
-                <p class="text-sm text-stone-500">{SITE_CONFIG.phone} — WhatsApp e ligação</p>
+                <p class="text-sm text-stone-600">{SITE_CONFIG.phone} — WhatsApp e ligação</p>
               </div>
             </div>
             <div class="flex items-start gap-4">
-              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10 text-xl">🕐</div>
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10 text-xl" aria-hidden="true">🕐</div>
               <div>
                 <p class="font-semibold text-charcoal">Horário</p>
-                <p class="text-sm text-stone-500">Seg–Sex 8h–19h | Sáb 8h–15h</p>
+                <p class="text-sm text-stone-600">Seg–Sex 8h–19h | Sáb 8h–15h</p>
               </div>
             </div>
             <div class="flex items-start gap-4">
-              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10 text-xl">🏅</div>
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10 text-xl" aria-hidden="true">🏅</div>
               <div>
                 <p class="font-semibold text-charcoal">Credenciamento</p>
-                <p class="text-sm text-stone-500">Registro ANS {SITE_CONFIG.ansRegister}</p>
+                <p class="text-sm text-stone-600">Registro ANS {SITE_CONFIG.ansRegister}</p>
               </div>
             </div>
           </div>
@@ -201,15 +188,15 @@ const depoimentos = [
         <h2 class="font-display mt-3 text-3xl font-semibold tracking-tight text-charcoal md:text-5xl">
           As melhores operadoras do Rio de Janeiro
         </h2>
-        <p class="mx-auto mt-4 max-w-xl text-stone-500">
+        <p class="mx-auto mt-4 max-w-xl text-stone-600">
           Trabalho com as principais operadoras de saúde do país para encontrar o plano ideal para o seu perfil.
         </p>
       </div>
 
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {servicos.map((s) => (
+        {servicosDestaque.map((s) => (
           <a
-            href={`/servicos/${s.slug}`}
+            href={`/servicos/${s.slug}/`}
             class="group flex flex-col items-center rounded-xl border border-stone-200 bg-white p-10 transition-all duration-300 hover:border-accent/20 hover:shadow-elegant text-center"
           >
             <div class="mb-4 inline-block rounded-md bg-sage px-4 py-2 text-sm font-semibold uppercase tracking-wider text-secondary border border-stone-100">
@@ -218,7 +205,7 @@ const depoimentos = [
             <h3 class="font-display mb-3 text-xl font-semibold text-charcoal group-hover:text-secondary transition-colors">
               {s.data.title}
             </h3>
-            <p class="mb-6 text-sm leading-relaxed text-stone-500">{s.data.description}</p>
+            <p class="mb-6 text-sm leading-relaxed text-stone-600">{s.data.description}</p>
             <span class="mt-auto inline-flex items-center gap-1 rounded-full bg-accent px-6 py-2 text-sm font-semibold text-white transition-all group-hover:translate-x-1"
             >
               Saiba mais →
@@ -229,7 +216,7 @@ const depoimentos = [
 
       <div class="mt-12 text-center">
         <a
-          href={SITE_CONFIG.whatsappLink}
+          href={SITE_CONFIG.whatsappLink} data-evento="clique_whatsapp" data-local="cta-meio"
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center gap-2 rounded-full bg-accent px-8 py-4 text-base font-semibold text-white shadow-gold transition-all duration-300 hover:scale-105 active:scale-95"
@@ -239,37 +226,6 @@ const depoimentos = [
           </svg>
           Fale com o corretor
         </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- DEPOIMENTOS -->
-  <section class="py-24 md:py-32 bg-white">
-    <div class="container mx-auto px-6 md:px-12">
-      <div class="mb-16 text-center">
-        <h2 class="font-display text-3xl font-semibold tracking-tight text-charcoal md:text-5xl">
-          O que dizem os clientes
-        </h2>
-        <p class="mx-auto mt-4 max-w-xl text-stone-500">
-          Resultados reais de quem confiou no processo de consultoria.
-        </p>
-      </div>
-
-      <div class="grid gap-8 md:grid-cols-3">
-        {depoimentos.map((d) => (
-          <div class="rounded-xl border border-stone-200 bg-cream p-10 shadow-elegant transition-all duration-300 hover:shadow-elevated">
-            <div class="mb-6 text-accent/30 text-5xl leading-none font-display">&ldquo;</div>
-            <p class="mb-6 text-base leading-relaxed text-stone-700">{d.texto}</p>
-            <div class="flex items-center gap-4">
-              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-secondary font-semibold text-white"
-                >{d.nome.charAt(0)}</div>
-              <div>
-                <p class="font-semibold text-charcoal">{d.nome}</p>
-                <p class="text-xs text-stone-500">{d.cargo}</p>
-              </div>
-            </div>
-          </div>
-        ))}
       </div>
     </div>
   </section>
@@ -285,7 +241,7 @@ const depoimentos = [
           </h2>
         </div>
         <a
-          href="/blog"
+          href="/blog/"
           class="inline-flex items-center gap-2 rounded-full border border-stone-300 bg-white px-6 py-3 text-sm font-semibold text-charcoal transition-all duration-300 hover:border-accent hover:bg-accent/5 hover:text-accent"
         >
           Ver todos os posts
@@ -295,18 +251,21 @@ const depoimentos = [
       <div class="grid gap-8 md:grid-cols-3">
         {blogPosts.map((post) => (
           <a
-            href={`/blog/${post.slug}`}
+            href={`/blog/${post.slug}/`}
             class="group flex flex-col rounded-xl border border-stone-200 bg-white transition-all duration-300 hover:border-accent/20 hover:shadow-elegant overflow-hidden"
           >
             {post.data.image ? (
               <div class="relative h-48 w-full overflow-hidden bg-stone-200">
                 <Image
                   src={post.data.image}
-                  alt={post.data.title}
+                  alt={post.data.imageAlt ?? post.data.title}
                   width={800}
                   height={400}
+                  widths={[400, 800]}
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                  decoding="async"
                   class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  loading="eager"
+                  loading="lazy"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                 <div class="absolute bottom-4 left-4 flex flex-wrap gap-2">
@@ -332,7 +291,7 @@ const depoimentos = [
               <h3 class="font-display mb-3 text-lg font-semibold text-charcoal group-hover:text-secondary transition-colors">
                 {post.data.title}
               </h3>
-              <p class="mb-6 text-sm leading-relaxed text-stone-500">{post.data.description}</p>
+              <p class="mb-6 text-sm leading-relaxed text-stone-600">{post.data.description}</p>
               <span class="mt-auto inline-flex items-center gap-1 text-sm font-semibold text-secondary transition-all group-hover:translate-x-1"
               >
                 Ler artigo →
@@ -362,12 +321,12 @@ const depoimentos = [
           Pronto para encontrar o melhor plano?
         </h2>
         <p class="mx-auto mt-6 max-w-xl text-lg text-stone-300">
-          Receba uma cotação comparativa em até 24h. Sem compromisso, sem pressão.
+          Peça uma cotação comparativa pelo WhatsApp. Sem compromisso e sem custo extra.
         </p>
 
         <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href={SITE_CONFIG.whatsappLink}
+            href={SITE_CONFIG.whatsappLink} data-evento="clique_whatsapp" data-local="cta-final"
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex items-center gap-2 rounded-full bg-accent px-8 py-4 text-base font-semibold text-white shadow-gold transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95"
@@ -379,7 +338,7 @@ const depoimentos = [
           </a>
 
           <a
-            href={`tel:${SITE_CONFIG.phoneRaw}`}
+            href={SITE_CONFIG.telefoneLink} data-evento="clique_telefone" data-local="cta-final"
             class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-8 py-4 text-base font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:bg-white/10 active:scale-95"
           >
             Ligar Agora

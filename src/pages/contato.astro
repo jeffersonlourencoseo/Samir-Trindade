@@ -1,15 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import SchemaBreadcrumb from '../components/SchemaBreadcrumb.astro';
 import { SITE_CONFIG } from '../data/config';
 ---
 
-<Layout title="Contato" description="Entre em contato com Samir Trindade, corretor de plano de saúde no Rio de Janeiro. Atendimento presencial e online. WhatsApp, telefone e formulário.">
-  <SchemaBreadcrumb items={[{ name: 'Início', url: '/' }, { name: 'Contato', url: '/contato' }]} />
+<Layout title="Contato e Cotação de Plano de Saúde" description="Peça sua cotação de plano de saúde ao corretor Samir Trindade: WhatsApp (21) 96462-5163, formulário ou visita na Av. Rio Branco, 108, Centro do Rio de Janeiro." pageType="contact" crumbs={[{"name":"Início","url":"/"},{"name":"Contato","url":"/contato/"}]}>
   <section class="bg-secondary py-24 md:py-32">
     <div class="container mx-auto px-6 md:px-12">
       <div class="mx-auto max-w-3xl text-center">
-        <span class="mb-4 inline-block text-sm font-bold uppercase tracking-widest text-primary">Contato</span>
+        <span class="mb-4 inline-block text-sm font-bold uppercase tracking-widest text-gold">Contato</span>
         <h1 class="text-4xl font-extrabold leading-tight tracking-tighter text-white md:text-6xl mb-10">
           Vamos conversar sobre seu plano
         </h1>
@@ -28,7 +26,7 @@ import { SITE_CONFIG } from '../data/config';
             </h2>
             <address class="not-italic space-y-5">
               <div>
-                <p class="text-xs font-bold uppercase tracking-wider text-gray-400">Endereço</p>
+                <p class="text-xs font-bold uppercase tracking-wider text-gray-600">Endereço</p>
                 <p class="text-gray-900">
                   {SITE_CONFIG.address.street}<br />
                   {SITE_CONFIG.address.neighborhood} — {SITE_CONFIG.address.city}/{SITE_CONFIG.address.state}
@@ -37,19 +35,19 @@ import { SITE_CONFIG } from '../data/config';
                 </p>
               </div>
               <div>
-                <p class="text-xs font-bold uppercase tracking-wider text-gray-400">Telefone / WhatsApp</p>
+                <p class="text-xs font-bold uppercase tracking-wider text-gray-600">Telefone / WhatsApp</p>
                 <p class="text-gray-900">{SITE_CONFIG.phone}</p>
               </div>
               <div>
-                <p class="text-xs font-bold uppercase tracking-wider text-gray-400">E-mail</p>
+                <p class="text-xs font-bold uppercase tracking-wider text-gray-600">E-mail</p>
                 <p class="text-gray-900">{SITE_CONFIG.email}</p>
               </div>
               <div>
-                <p class="text-xs font-bold uppercase tracking-wider text-gray-400">Horário de atendimento</p>
+                <p class="text-xs font-bold uppercase tracking-wider text-gray-600">Horário de atendimento</p>
                 <p class="text-gray-900">{SITE_CONFIG.hours}</p>
               </div>
               <div>
-                <p class="text-xs font-bold uppercase tracking-wider text-gray-400">Registro ANS</p>
+                <p class="text-xs font-bold uppercase tracking-wider text-gray-600">Registro ANS</p>
                 <p class="text-gray-900">{SITE_CONFIG.ansRegister}</p>
               </div>
             </address>
@@ -57,7 +55,7 @@ import { SITE_CONFIG } from '../data/config';
 
           <div class="flex flex-col gap-4">
             <a
-              href={SITE_CONFIG.whatsappLink}
+              href={SITE_CONFIG.whatsappLink} data-evento="clique_whatsapp" data-local="contato"
               target="_blank"
               rel="noopener noreferrer"
               class="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-5 text-lg font-bold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:scale-105 active:scale-95"
@@ -69,7 +67,7 @@ import { SITE_CONFIG } from '../data/config';
             </a>
 
             <a
-              href={`tel:${SITE_CONFIG.phoneRaw}`}
+              href={SITE_CONFIG.telefoneLink} data-evento="clique_telefone" data-local="contato"
               class="inline-flex items-center justify-center gap-2 rounded-full border-2 border-gray-200 px-8 py-5 text-lg font-bold text-gray-900 transition-all duration-300 hover:scale-105 hover:border-primary active:scale-95"
             >
               Ligar Agora
@@ -85,6 +83,7 @@ import { SITE_CONFIG } from '../data/config';
 
           <form
             action="https://formspree.io/f/mnjrpowy"
+            data-evento-envio="envio_formulario"
             method="POST"
             class="space-y-6"
           >

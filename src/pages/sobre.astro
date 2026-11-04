@@ -1,6 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import SchemaBreadcrumb from '../components/SchemaBreadcrumb.astro';
 import { SITE_CONFIG } from '../data/config';
 import { Image } from 'astro:assets';
 import samirPhoto from '../assets/samir-trindade.png';
@@ -25,13 +24,12 @@ const valores = [
 ];
 ---
 
-<Layout title="Sobre" description="Conheça Samir Trindade, corretor credenciado ANS no Rio de Janeiro. Especialista em planos de saúde empresariais, MEI e familiares. Atendimento humanizado e pós-venda de verdade.">
-  <SchemaBreadcrumb items={[{ name: 'Início', url: '/' }, { name: 'Quem Somos', url: '/sobre' }]} />
+<Layout rawTitle="Sobre: Corretor de Planos de Saúde no Rio | Samir Trindade" description="Conheça Samir Trindade, corretor de planos de saúde credenciado ANS no Rio de Janeiro: história, valores e como funciona o acompanhamento depois da venda." pageType="about" crumbs={[{"name":"Início","url":"/"},{"name":"Sobre","url":"/sobre/"}]}>
   <!-- HERO -->
   <section class="bg-secondary py-24 md:py-32">
     <div class="container mx-auto px-6 md:px-12">
       <div class="mx-auto max-w-3xl text-center">
-        <span class="mb-4 inline-block text-sm font-bold uppercase tracking-widest text-primary">Sobre</span>
+        <span class="mb-4 inline-block text-sm font-bold uppercase tracking-widest text-gold">Sobre</span>
         <h1 class="text-4xl font-extrabold leading-tight tracking-tighter text-white md:text-6xl mb-10">
           Quem é Samir Trindade
         </h1>
@@ -59,7 +57,7 @@ const valores = [
           </p>
           <div class="flex flex-col sm:flex-row gap-4 pt-2">
             <a
-              href={SITE_CONFIG.whatsappLink}
+              href={SITE_CONFIG.whatsappLink} data-evento="clique_whatsapp" data-local="hero"
               target="_blank"
               rel="noopener noreferrer"
               class="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-bold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:scale-105 active:scale-95"
@@ -70,7 +68,7 @@ const valores = [
               Falar com o corretor
             </a>
             <a
-              href={`tel:${SITE_CONFIG.phoneRaw}`}
+              href={SITE_CONFIG.telefoneLink} data-evento="clique_telefone" data-local="hero"
               class="inline-flex items-center justify-center gap-2 rounded-full border-2 border-secondary px-8 py-4 text-base font-bold text-secondary transition-all duration-300 hover:scale-105 hover:bg-secondary hover:text-white active:scale-95"
             >
               Ligar agora
@@ -99,8 +97,8 @@ const valores = [
               </div>
               <div class="h-px bg-gray-200"></div>
               <div>
-                <p class="text-5xl font-extrabold text-accent">2.998</p>
-                <p class="mt-1 text-gray-600">Vidas atendidas (de 3 a 3000)</p>
+                <p class="text-5xl font-extrabold text-accent">ANS</p>
+                <p class="mt-1 text-gray-600">Corretor credenciado, registro {SITE_CONFIG.ansRegister}</p>
               </div>
               <div class="h-px bg-gray-200"></div>
               <div>
@@ -180,7 +178,7 @@ const valores = [
             ou piorar o atendimento, eu já estou preparando alternativas.
           </p>
           <a
-            href={SITE_CONFIG.whatsappLink}
+            href={SITE_CONFIG.whatsappLink} data-evento="clique_whatsapp" data-local="cta-meio"
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-bold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:scale-105 active:scale-95"
@@ -215,7 +213,7 @@ const valores = [
 
         <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href={SITE_CONFIG.whatsappLink}
+            href={SITE_CONFIG.whatsappLink} data-evento="clique_whatsapp" data-local="cta-final"
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-bold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:scale-105 active:scale-95"
@@ -226,7 +224,7 @@ const valores = [
             Agendar uma conversa
           </a>
           <a
-            href={`tel:${SITE_CONFIG.phoneRaw}`}
+            href={SITE_CONFIG.telefoneLink} data-evento="clique_telefone" data-local="cta-final"
             class="inline-flex items-center gap-2 rounded-full border-2 border-secondary px-8 py-4 text-base font-bold text-secondary transition-all duration-300 hover:scale-105 hover:bg-secondary hover:text-white active:scale-95"
           >
             Ligar agora

@@ -1,16 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import SchemaBreadcrumb from '../components/SchemaBreadcrumb.astro';
 import { SITE_CONFIG } from '../data/config';
 ---
 
-<Layout title="Política de Privacidade" description="Política de privacidade do site Samir Trindade. Entenda como protegemos seus dados pessoais conforme a LGPD." noindex={true}>
-  <SchemaBreadcrumb items={[{ name: 'Início', url: '/' }, { name: 'Privacidade', url: '/privacidade' }]} />
+<Layout title="Política de Privacidade e Uso de Dados" description="Saiba como o site do corretor Samir Trindade trata seus dados pessoais, o uso do Google Analytics, o contato por WhatsApp e seus direitos garantidos pela LGPD." pageType="page" crumbs={[{"name":"Início","url":"/"},{"name":"Privacidade","url":"/privacidade/"}]} noindex={true}>
   <section class="bg-secondary py-24 md:py-32">
     <div class="container mx-auto px-6 md:px-12">
       <div class="mx-auto max-w-3xl">
-        <span class="mb-4 inline-block text-sm font-bold uppercase tracking-widest text-primary">Legal</span>
-        <h1 class="text-4xl font-extrabold leading-tight tracking-tighter text-white md:text-5xl mb-10">
+        <span class="mb-4 inline-block text-sm font-bold uppercase tracking-widest text-gold">Legal</span>
+        <h1 class="mb-10 text-4xl font-extrabold leading-tight tracking-tighter text-white md:text-5xl" style="text-wrap: balance">
           Política de Privacidade
         </h1>
       </div>
@@ -54,19 +52,35 @@ import { SITE_CONFIG } from '../data/config';
           necessário para cotação junto às operadoras de saúde, sempre com seu consentimento.
         </p>
 
-        <h2 class="text-xl font-bold text-gray-900 pt-4">5. Cookies</h2>
+        <h2 class="text-xl font-bold text-gray-900 pt-4">5. Contato pelo WhatsApp</h2>
         <p>
-          Este site pode utilizar cookies para melhorar a experiência de navegação. Você pode
-          desativar os cookies nas configurações do seu navegador.
+          Ao clicar nos botões de WhatsApp, você é levado ao aplicativo ou ao WhatsApp Web, com uma
+          mensagem inicial já preenchida. A conversa passa a ser regida também pela política de
+          privacidade do WhatsApp. Usamos o seu número apenas para responder ao seu pedido.
         </p>
 
-        <h2 class="text-xl font-bold text-gray-900 pt-4">6. Contato</h2>
+        <h2 class="text-xl font-bold text-gray-900 pt-4">6. Cookies e Google Analytics</h2>
+        <p>
+          Este site pode utilizar o Google Analytics para medir de forma agregada o número de
+          visitas e o uso dos botões de WhatsApp, telefone e formulário. O Google Analytics usa
+          cookies de medição para isso. Não usamos esses dados para identificar você
+          individualmente. Você pode desativar os cookies nas configurações do seu navegador ou
+          instalar o complemento de desativação do Google Analytics.
+        </p>
+
+        <h2 class="text-xl font-bold text-gray-900 pt-4">7. Seus direitos (LGPD)</h2>
+        <p>
+          Você pode pedir acesso, correção ou exclusão dos seus dados pessoais, conforme a Lei Geral
+          de Proteção de Dados (Lei 13.709/2018), escrevendo para o e-mail abaixo.
+        </p>
+
+        <h2 class="text-xl font-bold text-gray-900 pt-4">8. Contato</h2>
         <p>
           Em caso de dúvidas sobre esta política, entre em contato pelo e-mail {SITE_CONFIG.email}.
         </p>
 
-        <p class="pt-6 text-sm text-gray-400">
-          Última atualização: maio de 2024.
+        <p class="pt-6 text-sm text-gray-600">
+          Última atualização: 3 de novembro de 2026.
         </p>
       </div>
     </div>
