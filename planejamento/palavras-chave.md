@@ -21,8 +21,9 @@ Cidade-alvo: Rio de Janeiro (capital + Baixada). Nicho: corretor de plano de sa�
 | plano de saude individual rj | 140 (individual rio de janeiro: 40; preços: 170-210) | página de serviço + artigos de corretoras | **serviço** `plano-de-saude-individual-e-familiar` (já existe) | PAA: melhor individual, mais barato, preços |
 | plano de saude rj mais barato | 110 (planos de saúde rj baratos: 110) | artigo/comparativo + sites de corretoras com tabela | **artigo** `plano-de-saude-barato-rj` (já existe) | Sem R$ no texto (regra do Jefferson). Top: Tabela Saúde, GNDI, Qualicorp |
 | plano de saude sem carencia rj | 170-210 | página de serviço/artigo informativo | **artigo** `carencia-para-plano-de-saude...` (já existe) | PAA: existe plano sem carência, como fazer. Pontos: portabilidade, CNPJ/MEI, 24h urgência |
-| plano de saude para idoso rj | 70 | serviço (MedSênior, Prevent, Leve) + corretoras | **serviço** `plano-de-saude-para-idosos` (já existe) | Subpáginas MedSênior e Leve Saúde já existem |
-| plano de saude mei rio de janeiro | **não coletado** | serviço de corretoras (Assim, Amil, Bradesco MEI) | **serviço** `plano-de-saude-mei` + artigo `plano-saude-mei-rj` | Volume pendente no Semrush (limite diário). Regras: CNPJ 6 meses, mínimo de vidas varia por operadora |
+| plano de saude para idosos / plano de saude idoso | 1.900 / 1.600 (para idoso: 480; acima de 60: 480; acima de 70: 320; acima de 80: 390) | serviço (MedSênior, Prevent, Leve) + corretoras + guia Bricer | **serviço** `plano-de-saude-para-idosos` (já existe) | KD 6-15%, muito fácil. Busca nacional, SERP local. Subpáginas MedSênior e Leve Saúde já existem. Outline em `outlines/` |
+| plano de saude para mei / com mei / planos de saude para mei | 2.900 / 2.900 / 2.400 (plano de saúde mei: 880) | páginas MEI por operadora + guia comparativo | **serviço** `plano-de-saude-mei` + artigo `plano-saude-mei-rj` | KD 19-25%. "mei rj" só 30: busca nacional, SERP local. Regras: CNPJ 6 meses, mínimo de vidas varia por operadora. Outline em `outlines/` |
+| corretor plano de saude / plano de saúde corretor / corretor de plano de saúde | 880 / 590 / 390 | home de corretora | **home** (bloco "quem é o Samir") + `/sobre/` | KD 27-43%. Sem volume com "rio de janeiro" no Semrush. Outline em `outlines/` |
 | tabela de preços plano de saude rj | 30-50 | tabelas de corretoras | artigo `plano-de-saude-tabela-de-precos` (já existe) | Sem valores em R$ |
 | cotação plano de saude rj | 90-110 | formulário/cotador | **contato** | CTA, não página nova |
 | assim plano de saude / tabela assim | 110-210 | corretoras com página da operadora | **serviço** `assim-saude` | Muito volume de marca, concorrência de sites de operadora |
@@ -44,7 +45,13 @@ Cidade-alvo: Rio de Janeiro (capital + Baixada). Nicho: corretor de plano de sa�
 ## Concorrentes que mais aparecem (SERP 16/11/2026)
 Qualicorp (escolha.qualicorp.com.br), assim.com.br, rjplanodesaude.com.br, planosauderiodejaneiro.com.br, planodesaudesulamericarj.com.br, winnerscorretora.com.br, virtuacorretora.com.br, garantiaseg.com.br, planosdesaudeamilrj.com.br, assimplanodesaude.com.br, planosrj.com.br, bricer.com.br, tabelasaude.com.
 
+## SERPs adicionais (16/11/2026)
+- tabela de preços plano de saude rj: assimsauderj.com.br, tabelasaude.com, saudesulamericasa.com.br, riosaude.com, garantiaseg, virtuacorretora, planodesaudesulamericarj, bricer. Intenção: página com tabela. O cliente não quer valores em R$, então o post `plano-de-saude-tabela-de-precos` explica o que forma o preço, sem tabela. PAA: tabela de preços 2026; melhor plano hoje no RJ; tabela Leve 2026; tabela Assim 2026.
+- corretor de plano de saude rio de janeiro: planosauderj.com, instagram corretores_rj, virtuacorretora, levesaude, elianesilveirasaudeseguros, metacoresaude, facebook (grupo), affinitycorretora, medcorpsaude. Intenção: home de corretora.
+
+## Outlines (Etapa 4)
+Feitas em 16/11/2026 para os 9 grupos, em `planejamento/outlines/`: home, melhor plano, MEI, idosos, corretor, individual, mais barato, sem carência e tabela de preços. Mais de 30 páginas lidas.
+
 ## Pendências
-- Volume Semrush de MEI, idoso (maior), carência e "corretor de plano de saúde rio de janeiro" não coletados (limite de 30 consultas/dia do SEO Pack).
-- Etapa 4 (outlines H1/H2/H3 dos top 5) ainda não feita; fazer antes de reescrever qualquer página.
-- Refazer a checagem da SERP das palavras principais se passar mais de ~30 dias até publicar.
+- Headings que não foram extraídos: planobradescosauderj.com.br/bradesco-saude-mei, amilfacilrio.com.br/plano-individual (falha da ferramenta) e escolha.qualicorp.com.br/rj (renderiza por JS). Reler a mão só se for escrever a página correspondente.
+- Refazer a checagem da SERP das palavras principais se passar mais de ~30 dias até publicar (data base: 16/11/2026, refazer até 16/12/2026).

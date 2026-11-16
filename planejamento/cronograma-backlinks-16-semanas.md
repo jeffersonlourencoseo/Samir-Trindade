@@ -37,7 +37,7 @@ Destinos já existentes no site. Volumes do Semrush de 16/11/2026 (ver palavras-
 ## Acompanhamento
 | Sem. | Feito em | Sites parceiros usados | Observações |
 |---|---|---|---|
-| 1 | 16/11/2026 (criados, aguardando revisão/Publicar) | mariahelenamisturinhas.com.br (home), minharotina.com.br (melhor-plano) | Refeitos após apagar 2 pendentes de 16/11 (ceatox e alpacapress, âncoras "planos de saúde RJ" e "plano de saúde no Rio"). Só há 3 parceiros do nicho Saúde (minharotina, alpacapress, ceatox); os demais são de outros nichos. Rodízio: não repetir parceiro na mesma página |
+| 1 | 16/11/2026 (criados e publicados no mesmo dia) | mariahelenamisturinhas.com.br (home), minharotina.com.br (melhor-plano) | Refeitos após apagar 2 pendentes de 16/11 (ceatox e alpacapress, âncoras "planos de saúde RJ" e "plano de saúde no Rio"). Só há 3 parceiros do nicho Saúde (minharotina, alpacapress, ceatox); os demais são de outros nichos. Rodízio: não repetir parceiro na mesma página |
 | 2 |  |  |  |
 | 3 |  |  |  |
 | 4 |  |  |  |
