@@ -22,9 +22,27 @@ const valores = [
     desc: 'Comparar operadoras com o seu perfil e acompanhar o contrato depois da contratação.',
   },
 ];
+const faqSobre = [
+  {
+    question: 'O corretor cobra pela cotação ou pela contratação?',
+    answer: 'Não. A cotação e a contratação pelo corretor não têm custo extra para você.',
+  },
+  {
+    question: 'Como escolher um bom corretor de plano de saúde?',
+    answer: 'Confira se ele tem registro, se explica carência, rede e reajuste por escrito, se compara mais de uma operadora e se continua atendendo depois da contratação.',
+  },
+  {
+    question: 'Posso contratar o plano direto na operadora?',
+    answer: 'Em muitos casos sim. A vantagem do corretor é comparar várias operadoras de uma vez, explicar as regras e acompanhar você depois, sem custo extra.',
+  },
+  {
+    question: 'O corretor continua me atendendo depois da contratação?',
+    answer: 'Sim. Tiro dúvidas de uso, reembolso, autorização e reajuste, e comparo outras opções quando faz sentido para você.',
+  },
+];
 ---
 
-<Layout rawTitle="Sobre: Corretor de Planos de Saúde no Rio | Samir Trindade" description="Conheça Samir Trindade, corretor de planos de saúde credenciado ANS no Rio de Janeiro: história, valores e como funciona o acompanhamento depois da venda." pageType="about" crumbs={[{"name":"Início","url":"/"},{"name":"Sobre","url":"/sobre/"}]}>
+<Layout rawTitle="Sobre: Corretor de Planos de Saúde no Rio | Samir Trindade" description="Conheça Samir Trindade, corretor de planos de saúde credenciado ANS no Rio de Janeiro: história, valores e como funciona o acompanhamento depois da venda." pageType="about" faq={faqSobre} crumbs={[{"name":"Início","url":"/"},{"name":"Sobre","url":"/sobre/"}]}>
   <!-- HERO -->
   <section class="bg-secondary py-24 md:py-32">
     <div class="container mx-auto px-6 md:px-12">
@@ -226,6 +244,22 @@ const valores = [
           >
             Ligar agora
           </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ -->
+  <section class="py-24 md:py-32 bg-white">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="mx-auto max-w-3xl">
+        <h2 class="mb-10 text-3xl font-extrabold tracking-tighter text-gray-900 md:text-5xl">Perguntas frequentes sobre corretor de plano de saúde</h2>
+        <div class="space-y-4">
+          {faqSobre.map((item) => (
+            <details class="group rounded-xl border border-stone-200 bg-gray-50 p-6">
+              <summary class="cursor-pointer list-none text-lg font-semibold text-gray-900 marker:content-none">{item.question}</summary>
+              <p class="mt-3 leading-relaxed text-gray-600">{item.answer}</p>
+            </details>
+          ))}
         </div>
       </div>
     </div>
