@@ -1,11 +1,13 @@
 # Progresso do planejamento (16/11/2026)
 
-- [x] Etapa 0 Briefing: RJ, corretor de plano de saúde, cliente real, planodesaudenorio.com.br
-- [x] Etapa 1 Coleta (Semrush Keyword Overview + Keyword Magic, banco Brasil), incluindo MEI, idoso e corretor
-- [x] Etapa 2 Limpeza por SERP: 9 SERPs checadas (principal, melhor, individual, barato, sem carência, idoso, MEI, tabela, corretor)
-- [x] Etapa 3 Triagem (palavras-chave.md)
-- [x] Etapa 4 Outlines dos 9 grupos em `outlines/` (3 páginas sem extração, listadas em palavras-chave.md)
-- [x] Etapa 5 Mapa palavra → destino (palavras-chave.md)
+- [x] Etapas 0 a 5 do planejamento (briefing, coleta, SERP, triagem, outlines dos 9 grupos, mapa palavra-destino)
 - [x] Backlinks: 2 de 16/11 apagados; semana 1 criada e publicada (cronograma-backlinks-16-semanas.md)
+- [x] Aplicado no site em 16/11/2026 (commit 3c29e86 e seguinte):
+  - Home reescrita pela outline (H1, como escolher, tipos de contratação, rede, como funciona, quem é o Samir, FAQ com schema, onde atendo)
+  - Serviços idosos e individual: idade dos planos sênior, CPT, reajuste, checklist
+  - Posts: sem carência (resposta direta e FAQ), barato (operadoras regionais), tabela (10 faixas da ANS), melhor, MEI
+  - Removidas promessas sem prova (a cada 2 anos, percentuais de economia, valores em R$, turnover)
+  - Removido o post duplicado da tabela de preços (quebrava o build) com 301 para /blog/plano-de-saude-tabela-de-precos/
+- [x] Conferido no site publicado: 14 páginas com status 200, 1 H1, JSON-LD válido, FAQ com schema, redirect ok
 
-Próximo: reescrever as páginas seguindo as outlines (home, serviços MEI/idosos/individual, posts), uma por vez, sem preço/prazo/estatística.
+Pendências: dados do cliente (itens de config.ts e briefing), fotos reais, GA4 (ga4Id vazio), revisar checagem das SERPs até 16/12/2026.
