@@ -1,11 +1,12 @@
 ---
 title: "Quanto Custa um Plano de Saúde? O Que Pesa no Preço e Como Pedir Cotação"
-seoTitle: "Quanto Custa um Plano de Saúde? O Que Pesa no Preço"
+seoTitle: "Quanto Custa um Plano de Saúde? O Que Pesa"
 description: "Quanto custa um plano de saúde? O preço depende de idade, operadora, cobertura, rede e tipo de contrato. Entenda cada fator e como pedir uma cotação certeira."
 image: "../../assets/blog/quanto-custa-um-plano-de-saude-capa.webp"
 imageAlt: "Mãos sobre uma mesa branca com calculadora e documentos, simulando o cálculo do preço do plano de saúde"
 imageCredit: "RDNE Stock project / Pexels"
 publishDate: 2026-11-04T08:30:00Z
+updatedDate: 2026-11-16T12:00:00Z
 servicos: ["plano-empresarial-de-saude","plano-de-saude-individual-e-familiar"]
 tags: ["quanto custa", "preço", "cotação", "plano de saúde"]
 faq:

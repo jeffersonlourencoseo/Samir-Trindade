@@ -3,7 +3,7 @@ title: "Plano de Saúde Individual e Familiar no Rio de Janeiro"
 seoTitle: "Plano de Saúde Individual e Familiar no RJ"
 description: "Plano de saúde individual e familiar no Rio de Janeiro: diferença entre os dois, carência, reajuste e opções por CPF. Cotação gratuita com o corretor Samir."
 publishDate: 2026-11-04T12:00:00Z
-updatedDate: 2026-11-04T12:00:00Z
+updatedDate: 2026-11-16T12:00:00Z
 operadora: "Várias operadoras"
 modalidade: "Individual, Familiar"
 etiqueta: "Para pessoa física e famílias"
@@ -66,6 +66,21 @@ Escolha pelo seu uso real. Quem vai ao médico com frequência deve simular com 
 **Resposta direta:** pesam a idade, a operadora, o produto, a rede, a coparticipação, a acomodação, a abrangência e o número de dependentes. Como cada operadora tem a sua tabela, eu não divulgo valores no site. Você recebe a cotação atualizada pelo WhatsApp, sem custo extra.
 
 Compare sempre mensalidade, rede e regras de uso juntas. Leia também o post sobre [o que pesa na tabela de preços do plano de saúde](/blog/plano-de-saude-tabela-de-precos/) e o guia de [melhor plano de saúde no Rio](/blog/melhor-plano-de-saude/).
+
+## Reajuste do plano individual
+
+**Resposta direta:** o plano individual e familiar tem o reajuste anual limitado por um teto que a ANS define todo ano. Os planos coletivos, por adesão ou empresariais, seguem o contrato e a utilização do grupo. Além do reajuste anual, o valor sobe quando a pessoa muda de faixa etária.
+
+Peça sempre o histórico e a regra de reajuste do produto antes de assinar, e veja o guia de [tabela de preços de plano de saúde](/blog/plano-de-saude-tabela-de-precos/) para entender as faixas de idade.
+
+## Checklist antes de contratar
+
+- Quem vai usar o plano, com a idade de cada pessoa.
+- Hospitais, laboratórios e médicos que você quer manter na rede.
+- Com ou sem coparticipação, e enfermaria ou apartamento.
+- Carência de cada tipo de atendimento, por escrito.
+- Regra de reajuste anual e por faixa etária.
+- Se o contrato é individual, por adesão a uma entidade ou empresarial.
 
 ## Operadoras que eu consulto
 

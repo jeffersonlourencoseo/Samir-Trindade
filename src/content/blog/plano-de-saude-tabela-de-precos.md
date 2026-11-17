@@ -7,6 +7,7 @@ imageCredit: "Kaboompics / Pexels"
 servicos: ["valor-plano-de-saude-bradesco","unimed-rj"]
 description: "Como funciona a tabela de preços do plano de saúde em 2026: faixas etárias, tipos de plano, reajuste da ANS e por que o valor é consultado pelo WhatsApp."
 publishDate: 2026-10-22T21:00:00.000Z
+updatedDate: 2026-11-16T12:00:00Z
 tags: ["preços", "plano de saúde", "dicas", "rio de janeiro"]
 faq:
   - question: "O que é a tabela de preços do plano de saúde?"
@@ -26,6 +27,10 @@ faq:
 Plano de saúde é um serviço que oferece cobertura médica e hospitalar (e, em alguns casos, odontológica) mediante pagamento mensal, garantindo acesso a consultas, exames e tratamentos. A **tabela de preços do plano de saúde** é a lista com os valores cobrados pelas operadoras para cada tipo de plano, considerando faixa etária, cobertura, acomodação e região de atendimento.
 
 Os preços variam conforme a idade do beneficiário, a abrangência geográfica, o tipo de cobertura e a modalidade de contratação. Além disso, os valores mudam com os reajustes anuais e com a mudança de faixa etária, que seguem regras da Agência Nacional de Saúde Suplementar (ANS).
+
+## As 10 faixas etárias da ANS e por que o valor sobe
+
+Os planos de saúde usam 10 faixas de idade: de 0 a 18 anos, 19 a 23, 24 a 28, 29 a 33, 34 a 38, 39 a 43, 44 a 48, 49 a 53, 54 a 58 e 59 anos ou mais. O valor muda quando o beneficiário passa de uma faixa para outra. Pela regra da ANS, o valor da última faixa não pode ser mais de seis vezes o da primeira. É por isso que a mesma operadora cobra valores diferentes para cada idade, e que a tabela só faz sentido quando você informa quem vai usar o plano.
 
 ## Tipos de planos de saúde e suas tabelas de preços
 

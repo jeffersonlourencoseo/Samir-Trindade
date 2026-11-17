@@ -37,6 +37,8 @@ const redirecionamentos = {
   '/blog/plano-de-saude-unimed-preco': '/blog/valor-de-um-plano-de-saude-unimed/',
   '/blog/preco-plano-de-saude-unimed': '/blog/valor-de-um-plano-de-saude-unimed/',
   '/blog/unimed-plano-de-saude-valor': '/blog/valor-de-um-plano-de-saude-unimed/',
+  // Post duplicado do guia de tabela de preços (mesma palavra, quebrava o build)
+  '/blog/plano-de-saude-tabela-de-precos-2026-guia-completo-para-escolher-o-melhor': '/blog/plano-de-saude-tabela-de-precos/',
   // Post removido (Santa Casa não está no portfólio de operadoras)
   '/blog/plano-de-saude-santa-casa': '/blog/',
 };

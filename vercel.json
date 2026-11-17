@@ -31,6 +31,16 @@
       "statusCode": 301
     },
     {
+      "source": "/blog/plano-de-saude-tabela-de-precos-2026-guia-completo-para-escolher-o-melhor",
+      "destination": "/blog/plano-de-saude-tabela-de-precos/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/plano-de-saude-tabela-de-precos-2026-guia-completo-para-escolher-o-melhor/",
+      "destination": "/blog/plano-de-saude-tabela-de-precos/",
+      "statusCode": 301
+    },
+    {
       "source": "/blog/plano-de-saude-santa-casa",
       "destination": "/blog/",
       "statusCode": 301

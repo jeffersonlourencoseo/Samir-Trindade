@@ -53,4 +53,4 @@ export const SITE_CONFIG = {
 export const whatsappUrl = whatsappLink;
 
 // Data de atualização do conteúdo institucional (usada no sitemap e no schema)
-export const SITE_UPDATED = '2026-11-03';
+export const SITE_UPDATED = '2026-11-16';

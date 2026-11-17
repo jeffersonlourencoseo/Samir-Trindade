@@ -16,30 +16,82 @@ const blogPosts = (await getCollection('blog'))
 
 const diferenciais = [
   {
-    icon: '🛡️',
-    title: 'Pós-venda de verdade',
-    desc: 'Acompanho seus reajustes anuais, troco operadoras a cada 2 anos para reduzir custos e resolvo problemas de cobertura.',
+    icon: '🔍',
+    title: 'Comparo operadoras',
+    desc: 'Mostro propostas lado a lado, com rede, carência e regra de reajuste, para você escolher com informação.',
   },
   {
     icon: '🏥',
-    title: '+10 operadoras credenciadas',
-    desc: 'Amil, Bradesco, SulAmérica, Unimed, Hapvida, NotreDame, Porto Seguro e mais. A escolha certa para cada perfil.',
+    title: 'Operadoras do Rio',
+    desc: 'Amil, Bradesco, SulAmérica, Unimed, Hapvida, NotreDame, Porto Seguro, Assim, Leve, MedSênior e Prevent Senior.',
   },
   {
     icon: '🏢',
-    title: 'Empresas, MEI e famílias',
-    desc: 'Atendo de 2 a 3000 vidas. Planos empresariais, MEI, individual, familiar e terceira idade em todo o RJ.',
+    title: 'Individual, MEI e empresas',
+    desc: 'Planos individuais, familiares, para MEI, empresariais e para a terceira idade, na capital e na Baixada.',
   },
   {
     icon: '📍',
-    title: 'Presencial + Online',
-    desc: 'Escritório no Centro do Rio (Av. Rio Branco, 108) e atendimento por WhatsApp/video para todo o estado.',
+    title: 'Presencial e online',
+    desc: 'Escritório no Centro do Rio (Av. Rio Branco, 108) e atendimento por WhatsApp para todo o estado.',
+  },
+];
+
+const criterios = [
+  { t: 'Idade de cada pessoa', d: 'O valor muda por faixa etária, e a tabela só faz sentido com as idades de quem vai usar.' },
+  { t: 'Modalidade', d: 'Individual, familiar, por adesão, MEI ou empresarial: cada uma tem regra de contratação e de reajuste.' },
+  { t: 'Hospitais e médicos', d: 'Liste onde você quer ser atendido. Rede longe de casa vira gasto particular.' },
+  { t: 'Acomodação', d: 'Enfermaria ou apartamento muda o preço e o conforto na internação.' },
+  { t: 'Coparticipação', d: 'Mensalidade menor com pagamento por uso, ou mensalidade maior e previsível.' },
+  { t: 'Abrangência', d: 'Município, região do Rio ou nacional. Quem não viaja pode escolher abrangência menor.' },
+  { t: 'Carência', d: 'Peça por escrito o prazo de cada tipo de atendimento antes de assinar.' },
+  { t: 'Orçamento', d: 'Compare o conjunto, não só a menor mensalidade: rede, carência e reajuste entram na conta.' },
+];
+
+const modalidades = [
+  { t: 'Individual e familiar', d: 'Contrato por CPF, para uma pessoa ou para a família.', href: '/servicos/plano-de-saude-individual-e-familiar/' },
+  { t: 'Plano para MEI', d: 'Contrato pelo CNPJ do microempreendedor, com as regras de cada operadora.', href: '/servicos/plano-de-saude-mei/' },
+  { t: 'Plano empresarial', d: 'Para empresas, com contrato coletivo e condições próprias.', href: '/servicos/plano-empresarial-de-saude/' },
+  { t: 'Plano para idosos', d: 'Operadoras com foco no público sênior e de rede ampla.', href: '/servicos/plano-de-saude-para-idosos/' },
+];
+
+const passos = [
+  { t: 'Conversa pelo WhatsApp', d: 'Você informa quem vai usar o plano, as idades, o bairro e os hospitais de preferência.' },
+  { t: 'Propostas comparadas', d: 'Envio propostas de mais de uma operadora, com rede, carência e regras explicadas.' },
+  { t: 'Contratação', d: 'Ajudo com documentos e com a assinatura, sem custo extra para você.' },
+  { t: 'Acompanhamento', d: 'Depois da contratação, tiro dúvidas de uso, reembolso e reajuste.' },
+];
+
+const faqHome = [
+  {
+    question: 'Qual é o plano de saúde bom e barato no RJ?',
+    answer: 'Depende do seu uso. Operadoras regionais costumam ter menor preço de entrada, mas o que vale é comparar rede, coparticipação, carência e regra de reajuste, não só a mensalidade. Eu faço a cotação com o seu perfil em mais de uma operadora.',
+  },
+  {
+    question: 'Qual o melhor plano de saúde do Rio de Janeiro?',
+    answer: 'Não existe um melhor plano para todos. O melhor é o que tem a rede perto de você, a carência e o reajuste que fazem sentido e um preço que cabe no orçamento. Veja o guia para escolher o melhor plano de saúde no Rio e peça uma cotação comparada.',
+  },
+  {
+    question: 'Quais planos de saúde estão disponíveis no Rio de Janeiro?',
+    answer: 'Trabalho com Amil, Bradesco Saúde, SulAmérica, Unimed, Porto Seguro Saúde, NotreDame Intermédica, Hapvida, Assim Saúde, Leve Saúde, MedSênior e Prevent Senior. A disponibilidade muda por produto, idade e região, e eu confirmo na cotação.',
+  },
+  {
+    question: 'O corretor cobra pela cotação?',
+    answer: 'Não. A cotação e a contratação pelo corretor não têm custo extra para você.',
+  },
+  {
+    question: 'Posso contratar direto na operadora?',
+    answer: 'Em muitos casos sim. A vantagem do corretor é comparar várias operadoras de uma vez, explicar as regras e acompanhar você depois da contratação, sem custo extra.',
+  },
+  {
+    question: 'Você atende fora da capital?',
+    answer: 'Atendo no município do Rio de Janeiro e na Baixada, como Duque de Caxias, Nova Iguaçu, São João de Meriti, Belford Roxo, Nilópolis e Mesquita. Por WhatsApp, o atendimento alcança todo o estado.',
   },
 ];
 
 ---
 
-<Layout rawTitle="Corretor de Plano de Saúde Rio de Janeiro | Samir Trindade" description="Corretor de plano de saúde credenciado ANS no Rio de Janeiro. Planos empresariais, MEI e familiares com mais de 10 operadoras. Cotação gratuita pelo WhatsApp." pageType="home">
+<Layout rawTitle="Plano de Saúde no Rio de Janeiro | Samir Trindade" description="Plano de saúde no Rio de Janeiro: compare operadoras, entenda carência e rede e peça cotação grátis com o corretor Samir Trindade, credenciado ANS." pageType="home" faq={faqHome}>
 
   <!-- HERO -->
   <section class="relative overflow-hidden bg-secondary py-28 md:py-40">
@@ -62,12 +114,12 @@ const diferenciais = [
         </span>
 
         <h1 class="font-display text-4xl font-semibold leading-[1.1] tracking-tight text-white md:text-6xl lg:text-7xl">
-          Planos de Saúde para Empresas, MEI e Famílias no Rio de Janeiro
+          Plano de saúde no Rio de Janeiro: compare operadoras e peça cotação com um corretor
         </h1>
 
         <p class="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-stone-300 md:text-xl">
-          Mais de 10 operadoras. Atendimento presencial no Centro do Rio e online para todo o estado.
-          Especialista em reduzir sua mensalidade a cada 2 anos sem perder qualidade.
+          Comparo as operadoras que atendem o Rio de Janeiro e a Baixada e explico rede, carência e reajuste antes de você contratar.
+          Atendimento no Centro do Rio e por WhatsApp, com cotação gratuita.
         </p>
 
         <div class="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -99,10 +151,10 @@ const diferenciais = [
     <div class="container mx-auto px-6 md:px-12">
       <div class="mb-16 text-center">
         <h2 class="font-display text-3xl font-semibold tracking-tight text-charcoal md:text-5xl">
-          Por que contratar comigo?
+          Por que fazer a cotação comigo
         </h2>
         <p class="mx-auto mt-4 max-w-xl text-stone-600">
-          Não vendo plano. Entrego solução de saúde com acompanhamento contínuo.
+          Corretor credenciado na ANS, com atendimento direto, sem call center.
         </p>
       </div>
 
@@ -118,6 +170,28 @@ const diferenciais = [
     </div>
   </section>
 
+  <!-- COMO ESCOLHER -->
+  <section class="py-24 md:py-32 bg-white">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="mb-16 text-center">
+        <h2 class="font-display text-3xl font-semibold tracking-tight text-charcoal md:text-5xl">
+          Como escolher o plano de saúde certo no Rio
+        </h2>
+        <p class="mx-auto mt-4 max-w-2xl text-stone-600">
+          Oito pontos decidem se o plano serve para você. Eu levo todos para a cotação e comparo as operadoras pelos mesmos critérios. Se quiser aprofundar, leia o guia do <a href="/blog/melhor-plano-de-saude/" class="text-secondary underline">melhor plano de saúde no Rio</a>.
+        </p>
+      </div>
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        {criterios.map((c) => (
+          <div class="rounded-xl border border-stone-200 bg-cream p-8">
+            <h3 class="font-display mb-3 text-lg font-semibold text-charcoal">{c.t}</h3>
+            <p class="text-sm leading-relaxed text-stone-600">{c.d}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
   <!-- SOBRE RESUMO -->
   <section class="py-24 md:py-32 bg-sage">
     <div class="container mx-auto px-6 md:px-12">
@@ -125,17 +199,16 @@ const diferenciais = [
         <div class="space-y-6">
           <span class="text-sm font-semibold uppercase tracking-[0.2em] text-accent">Sobre</span>
           <h2 class="font-display text-3xl font-semibold tracking-tight text-charcoal md:text-5xl">
-            Corretor de plano de saúde que não some depois da venda
+            Quem é o Samir Trindade, corretor de plano de saúde no Rio
           </h2>
           <p class="text-lg leading-relaxed text-stone-600">
-            Sou Samir Trindade, corretor credenciado ANS há anos no mercado de saúde suplementar no Rio de Janeiro.
-            Atendo empresas de 2 a 3000 vidas, MEI e famílias. Meu diferencial é simples:
-            <strong class="text-charcoal">a qualidade do pós-venda.</strong>
+            Sou Samir Trindade, corretor de plano de saúde credenciado na ANS, no Rio de Janeiro.
+            Atendo famílias, MEI e empresas. Meu foco é simples:
+            <strong class="text-charcoal">explicar cada ponto do plano antes de você assinar e continuar por perto depois.</strong>
           </p>
           <p class="text-lg leading-relaxed text-stone-600">
-            Toda empresa precisa revisar seu plano a cada 2 anos. Eu faço essa revisão de forma proativa,
-            negocio reajustes abusivos e, quando necessário, migro para outra operadora sem carência —
-            sempre reduzindo a parcela e mantendo a qualidade.
+            Como corretor, eu comparo operadoras, tiro dúvidas sobre carência, rede e reajuste e acompanho o contrato
+            depois da contratação. A cotação é gratuita e não tem custo extra para você.
           </p>
           <a
             href="/sobre/"
@@ -187,10 +260,10 @@ const diferenciais = [
       <div class="mb-16 text-center">
         <span class="text-sm font-semibold uppercase tracking-[0.2em] text-accent">Operadoras</span>
         <h2 class="font-display mt-3 text-3xl font-semibold tracking-tight text-charcoal md:text-5xl">
-          As melhores operadoras do Rio de Janeiro
+          Operadoras que eu atendo no Rio de Janeiro
         </h2>
         <p class="mx-auto mt-4 max-w-xl text-stone-600">
-          Trabalho com as principais operadoras de saúde do país para encontrar o plano ideal para o seu perfil.
+          Veja a página de cada operadora com rede, carência e regras. Eu comparo as que atendem o seu perfil.
         </p>
       </div>
 
@@ -231,6 +304,66 @@ const diferenciais = [
     </div>
   </section>
 
+  <!-- TIPOS DE CONTRATAÇÃO -->
+  <section class="py-24 md:py-32 bg-sage">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="mb-16 text-center">
+        <h2 class="font-display text-3xl font-semibold tracking-tight text-charcoal md:text-5xl">
+          Tipos de contratação
+        </h2>
+        <p class="mx-auto mt-4 max-w-2xl text-stone-600">
+          O tipo de contrato muda regra, reajuste e carência. Escolha a página que combina com o seu caso.
+        </p>
+      </div>
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        {modalidades.map((m) => (
+          <a href={m.href} class="group flex flex-col rounded-xl border border-stone-200 bg-white p-8 transition-all duration-300 hover:border-accent/20 hover:shadow-elegant">
+            <h3 class="font-display mb-3 text-lg font-semibold text-charcoal group-hover:text-secondary transition-colors">{m.t}</h3>
+            <p class="mb-6 text-sm leading-relaxed text-stone-600">{m.d}</p>
+            <span class="mt-auto text-sm font-semibold text-secondary">Ver detalhes →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- REDE E HOSPITAIS -->
+  <section class="py-24 md:py-32 bg-white">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="mx-auto max-w-3xl">
+        <h2 class="font-display text-3xl font-semibold tracking-tight text-charcoal md:text-5xl">
+          Rede credenciada e hospitais por região
+        </h2>
+        <p class="mt-6 text-lg leading-relaxed text-stone-600">
+          A rede muda de uma operadora para outra e de um produto para outro. No Rio, vale olhar a região em que você vive e trabalha: Zona Sul, Zona Norte, Zona Oeste, Barra da Tijuca, Centro e Baixada.
+        </p>
+        <p class="mt-4 text-lg leading-relaxed text-stone-600">
+          Antes de fechar, eu confiro na proposta se os hospitais, laboratórios e médicos que você quer manter estão na rede do produto escolhido, porque listas antigas enganam. Para casos específicos, como idosos ou empresas, veja as páginas de <a href="/servicos/plano-de-saude-para-idosos/" class="text-secondary underline">plano para idosos</a> e de <a href="/servicos/plano-empresarial-de-saude/" class="text-secondary underline">plano empresarial</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="py-24 md:py-32 bg-cream">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="mb-16 text-center">
+        <h2 class="font-display text-3xl font-semibold tracking-tight text-charcoal md:text-5xl">
+          Como funciona a contratação comigo
+        </h2>
+      </div>
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        {passos.map((p, i) => (
+          <div class="rounded-xl border border-stone-200 bg-white p-8">
+            <p class="font-display mb-3 text-3xl font-semibold text-accent" aria-hidden="true">{i + 1}</p>
+            <h3 class="font-display mb-3 text-lg font-semibold text-charcoal">{p.t}</h3>
+            <p class="text-sm leading-relaxed text-stone-600">{p.d}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
   <!-- AVALIAÇÕES REAIS DO GOOGLE (sem schema Review) -->
   {AVALIACOES_GOOGLE.itens.length > 0 && (
     <section class="py-24 md:py-32 bg-white">
@@ -258,6 +391,33 @@ const diferenciais = [
       </div>
     </section>
   )}
+
+  <!-- FAQ -->
+  <section class="py-24 md:py-32 bg-white">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="mx-auto max-w-3xl">
+        <h2 class="font-display mb-10 text-3xl font-semibold tracking-tight text-charcoal md:text-5xl">
+          Perguntas frequentes
+        </h2>
+        <div class="space-y-4">
+          {faqHome.map((item) => (
+            <details class="group rounded-xl border border-stone-200 bg-cream p-6">
+              <summary class="cursor-pointer list-none font-display text-lg font-semibold text-charcoal marker:content-none">
+                {item.question}
+              </summary>
+              <p class="mt-3 leading-relaxed text-stone-600">{item.answer}</p>
+            </details>
+          ))}
+        </div>
+        <div class="mt-12 rounded-xl border border-stone-200 bg-sage p-8">
+          <h2 class="font-display mb-3 text-2xl font-semibold text-charcoal">Onde eu atendo</h2>
+          <p class="leading-relaxed text-stone-600">
+            No município do Rio de Janeiro, com escritório no Centro, e na Baixada: Duque de Caxias, Nova Iguaçu, São João de Meriti, Belford Roxo, Nilópolis e Mesquita. Por WhatsApp, o atendimento alcança todo o estado.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- BLOG -->
   <section class="py-24 md:py-32 bg-sage">

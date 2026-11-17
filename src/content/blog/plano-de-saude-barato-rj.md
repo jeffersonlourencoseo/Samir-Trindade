@@ -6,6 +6,7 @@ image: "../../assets/blog/plano-de-saude-barato-rj-capa.webp"
 imageAlt: "Duas pessoas analisando um contrato de plano de saúde em uma mesa com documentos e dispositivos"
 imageCredit: "Mikhail Nilov / Pexels"
 publishDate: 2026-11-04T08:00:00Z
+updatedDate: 2026-11-16T12:00:00Z
 servicos: ["plano-de-saude-individual-e-familiar","plano-de-saude-mei"]
 tags: ["plano de saúde barato", "economizar", "rio de janeiro", "coparticipação"]
 faq:
@@ -17,6 +18,10 @@ faq:
     answer: "Sim, se o CNPJ estiver ativo e a operadora aceitar. Os planos empresariais costumam ter condições diferentes dos individuais."
   - question: "O corretor cobra para fazer a cotação?"
     answer: "Não. A cotação e a contratação são sem custo extra para você."
+  - question: "Qual o plano de saúde mais barato atualmente no Rio?"
+    answer: "Muda de mês para mês e depende da idade, do produto e da rede. Operadoras regionais costumam ter menor preço de entrada, mas o que vale é comparar o conjunto. Eu faço a cotação com o seu perfil em mais de uma operadora."
+  - question: "Onde ver a tabela de preços do plano de saúde em 2026?"
+    answer: "Os valores variam por operadora e faixa etária e mudam ao longo do ano, por isso eu não divulgo números no site. Peça a tabela atualizada pelo WhatsApp, informando as idades de quem vai usar o plano."
   - question: "Como saber quanto vai custar no meu caso?"
     answer: "O valor depende de idade, cidade, operadora, tipo de contrato e cobertura. O jeito mais seguro é pedir uma cotação com o seu perfil."
 ---
@@ -37,6 +42,10 @@ Os valores mudam por operadora, idade, tipo de contrato e momento, por isso este
 
 **Tipo de contrato.** Individual/familiar, empresarial (para CNPJ) e coletivo por adesão têm regras de preço e reajuste diferentes. Em muitos casos, quem tem CNPJ ativo, incluindo MEI, encontra condições que não existem para pessoa física. Veja a página de [plano empresarial](/servicos/plano-empresarial-de-saude/), a de [plano de saúde para MEI](/servicos/plano-de-saude-mei/) e a de [plano individual e familiar](/servicos/plano-de-saude-individual-e-familiar/).
 
+## Operadoras regionais costumam ter menor preço de entrada
+
+Operadoras com rede própria e foco no Rio e na Grande Rio, como Assim Saúde e Leve Saúde, e as do grupo Hapvida/NotreDame costumam aparecer entre as de menor preço de entrada. A razão é a rede mais concentrada. A contrapartida é que o plano vale mais na região e a rede é menor que a das operadoras nacionais. Confirme a rede antes de decidir, e veja as páginas de [Assim Saúde](/servicos/assim-saude/), [Leve Saúde](/servicos/leve-saude/) e [Hapvida](/servicos/hapvida/).
+
 ## O que não vale a pena cortar
 
 - **Rede que você realmente usa.** Plano barato com médico e hospital distantes vira gasto particular.
@@ -46,6 +55,10 @@ Os valores mudam por operadora, idade, tipo de contrato e momento, por isso este
 ## Cuidado com o preço de entrada
 
 Mensalidade baixa no primeiro ano não diz tudo. Pergunte como funciona o reajuste anual e o reajuste por faixa etária, e se há regras de permanência. Plano barato hoje que dobra de preço em pouco tempo não é barato.
+
+## Como comparar sem cair em promoção
+
+Promoção na primeira mensalidade ou "carência zero" chama atenção, mas não substitui a comparação. Compare as propostas pelos mesmos critérios: cobertura, rede, abrangência, coparticipação, carência por escrito e regra de reajuste. Pergunte o que acontece depois da promoção.
 
 ## Passo a passo para pagar menos com segurança
 
