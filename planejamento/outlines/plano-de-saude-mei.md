@@ -7,7 +7,7 @@ Intenção do top 5: página de operadora MEI + comparativo/guia.
 1. planosdesaudemei.com.br/blog/melhores-planos-de-saude-mei-rj-2026/: H1 "Os 5 melhores planos para MEI no RJ"; H2 por operadora com mínimo de vidas (Assim 2 vidas, Hapvida 1 vida, Amil 2, Porto 3, SulAmérica 3); tabela comparativa.
 2. planosdesaudeamilrj.com.br/mei.html: H1 "Plano de Saúde Amil MEI"; características; benefícios; opcionais; tipos de plano; rede credenciada; quem pode aderir; dependentes aceitos; carências; como contratar; "Amil é bom?"; comparar.
 3. assimplanodesaude.com.br/mei.html: H1 "Plano de Saúde Assim MEI"; planos A5 a A80 (H3); rede; carência; como contratar; preços; cotação.
-4. planobradescosauderj.com.br/bradesco-saude-mei/ (headings não extraídos nesta rodada; só o snippet da SERP: mínimo 3 vidas, CNPJ com 6 meses).
+4. planobradescosauderj.com.br/bradesco-saude-mei/ H1 "Bradesco Saúde MEI no RJ"; H2 MEI pode contratar?; como funciona o preço para MEI; quem pode entrar no plano do MEI; aproveitamento de carência para empresário individual; documentos do MEI; perguntas frequentes (lido em 16/11/2026, tudo já coberto na página de MEI do site).
 5. bricer.com.br/plano-de-saude-mei-valores-rj-2026/: H1 "Plano de saúde MEI no RJ 2026: valores, quanto custa, regras e como escolher"; H2 MEI pode contratar?; erros sem orientação; tempo mínimo de CNPJ; regularidade do MEI (DAS em atraso); regras das operadoras; mínimo de vidas (H3 só para mim?); valores por faixa etária; custo além do preço; tipos (regionais, coparticipação, empresariais); impacto do RJ; carências, portabilidade, reajustes e erros.
 
 ## Padrão aprovado

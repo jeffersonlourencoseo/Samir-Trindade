@@ -7,7 +7,7 @@ Intenção do top 5: página de serviço (Amil individual) + guia de comparaçã
 1. planosdesaudeamilrj.com.br/individual.html: H1 "Plano de saúde Amil Individual"; cobertura; tipos de plano (por adesão); dental; rede credenciada; espaço saúde; diferenciais; preços; contratar; telefones; orçamento; comparar.
 2. assim.com.br/site/ (operadora), 3. escolha.qualicorp.com.br/rj/, 4. levesaude.com.br, 5. planodesaudesulamericarj.com.br: vistos na outline da home.
 6. clickplanos.com.br/blog/melhores-planos-de-saude-individuais-no-rj-como-escolher-e-comparar: H1 "Melhores planos de saúde individuais no RJ: como escolher e comparar"; H3 o que é plano individual; profissão/formação (adesão); qual o melhor individual no RJ; com ou sem coparticipação; ofertas; não escolher só pela promoção; rede credenciada no RJ (hospitais e laboratórios, capital x região metropolitana); enfermaria ou apartamento; checklist antes de contratar.
-Não extraído: amilfacilrio.com.br/plano-individual/ (falha de extração).
+amilfacilrio.com.br: erro de certificado, não lido. Lida no lugar institucional.amil.com.br/nossos-planos (catálogo por plano: hospitais, diferenciais, disponibilidade). Qualicorp (FAQ lido): vínculo com associação, quanto custa por idade, sem carência, idosos, MEI, hospitais e laboratórios.
 
 ## Padrão aprovado
 O que é (individual x adesão x empresarial: individual puro quase não existe) → como contratar (profissão/entidade) → rede → coparticipação → acomodação → checklist → FAQ.

@@ -3,7 +3,7 @@ title: "Plano de Saúde Individual e Familiar no Rio de Janeiro"
 seoTitle: "Plano de Saúde Individual e Familiar no RJ"
 description: "Plano de saúde individual e familiar no Rio de Janeiro: diferença entre os dois, carência, reajuste e opções por CPF. Cotação gratuita com o corretor Samir."
 publishDate: 2026-11-04T12:00:00Z
-updatedDate: 2026-11-16T12:00:00Z
+updatedDate: 2026-11-16T15:00:00Z
 operadora: "Várias operadoras"
 modalidade: "Individual, Familiar"
 etiqueta: "Para pessoa física e famílias"
@@ -19,6 +19,8 @@ faq:
     answer: "O reajuste anual do plano individual tem um teto definido pela ANS. Há também a mudança de faixa etária, que também é regulada. Planos coletivos funcionam de outro jeito, conforme o contrato. Eu explico a regra do produto que você está olhando."
   - question: "Quanto custa um plano de saúde individual?"
     answer: "O preço depende da idade, da operadora, da rede, da coparticipação, da acomodação e da abrangência. Como muda de caso para caso, não divulgo valores no site. Me chame no WhatsApp e eu envio a cotação atualizada de mais de uma operadora."
+  - question: "Preciso ter vínculo com uma entidade ou associação para contratar?"
+    answer: "Nos planos por adesão, sim: a operadora pede vínculo com uma entidade de classe, associação ou sindicato ligado à sua profissão, e eu verifico quais entidades servem no seu caso. Nos planos individuais diretos o vínculo não é exigido, mas nem todas as operadoras vendem esse tipo de contrato."
   - question: "Posso incluir meus pais no plano familiar?"
     answer: "Depende do produto. Algumas operadoras limitam os dependentes ao cônjuge e aos filhos, e outras aceitam uma lista maior, como a Leve Saúde em alguns produtos. Eu verifico quem pode entrar no seu caso antes da proposta."
 ---

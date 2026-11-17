@@ -10,4 +10,8 @@
   - Removido o post duplicado da tabela de preços (quebrava o build) com 301 para /blog/plano-de-saude-tabela-de-precos/
 - [x] Conferido no site publicado: 14 páginas com status 200, 1 H1, JSON-LD válido, FAQ com schema, redirect ok
 
-Pendências: dados do cliente (itens de config.ts e briefing), fotos reais, GA4 (ga4Id vazio), revisar checagem das SERPs até 16/12/2026.
+- [x] GA4 (propriedade "Plano de Saúde Samir Trindade", 562284594): tag G-KH3RB77HEF confere com o código e recebe dados. `clique_whatsapp` marcado como evento principal em 16/11/2026. Teste de `clique_telefone` enviado (204); marcar como evento principal quando aparecer na lista (até 24 h). `envio_formulario` só aparece com o primeiro envio real.
+- [x] Concorrentes relidos: Bradesco MEI e Qualicorp lidos; Amil Fácil com erro de certificado (trocada pela Amil oficial)
+- [x] FAQ do plano individual ganhou a pergunta sobre vínculo com entidade
+
+Acompanhamento: refazer as SERPs das palavras principais até 16/12/2026.

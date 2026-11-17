@@ -53,5 +53,5 @@ Qualicorp (escolha.qualicorp.com.br), assim.com.br, rjplanodesaude.com.br, plano
 Feitas em 16/11/2026 para os 9 grupos, em `planejamento/outlines/`: home, melhor plano, MEI, idosos, corretor, individual, mais barato, sem carência e tabela de preços. Mais de 30 páginas lidas.
 
 ## Pendências
-- Headings que não foram extraídos: planobradescosauderj.com.br/bradesco-saude-mei, amilfacilrio.com.br/plano-individual (falha da ferramenta) e escolha.qualicorp.com.br/rj (renderiza por JS). Reler a mão só se for escrever a página correspondente.
-- Refazer a checagem da SERP das palavras principais se passar mais de ~30 dias até publicar (data base: 16/11/2026, refazer até 16/12/2026).
+Nenhuma de pesquisa. Leitura final das páginas que tinham falhado (16/11/2026): Bradesco MEI e Qualicorp lidas; Amil Fácil (amilfacilrio.com.br) tem erro de certificado e foi trocada pela página oficial da Amil (institucional.amil.com.br/nossos-planos). Qualicorp responde na SERP "preciso ter vínculo com associação?", pergunta que passou para o FAQ do plano individual.
+Acompanhamento: refazer a checagem das SERPs das palavras principais até 16/12/2026 (as consultas atuais são de 16/11/2026).
