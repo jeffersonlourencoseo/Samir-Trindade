@@ -3,7 +3,7 @@ title: "Plano de Saúde Amil"
 seoTitle: "Plano de Saúde Amil no Rio de Janeiro"
 description: "Quer contratar plano de saúde Amil no Rio de Janeiro? Veja modalidades, para quem faz sentido e como o corretor Samir Trindade compara e cota sem custo extra."
 publishDate: 2025-05-01T08:00:00Z
-updatedDate: 2026-11-03T12:00:00Z
+updatedDate: 2026-11-18T12:00:00Z
 operadora: "Amil"
 modalidade: "Empresarial, Adesão"
 etiqueta: "Rede ampla e cobertura nacional"
@@ -17,6 +17,10 @@ faq:
     answer: "Existem as duas formas. Sem coparticipação a mensalidade é mais previsível, com coparticipação ela tende a ser menor e você paga uma parte a cada uso. Eu simulo os dois cenários para o seu perfil."
   - question: "Dá para trazer meu plano atual para a Amil com portabilidade?"
     answer: "Em muitos casos sim, seguindo as regras de portabilidade de carências da ANS, que exigem tempo mínimo no plano atual e compatibilidade de faixa de preço. Na conversa eu verifico se você se enquadra."
+  - question: "Quanto custa o plano de saúde Amil no Rio de Janeiro?"
+    answer: "O valor muda por idade, produto, rede, coparticipação e tipo de contrato, e os números mudam ao longo do ano. Por isso não divulgo valores no site. Me chame no WhatsApp com as idades e o bairro, e eu envio a cotação atualizada, comparada com outras operadoras."
+  - question: "Como contratar o plano de saúde Amil?"
+    answer: "Você me envia as idades, o bairro e os hospitais de preferência, eu faço a cotação comparada, e a contratação segue com os documentos pedidos pela operadora. A cotação e a contratação pelo corretor não têm custo extra."
 ---
 A Amil é uma operadora de grande porte, conhecida pela rede ampla e pelos planos de abrangência nacional. Faz sentido para quem quer uma rede grande no Rio de Janeiro e precisa de cobertura em outros estados, seja por viagens frequentes ou por equipe e filiais fora daqui. Eu comparo a Amil ao lado de outras operadoras para você comparar com calma.
 
@@ -37,6 +41,24 @@ A disponibilidade de cada modalidade muda com o tempo e com a região. Por isso 
 ## Para quem faz sentido
 
 A Amil tende a fazer sentido para empresas que querem rede grande e cobertura nacional, e para famílias que dão peso à variedade de hospitais e laboratórios. Se o seu foco é a menor mensalidade possível, vale comparar com operadoras de rede própria mais enxuta, como a [Hapvida](/servicos/hapvida/) e a [Assim Saúde](/servicos/assim-saude/).
+
+## Rede e hospitais no Rio: o que conferir
+
+A Amil trabalha com linhas regionais e nacionais, em níveis diferentes de rede e de acomodação. Confira na proposta os hospitais e laboratórios do Rio que fazem parte da linha escolhida e a abrangência do produto.
+
+Peça sempre a rede do produto por escrito. Para saber como validar um hospital específico, veja [como saber se o plano atende o hospital](/blog/como-saber-se-o-plano-atende-o-hospital/).
+
+## Carência e portabilidade
+
+**Resposta direta:** a carência do plano de saúde Amil depende do produto, do tipo de contrato e de você já ter plano anterior. Quem já tem plano pode, em alguns casos, usar a portabilidade de carências, ou o aproveitamento do plano anterior, para reduzir o prazo. Eu peço a regra por escrito antes da contratação.
+
+Veja o guia de [carência para plano de saúde](/blog/carencia-para-plano-de-saude-guia-completo-para-2026/) e [o que é plano congênere](/blog/o-que-e-plano-congenere/).
+
+## O que pesa no valor do plano de saúde Amil
+
+**Resposta direta:** o valor do plano de saúde Amil depende da idade de cada beneficiário, do produto, da rede, da coparticipação, da acomodação e do tipo de contrato. Como esses itens mudam de caso para caso, eu não divulgo valores no site. Você recebe a cotação atualizada pelo WhatsApp, sem custo extra.
+
+O reajuste anual segue o contrato nos planos coletivos e tem teto definido pela ANS nos individuais. Para entender como o preço muda por faixa de idade, veja o guia de [tabela de preços de plano de saúde](/blog/plano-de-saude-tabela-de-precos/).
 
 ## O que conferir antes de assinar
 

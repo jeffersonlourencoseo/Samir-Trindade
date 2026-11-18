@@ -7,7 +7,7 @@ updatedDate: 2026-11-16T12:00:00Z
 operadora: "Várias operadoras"
 modalidade: "Individual, Familiar, Coletivo por adesão"
 etiqueta: "Terceira idade e público sênior"
-posts: ["carencia-para-plano-de-saude-guia-completo-para-2026", "melhor-plano-de-saude", "plano-de-saude-tabela-de-precos"]
+posts: ["carencia-para-plano-de-saude-guia-completo-para-2026", "melhor-plano-de-saude", "plano-de-saude-tabela-de-precos", "como-saber-se-o-plano-atende-o-hospital", "plano-de-saude-por-adesao"]
 faq:
   - question: "Qual o melhor plano de saúde para idosos no RJ?"
     answer: "Não existe um plano único que seja o melhor para todos. O que costuma pesar é a rede perto de casa, a carência, a coparticipação e como o preço evolui com a idade. Eu comparo operadoras como Prevent Senior, MedSênior, Leve Saúde e as de rede ampla, usando os hospitais e médicos que você já frequenta."

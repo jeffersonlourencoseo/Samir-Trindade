@@ -7,7 +7,7 @@ updatedDate: 2026-11-16T15:00:00Z
 operadora: "Várias operadoras"
 modalidade: "Individual, Familiar"
 etiqueta: "Para pessoa física e famílias"
-posts: ["melhor-plano-de-saude", "carencia-para-plano-de-saude-guia-completo-para-2026", "plano-de-saude-tabela-de-precos"]
+posts: ["melhor-plano-de-saude", "carencia-para-plano-de-saude-guia-completo-para-2026", "plano-de-saude-tabela-de-precos", "plano-de-saude-por-adesao", "plano-de-saude-infantil-0-a-18-anos-rj", "como-saber-se-o-plano-atende-o-hospital"]
 faq:
   - question: "Qual a diferença entre plano individual e familiar?"
     answer: "O individual cobre uma pessoa, e o familiar reúne o titular e dependentes no mesmo contrato. Ambos são contratados por pessoa física, com CPF. A escolha depende de quantas pessoas vão usar e da disponibilidade do produto na operadora."

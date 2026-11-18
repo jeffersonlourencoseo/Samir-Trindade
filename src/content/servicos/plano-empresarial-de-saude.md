@@ -7,7 +7,7 @@ updatedDate: 2026-11-03T12:00:00Z
 operadora: "Várias operadoras"
 modalidade: "Empresarial (PME, MEI e empresas)"
 etiqueta: "PME, MEI e empresas"
-posts: ["como-escolher-plano-saude-empresa", "plano-saude-mei-rj", "pos-venda-plano-saude", "carencia-para-plano-de-saude-guia-completo-para-2026"]
+posts: ["como-escolher-plano-saude-empresa", "plano-saude-mei-rj", "pos-venda-plano-saude", "carencia-para-plano-de-saude-guia-completo-para-2026", "plano-de-saude-infantil-0-a-18-anos-rj", "o-que-e-plano-congenere"]
 faq:
   - question: "Quantas pessoas preciso ter para contratar um plano empresarial?"
     answer: "Depende da operadora e do produto. Muitas aceitam contratos a partir de 2 beneficiários, contando titular e dependentes. Eu confirmo o mínimo atual de cada operadora na hora da cotação, porque essa regra muda com o tempo."

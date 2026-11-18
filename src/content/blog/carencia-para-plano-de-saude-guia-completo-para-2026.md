@@ -59,6 +59,8 @@ Existem situações em que a carência é eliminada ou reduzida, facilitando o a
 
 Planos coletivos empresariais costumam ter carência reduzida ou até mesmo inexistente, pois são contratados por grupos de funcionários, o que diminui o risco para a operadora. Além disso, alguns planos oferecem cobertura imediata para casos específicos, como urgência e emergência, ou para procedimentos simples, garantindo atendimento rápido desde o início do contrato.
 
+Para entender a diferença entre a portabilidade de carências e o aproveitamento de plano congênere, veja [o que é plano congênere](/blog/o-que-e-plano-congenere/). Para contratos coletivos, veja também [plano de saúde por adesão](/blog/plano-de-saude-por-adesao/).
+
 ## Como funciona a carência para doenças preexistentes
 
 Doenças preexistentes são condições de saúde que o beneficiário já possui antes da contratação do plano. É obrigatório declarar essas doenças no momento da adesão para que a operadora possa aplicar regras específicas de carência. Caso a declaração não seja feita, o usuário pode perder o direito à cobertura para tratamentos relacionados.

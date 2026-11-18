@@ -7,7 +7,7 @@ updatedDate: 2026-11-04T12:00:00Z
 operadora: "Várias operadoras"
 modalidade: "Empresarial (MEI)"
 etiqueta: "Para microempreendedores com CNPJ"
-posts: ["plano-saude-mei-rj", "carencia-para-plano-de-saude-guia-completo-para-2026", "como-escolher-plano-saude-empresa"]
+posts: ["plano-saude-mei-rj", "carencia-para-plano-de-saude-guia-completo-para-2026", "como-escolher-plano-saude-empresa", "o-que-e-plano-congenere"]
 faq:
   - question: "O MEI pode contratar plano de saúde?"
     answer: "Pode, desde que o CNPJ esteja ativo e a operadora aceite microempreendedor no produto escolhido. Algumas pedem mais de um beneficiário no contrato. Eu confirmo as regras atuais de cada operadora do meu portfólio antes de montar a proposta."
