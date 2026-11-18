@@ -16,4 +16,5 @@
 
 Acompanhamento: refazer as SERPs das palavras principais até 16/12/2026.
 - [x] Semrush (18/11/2026): Organic Research de riosaude.com, virtuacorretora.com.br e do próprio site, Keyword Gap, cidades e bairros, volumes das operadoras. Detalhes em semrush-concorrentes-18-11-2026.md
-- [ ] Decidir quais páginas novas criar a partir do Semrush (ver seção "O que o dado sugere")
+- [x] Aplicado em 18/11/2026 (commit 5a71b80): 4 artigos novos (plano infantil 0 a 18 anos, o que é plano congênere, plano por adesão, como saber se o plano atende o hospital); 9 páginas de operadora ampliadas (rede, carência, valor, FAQ); post do Unimed com as palavras de preço; links internos. Páginas por hospital com lista de planos aceitos NÃO criadas: dependem de confirmação do que cada hospital aceita.
+- [ ] Acompanhamento: reler posições no Semrush em 2 a 4 semanas (post "melhor plano", Unimed, operadoras)
