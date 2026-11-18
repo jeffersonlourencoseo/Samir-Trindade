@@ -15,3 +15,5 @@
 - [x] FAQ do plano individual ganhou a pergunta sobre vínculo com entidade
 
 Acompanhamento: refazer as SERPs das palavras principais até 16/12/2026.
+- [x] Semrush (18/11/2026): Organic Research de riosaude.com, virtuacorretora.com.br e do próprio site, Keyword Gap, cidades e bairros, volumes das operadoras. Detalhes em semrush-concorrentes-18-11-2026.md
+- [ ] Decidir quais páginas novas criar a partir do Semrush (ver seção "O que o dado sugere")
