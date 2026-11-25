@@ -3,7 +3,7 @@ title: "Plano de Saúde Infantil no Rio de Janeiro: Como Funciona para Crianças
 seoTitle: "Plano de Saúde Infantil no RJ: 0 a 18 Anos"
 description: "Plano de saúde infantil no Rio de Janeiro: como incluir criança e recém-nascido, carência, rede de pediatras, coparticipação e o que muda na faixa de 0 a 18 anos."
 publishDate: 2026-11-18T12:00:00Z
-updatedDate: 2026-11-18T12:00:00Z
+updatedDate: 2026-11-25T12:00:00Z
 servicos: ["plano-de-saude-individual-e-familiar","plano-empresarial-de-saude"]
 tags: ["plano infantil", "criança", "carência", "família"]
 faq:
@@ -39,7 +39,7 @@ Essa é a primeira das 10 faixas de idade usadas pelos planos, e costuma ser a d
 
 **Resposta direta:** a Lei 9.656/98 prevê que o filho natural ou adotivo do titular pode ser inscrito sem cumprir carência, desde que a inscrição ocorra dentro de 30 dias do nascimento ou da adoção. Quem perde o prazo pode ter de cumprir as carências do contrato.
 
-Por isso, quem está esperando um bebê deve conferir antes do parto o que o contrato diz sobre inclusão do recém-nascido, e avisar a operadora logo depois do nascimento. Para as regras gerais, leia o guia de [carência para plano de saúde](/blog/carencia-para-plano-de-saude-guia-completo-para-2026/).
+Por isso, quem está esperando um bebê deve conferir antes do parto o que o contrato diz sobre inclusão do recém-nascido, e avisar a operadora logo depois do nascimento. Para as regras gerais, leia o guia de [carência para plano de saúde](/blog/carencia-para-plano-de-saude-guia-completo-para-2026/). Veja o que cobre o [plano ambulatorial + hospitalar com obstetrícia](/blog/plano-ambulatorial-hospitalar-com-obstetricia/).
 
 ## Rede: pediatras, pronto atendimento e hospital
 

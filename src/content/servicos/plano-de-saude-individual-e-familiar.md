@@ -3,11 +3,11 @@ title: "Plano de Saúde Individual e Familiar no Rio de Janeiro"
 seoTitle: "Plano de Saúde Individual e Familiar no RJ"
 description: "Plano de saúde individual e familiar no Rio de Janeiro: diferença entre os dois, carência, reajuste e opções por CPF. Cotação gratuita com o corretor Samir."
 publishDate: 2026-11-04T12:00:00Z
-updatedDate: 2026-11-16T15:00:00Z
+updatedDate: 2026-11-25T12:00:00Z
 operadora: "Várias operadoras"
 modalidade: "Individual, Familiar"
 etiqueta: "Para pessoa física e famílias"
-posts: ["melhor-plano-de-saude", "carencia-para-plano-de-saude-guia-completo-para-2026", "plano-de-saude-tabela-de-precos", "plano-de-saude-por-adesao", "plano-de-saude-infantil-0-a-18-anos-rj", "como-saber-se-o-plano-atende-o-hospital"]
+posts: ["melhor-plano-de-saude", "carencia-para-plano-de-saude-guia-completo-para-2026", "plano-de-saude-tabela-de-precos", "plano-de-saude-por-adesao", "plano-de-saude-infantil-0-a-18-anos-rj", "como-saber-se-o-plano-atende-o-hospital", "plano-ambulatorial-hospitalar-com-obstetricia"]
 faq:
   - question: "Qual a diferença entre plano individual e familiar?"
     answer: "O individual cobre uma pessoa, e o familiar reúne o titular e dependentes no mesmo contrato. Ambos são contratados por pessoa física, com CPF. A escolha depende de quantas pessoas vão usar e da disponibilidade do produto na operadora."

@@ -7,7 +7,7 @@ imageCredit: "Leeloo The First / Pexels"
 servicos: ["plano-empresarial-de-saude","unimed-rj"]
 description: "Entenda a carência do plano de saúde: prazos máximos da ANS, exceções, portabilidade e como evitar surpresas ao contratar. Guia atualizado e completo para 2026."
 publishDate: 2026-10-09T22:45:32.151Z
-updatedDate: 2026-11-16T12:00:00Z
+updatedDate: 2026-11-25T12:00:00Z
 tags: ["carência", "plano de saúde", "dicas"]
 faq:
   - question: "Tem algum plano de saúde sem carência?"
@@ -43,7 +43,7 @@ Para saber se o seu caso entra em algum desses caminhos, veja a página de [plan
 
 Os prazos de carência variam conforme o tipo de serviço solicitado. Os prazos mudam conforme o procedimento. O teto legal para a maioria dos atendimentos é de 180 dias, e a operadora pode aplicar prazos menores, que variam por produto. Por isso, peça a carência de cada tipo de atendimento por escrito antes de assinar.
 
-No caso de parto e procedimentos obstétricos, a carência é mais longa, podendo atingir até 300 dias. Isso ocorre porque os custos envolvidos são elevados e os planos precisam se proteger contra contratações feitas apenas para cobrir o nascimento. Em situações de urgência e emergência, a carência não se aplica, e o atendimento deve ser imediato, garantindo a proteção do usuário em casos críticos.
+No caso de parto e procedimentos obstétricos, a carência é mais longa, podendo atingir até 300 dias. Isso ocorre porque os custos envolvidos são elevados e os planos precisam se proteger contra contratações feitas apenas para cobrir o nascimento. Em situações de urgência e emergência, a carência não se aplica, e o atendimento deve ser imediato, garantindo a proteção do usuário em casos críticos. Veja o que cobre o [plano ambulatorial + hospitalar com obstetrícia](/blog/plano-ambulatorial-hospitalar-com-obstetricia/).
 
 ## Regras e legislação sobre carência para planos de saúde
 
